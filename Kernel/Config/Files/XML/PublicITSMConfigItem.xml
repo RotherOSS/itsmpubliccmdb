@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otobo_config version="2.0" init="Config">
+
+    <!-- Public ITSM Config Items related settings -->
+    
+    <Setting Name="PublicFrontend::Module###PublicITSMConfigItem" Required="0" Valid="1">
+        <Description Translatable="1">Frontend module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">ITSM config item overview.</Item>
+                    <Item Key="NavBarName">Config Item</Item>
+                    <Item Key="Title" Translatable="1">Config Item</Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+
+    <Setting Name="PublicFrontend::Module###PublicITSMConfigItemZoom" Required="0" Valid="0">
+        <Description Translatable="1">Frontend module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">Config item zoom.</Item>
+                    <Item Key="Title" Translatable="1">Zoom</Item>
+                    <Item Key="NavBarName">Config Item</Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+
+    <Setting Name="PublicFrontend::Module###PublicITSMConfigItemSearch" Required="0" Valid="0">
+        <Description Translatable="1">Frontend module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="Group">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">Search config items.</Item>
+                    <Item Key="Title" Translatable="1">Search</Item>
+                    <Item Key="NavBarName">Config Item</Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+
+    <Setting Name="PublicFrontend::Module###PublicITSMConfigItemAttachment" Required="0" Valid="1">
+        <Description Translatable="1">Frontend module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration</Navigation>
+        <Value>
+            <Item ValueType="FrontendRegistration">
+                <Hash>
+                    <Item Key="GroupRo">
+                        <Array>
+                        </Array>
+                    </Item>
+                    <Item Key="Group">
+                        <Array>
+                            <Item>itsm-configitem</Item>
+                        </Array>
+                    </Item>
+                    <Item Key="Description" Translatable="1">To download attachments.</Item>
+                    <Item Key="Title"></Item>
+                    <Item Key="NavBarName">Config Item</Item>
+                </Hash>
+            </Item>
+        </Value>
+    </Setting>
+
+    <Setting Name="ITSMConfigItem::Frontend::PublicOverview###Small" Required="0" Valid="1">
+        <Description Translatable="1">Defines an overview module to show the small view of a configuration item list.</Description>
+        <Navigation>Frontend::Public::ITSMConfigItemOverview</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::ITSMConfigItem::PublicOverviewSmall</Item>
+                <Item Key="Name">Small</Item>
+                <Item Key="NameShort">S</Item>
+                <Item Key="PageShown">25</Item>
+            </Hash>
+        </Value>
+    </Setting>
+
+    <!-- ITSMConfigItem::Frontend::PublicITSMConfigItemSearch -->
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Permission" Required="1" Valid="1">
+        <Description Translatable="1">Required permissions to use the ITSM configuration item search screen in the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">ro</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###DeploymentState" Required="0" Valid="1">
+        <Description Translatable="1">Includes deployment states in the config item search of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###IncidentState" Required="0" Valid="1">
+        <Description Translatable="1">Includes incident states in the config item search of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###ExtendedSearchCondition" Required="1" Valid="1">
+        <Description Translatable="1">Allows extended search conditions in config item search of the public interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&amp;&amp;*key2*)" or "(*key1*||*key2*)".</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SearchPageShown" Required="1" Valid="1">
+        <Description Translatable="1">Number of config items to be displayed in each page of a search result in the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">40</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SortBy::Default" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="1" Valid="1">
+        <Description Translatable="1">Defines the default config item attribute for config item sorting of the config item search result of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Select" SelectedID="Age">
+                <Item ValueType="Option" Value="Age" Translatable="1">Age</Item>
+                <Item ValueType="Option" Value="Number" Translatable="1">Number</Item>
+                <Item ValueType="Option" Value="Name" Translatable="1">Name</Item>
+                <Item ValueType="Option" Value="DeplState" Translatable="1">Deployment State</Item>
+                <Item ValueType="Option" Value="InciState" Translatable="1">Incident State</Item>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Order::Default" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="1" Valid="1">
+        <Description Translatable="1">Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Select" SelectedID="Down">
+                <Item ValueType="Option" Value="Down" Translatable="1">Down</Item>
+                <Item ValueType="Option" Value="Up" Translatable="1">Up</Item>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Defaults###Number" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default shown config item search attribute for config item search screen.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String"></Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Defaults###Name" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default shown config item search attribute for config item search screen.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String"></Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Defaults###DeploymentStateIDs" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default shown config item search attribute for config item search screen.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Array></Array>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Defaults###IncidentStateIDs" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default shown config item search attribute for config item search screen.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Array></Array>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Defaults###DynamicField" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="0" Valid="1">
+        <Description Translatable="1">Defines the default shown config item search attribute for config item search screen. Example: "Key" must have the name of the Dynamic Field in this case 'X', "Content" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Hash>
+            </Hash>
+        </Value>
+    </Setting>
+
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###DynamicField" Required="0" Valid="1">
+        <Description Translatable="1">Dynamic fields shown in the config item overview screen of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ITSMConfigItemOverview</Navigation>
+        <Value>
+            <Hash>
+                <DefaultItem ValueType="Select">
+                    <Item ValueType="Option" Value="0" Translatable="1">0 - Disabled</Item>
+                    <Item ValueType="Option" Value="1" Translatable="1">1 - Enabled</Item>
+                    <Item ValueType="Option" Value="2" Translatable="1">2 - Enabled and required</Item>
+                </DefaultItem>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SearchLimit" Required="1" Valid="1">
+        <Description Translatable="1">Defines the search limit for the PublicITSMConfigItemSearch screen.</Description>
+        <Navigation>Frontend::Public::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="^\d+$">10000</Item>
+        </Value>
+    </Setting>
+
+    <Setting Name="PublicFrontend::Navigation###PublicITSMConfigItem###003-ITSMConfigItem" Required="0" Valid="1">
+        <Description Translatable="1">Main menu item registration.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration::MainMenu</Navigation>
+        <Value>
+            <Array>
+                <DefaultItem ValueType="FrontendNavigation">
+                    <Hash>
+                    </Hash>
+                </DefaultItem>
+                <Item>
+                    <Hash>
+                        <Item Key="Group">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="GroupRo">
+                            <Array>
+                            </Array>
+                        </Item>
+                        <Item Key="Description" Translatable="1">Configuration Management Database.</Item>
+                        <Item Key="Name">CMDB</Item>
+                        <Item Key="Link">Action=PublicITSMConfigItem</Item>
+                        <Item Key="LinkOption"></Item>
+                        <Item Key="NavBar">Ticket</Item>
+                        <Item Key="Type">Menu</Item>
+                        <Item Key="Block"></Item>
+                        <Item Key="AccessKey"></Item>
+                        <Item Key="Prio">310</Item>
+                        <Item Key="svgIcon">var/httpd/htdocs/skins/Public/default/img/devices_black_24dp.svg</Item>
+                    </Hash>
+                </Item>
+            </Array>
+        </Value>
+    </Setting>
+
+    <Setting Name="Public::ConfigItem::PermissionConditions###01" Required="0" Valid="0">
+        <Description Translatable="1">Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.</Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Name"></Item>
+                <Item Key="Groups"><Array></Array></Item>
+                <Item Key="Classes"><Array></Array></Item>
+                <Item Key="DeploymentStates"><Array></Array></Item>
+                <Item Key="PublicUserDynamicField"></Item>
+                <Item Key="PublicCompanyDynamicField"></Item>
+                <Item Key="DynamicFieldValues">
+                    <Hash>
+                        <DefaultItem ValueType="String"></DefaultItem>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditions###02" Required="0" Valid="0">
+        <Description Translatable="1">Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.</Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Name"></Item>
+                <Item Key="Groups"><Array></Array></Item>
+                <Item Key="Classes"><Array></Array></Item>
+                <Item Key="DeploymentStates"><Array></Array></Item>
+                <Item Key="PublicUserDynamicField"></Item>
+                <Item Key="PublicCompanyDynamicField"></Item>
+                <Item Key="DynamicFieldValues">
+                    <Hash>
+                        <DefaultItem ValueType="String"></DefaultItem>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditions###03" Required="0" Valid="0">
+        <Description Translatable="1">Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.</Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Name"></Item>
+                <Item Key="Groups"><Array></Array></Item>
+                <Item Key="Classes"><Array></Array></Item>
+                <Item Key="DeploymentStates"><Array></Array></Item>
+                <Item Key="PublicUserDynamicField"></Item>
+                <Item Key="PublicCompanyDynamicField"></Item>
+                <Item Key="DynamicFieldValues">
+                    <Hash>
+                        <DefaultItem ValueType="String"></DefaultItem>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditions###04" Required="0" Valid="0">
+        <Description Translatable="1">Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.</Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Name"></Item>
+                <Item Key="Groups"><Array></Array></Item>
+                <Item Key="Classes"><Array></Array></Item>
+                <Item Key="DeploymentStates"><Array></Array></Item>
+                <Item Key="PublicUserDynamicField"></Item>
+                <Item Key="PublicCompanyDynamicField"></Item>
+                <Item Key="DynamicFieldValues">
+                    <Hash>
+                        <DefaultItem ValueType="String"></DefaultItem>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditions###05" Required="0" Valid="0">
+        <Description Translatable="1">Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.</Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Name"></Item>
+                <Item Key="Groups"><Array></Array></Item>
+                <Item Key="Classes"><Array></Array></Item>
+                <Item Key="DeploymentStates"><Array></Array></Item>
+                <Item Key="PublicUserDynamicField"></Item>
+                <Item Key="PublicCompanyDynamicField"></Item>
+                <Item Key="DynamicFieldValues">
+                    <Hash>
+                        <DefaultItem ValueType="String"></DefaultItem>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditionColumns###Default" Required="0" Valid="1">
+        <Description Translatable="1"></Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Array>
+                <Item>Number</Item>
+                <Item>Name</Item>
+                <Item>Class</Item>
+                <Item>InciState</Item>
+                <Item>DeplState</Item>
+                <Item>Created</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditionColumns###01" Required="0" Valid="0">
+        <Description Translatable="1"></Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Array>
+                <Item>Number</Item>
+                <Item>Name</Item>
+                <Item>Class</Item>
+                <Item>InciState</Item>
+                <Item>DeplState</Item>
+                <Item>Created</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditionColumns###02" Required="0" Valid="0">
+        <Description Translatable="1"></Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Array>
+                <Item>Number</Item>
+                <Item>Name</Item>
+                <Item>Class</Item>
+                <Item>InciState</Item>
+                <Item>DeplState</Item>
+                <Item>Created</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditionColumns###03" Required="0" Valid="0">
+        <Description Translatable="1"></Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Array>
+                <Item>Number</Item>
+                <Item>Name</Item>
+                <Item>Class</Item>
+                <Item>InciState</Item>
+                <Item>DeplState</Item>
+                <Item>Created</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditionColumns###04" Required="0" Valid="0">
+        <Description Translatable="1"></Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Array>
+                <Item>Number</Item>
+                <Item>Name</Item>
+                <Item>Class</Item>
+                <Item>InciState</Item>
+                <Item>DeplState</Item>
+                <Item>Created</Item>
+            </Array>
+        </Value>
+    </Setting>
+    <Setting Name="Public::ConfigItem::PermissionConditionColumns###05" Required="0" Valid="0">
+        <Description Translatable="1"></Description>
+        <Navigation>Core::ITSMConfigItem</Navigation>
+        <Value>
+            <Array>
+                <Item>Number</Item>
+                <Item>Name</Item>
+                <Item>Class</Item>
+                <Item>InciState</Item>
+                <Item>DeplState</Item>
+                <Item>Created</Item>
+            </Array>
+        </Value>
+    </Setting>
+
+</otobo_config>

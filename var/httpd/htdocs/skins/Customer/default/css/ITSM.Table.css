@@ -1,0 +1,559 @@
+/* OTOBO is a web-based ticketing system for service organisations.
+
+Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/**
+ * @package     Skin "Default"
+ * @section     Tables
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsection  General stuff
+ */
+
+/*
+ * FF3.6 has a problem with setting the position:relative only on :hover state.
+ * As a workaround it is set always and a special z-index on hover.
+ */
+.TableSmall tbody tr {
+    position: relative;
+}
+
+.TableSmall tbody tr:hover {
+    z-index: 10;
+}
+
+.TableSmall {
+    background-color: white;
+}
+
+/**
+ * @subsection  Generic table elements
+ */
+.TableSmall td,
+.TableSmall th {
+    line-height: 15px;
+    vertical-align: middle;
+    word-wrap: keep-all;
+}
+
+.TableSmall tr:hover {
+    color: #00023c;
+}
+
+table tr.MasterAction {
+    cursor: pointer;
+}
+
+.TableSmall thead .SortDescending > a:after {
+    content: "\25BC";
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+}
+
+.TableSmall thead .SortAscending > a:after {
+    content: "\25B2";
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+}
+
+/**
+ * @subsection  QueueOverviewTotals DataTable
+ */
+
+.Row td.QueueOverviewTotals,
+.Row a.QueueOverviewTotals {
+    font-weight: bold;
+}
+
+/**
+ * @subsection  Overview Small View Table
+ */
+.TableSmall {
+    width: 100%;
+    font-size: 14px;
+    color: #00023c;
+}
+
+.TableSmall .Checkbox {
+    margin-left: 7px;
+}
+
+.StaticColumn {
+    position: sticky;
+    left: 0;
+    background-color: white;
+}
+
+th.Checkbox,
+td.Checkbox {
+    width: 30px;
+}
+
+th.Flags {
+    width: 34px;
+}
+
+td.Flags {
+    width: 29px;
+}
+
+th.Direction,
+td.Direction {
+    width: 30px;
+    text-align: center;
+}
+
+th.Attachment,
+td.Attachment {
+    width: 40px;
+    padding-left: 5px !important;
+}
+
+.TableSmall thead th {
+    vertical-align: bottom;
+}
+
+.TableSmall thead th a,
+.TableSmall thead th span {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.RTL .TableSmall thead th {
+    background-position: left bottom;
+}
+
+.TableSmall thead a,
+.TableSmall thead span {
+    margin: 0 2px 1px 1px;
+    padding: 0 10px;
+    color: #4A4A4A;
+    font-size: 14px;
+    line-height: 15px;
+    height: 15px;
+    text-transform: uppercase;
+    display: block;
+    white-space: nowrap;
+}
+
+.RTL .TableSmall thead a,
+.RTL .TableSmall thead span {
+    margin: 0 1px 1px 2px;
+}
+
+.TableSmall thead span {
+    color: #00023c;
+}
+
+thead .SortAscending a,
+thead .headerSortUp a,
+thead .SortDescending a,
+thead .headerSortDown a {
+    color: #00023c;
+}
+
+.TableSmall thead a span {
+    height: 15px;
+    width: 16px;
+    display: block;
+    text-align: center;
+}
+
+.TableSmall thead a span.Flag {
+    height: 9px;
+    width: 16px;
+    margin-top: 6px;
+}
+
+.TableSmall td {
+    padding: 16px 10px 0px 0px;
+}
+
+.TableSmall td.NonTextContent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.TableSmall tbody tr.Active td {
+    color: #00023c;
+}
+
+.TableSmall td a {
+    color: #00023c;
+}
+
+.TableSmall tr:hover td a,
+.TableSmall tr.Active td a {
+    color: #00023c;
+}
+
+.TableSmall td a.DynamicFieldLink {
+    color: #FF7722;
+}
+
+.TableSmall tr:hover td a.DynamicFieldLink,
+.TableSmall tr.Active td a.DynamicFieldLink {
+    color: #FFFFFF;
+}
+
+.TableSmall tbody .Flags {
+    line-height: 11px;
+    padding-top: 2px;
+    padding-left: 5px;
+}
+
+.TableSmall tbody td span.Direction {
+    text-align: center;
+    display: block;
+    position: relative;
+    font-size: 14px;
+    width: 30px;
+}
+
+.TableSmall tbody td span.Direction i {
+    color: #555;
+}
+
+/* TODO change icon classes */
+.TableSmall tbody td span.Direction.Incoming .fa-long-arrow-left,
+.TableSmall tbody td span.Direction.Outgoing .fa-long-arrow-right {
+    color: #00023c;
+    font-size: 14px;
+}
+
+.TableSmall tbody td.Attachment {
+    text-align: center;
+}
+
+.TableSmall tbody td a.Attachment {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.TableSmall tbody td a.Attachment i {
+    color: #00023c;
+}
+
+.TableSmall td h2 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/**
+ * @subsection  Table Context Settings
+ */
+.TableContextSettings {
+    position: absolute;
+    right: 0;
+    top: 28px;
+}
+
+.TableContextSettings a {
+    display: block;
+    width: 18px;
+    height: 19px;
+    background: url(../img/contextsettings.png) no-repeat 5px 4px;
+    text-indent: -9999px;
+}
+
+/**
+ * @subsection  Handle for resizing tables
+ */
+.Handle {
+    width: 100%;
+}
+
+.Handle a {
+    display: block;
+    margin: auto;
+    height: 14px;
+    width: 79px;
+    background: transparent url(../img/handle.png) no-repeat;
+    text-indent: -9999px;
+    cursor: ns-resize;
+}
+
+.Handle.ui-resizable-s {
+    cursor:auto;
+    height:auto !important;
+    left:auto;
+}
+
+.Handle.ui-resizable-handle {
+    display: block;
+    font-size: inherit;
+    z-index: 19;
+}
+
+/**
+ * @subsection  Table headers-filters
+ */
+ .TableSmall thead span.Gray {
+    color: #444;
+}
+
+.ColumnFilter + .AJAXLoader {
+    float: right;
+    margin: 3px 0px 0px 2px;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+
+select.ColumnFilter {
+    width: 100px;
+}
+
+.TableSmall thead .SortAscendingLarge a,
+.TableSmall thead .SortDescendingLarge a {
+    color: #00023c;
+    height: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.TableSmall thead .SortDescendingLarge > a:after {
+    content: "\25BC";
+    display: inline-block;
+    width: 0;
+    margin-left: 4px;
+    text-shadow: 1px 1px 0px #fff;
+    z-index: 1;
+}
+
+thead .headerSortUp > a:before,
+thead .tablesorter-headerDesc > div.tablesorter-header-inner > a:before {
+    content: "\25BC";
+    display: inline-block;
+    margin-right: 2px;
+}
+
+thead .headerSortDown > a:before,
+thead .tablesorter-headerAsc > div.tablesorter-header-inner > a:before {
+    content: "\25B2";
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.TableSmall thead .SortAscendingLarge > a:after {
+    content: "\25B2";
+    display: inline-block;
+    width: 0;
+    margin-left: 4px;
+    text-shadow: 1px 1px 0px #fff;
+    z-index: 1;
+}
+
+.TableSmall thead th.OverviewHeader a,
+.TableSmall thead th.OverviewHeader span.Gray {
+    height: 16px;
+    line-height: 16px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger {
+    display: block;
+    width: 17px;
+    height: 17px;
+    float: right;
+    opacity: 0.5;
+    padding: 0px;
+    margin: 0px -8px 4px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger i {
+    color: #777777;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger {
+    margin: 0px -8px 4px 0px;
+}
+
+.TableSmall thead th.OverviewHeader.FilterActive .ColumnSettingsTrigger,
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger:hover,
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger.Active {
+    opacity: 1.0;
+    box-shadow: 0 1px 4px 0 rgba(4, 0, 71, 0.16);
+    box-shadow: 0 1px 4px 0 var(--colShadowDark);
+    border-radius: 5px;
+}
+
+.TableSmall thead th.OverviewHeader.FilterActive .ColumnSettingsTrigger i,
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger.Active i {
+
+    color: #333333;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsTrigger:after {
+    content: "";
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsContainer {
+    position: relative;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox {
+    background-color: #fff;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(4, 0, 71, 0.16);
+    box-shadow: 0 1px 4px 0 var(--colShadowDark);
+    display: none;
+    padding: 4px 8px;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    width: 180px;
+    z-index: 100;
+}
+
+.MainBox.Dashboard .TableSmall thead th.OverviewHeader .ColumnSettingsBox {
+    top: -10px;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox select {
+    margin-top: 0px;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox span.SelectedValue {
+    display: block;
+    text-transform: none;
+    margin-bottom: 8px;
+    position: relative;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox span.SelectedValue span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox span.SelectedValue a {
+    background: #AAAAAA;
+    border-radius: 14px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    height: 15px;
+    line-height: 13px;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: -1px;
+    width: 10px;
+    padding: 0px 0px 0px 5px;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox a.DeleteFilter {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox a.DeleteFilter.Hidden {
+    display: none;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox span.SelectedValue a:hover {
+    background: #888;
+}
+
+.TableSmall thead th.OverviewHeader .ColumnSettingsBox input[type="text"] {
+    width: 100px;
+}
+
+
+.TableSmall thead th.OverviewHeader {
+    padding: 0px 20px 0px 1px;
+}
+
+.TableSmall .ColumnFilter {
+    font-size: 12px;
+    float: left;
+}
+
+/* Delete filters */
+.ContextSettings.RemoveFilters a {
+    display: block;
+}
+
+.ContextSettings.RemoveFilters a i {
+    display: block !important;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/**
+ * @subsection  Package manager
+ */
+
+p.IntroInstall {
+    width: 70%;
+    padding-left: 10px;
+    margin-bottom: 7px;
+}
+
+.OTOBOVerifyLogoBig {
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+    width: 200px;
+    height: 45px;
+}
+
+.OTOBOVerifyLogo {
+    display: block;
+    float: right;
+    margin: 3px 0px 0px 3px;
+    width: 76px;
+    height: 16px;
+}
+
+/**
+ * @subsection  Icons in tables
+ */
+
+td i,
+td a i {
+    color: #999;
+    margin-right: 3px;
+}
+
+tr:hover td i,
+tr:hover td a i,
+td a:hover i {
+    color: #00023c;
+}
+
+} /* end @media */

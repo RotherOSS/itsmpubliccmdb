@@ -1,0 +1,3535 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ITSMConfigurationManagement\n"
+"POT-Creation-Date: 2019-06-25 12:05+0000\n"
+"PO-Revision-Date: 2024-05-24 08:14+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Russian <http://weblate.otobo.org/projects/opm-packages/"
+"itsm-configurationmanagement/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.4.2\n"
+
+#. Template: AdminITSMConfigItem
+msgid "Config Item Management"
+msgstr "Управление Конфигурационными единицами"
+
+#. Template: AdminITSMConfigItem
+msgid "Change class definition"
+msgstr "Изменить описание класса"
+
+#. Template: AdminITSMConfigItem
+msgid "Config Item Class"
+msgstr "Класс конфигурационной единицы"
+
+#. Template: AdminITSMConfigItem
+msgid "Definition"
+msgstr "Описание"
+
+#. Template: AdminITSMConfigItem
+msgid "Change"
+msgstr "Изменение"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "Incident State"
+msgstr "Состояние инцидента"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "Deployment State"
+msgstr "Состояние использования"
+
+#. Template: AgentITSMConfigItemAdd
+msgid "Class"
+msgstr "Класс"
+
+#. Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
+msgid "Deployment State Type"
+msgstr "Тип Состояния использования"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Current Incident State"
+msgstr "Текущее состояние инцидента"
+
+#. Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
+msgid "Current Incident State Type"
+msgstr "Тип Текущего состояния инцидента"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Last changed"
+msgstr "Время последнего изменения"
+
+#. Template: AgentITSMConfigItemAdd
+msgid "Config Item"
+msgstr "Основные средства"
+
+#. Template: AgentITSMConfigItemAdd
+msgid "Filter for Classes"
+msgstr "Фильтр для классов"
+
+#. Template: AgentITSMConfigItemAdd
+msgid "Select a Class from the list to create a new Config Item."
+msgstr "Выберите класс из списка для создания новой КЕ"
+
+#. Template: AgentITSMConfigItemBulk
+msgid "ITSM ConfigItem Bulk Action"
+msgstr "ITSM ConfigItem массовое действие"
+
+#. Template: AgentITSMConfigItemBulk
+msgid "Deployment state"
+msgstr "Состояние использования"
+
+#. Template: AgentITSMConfigItemBulk
+msgid "Incident state"
+msgstr "Состояние инцидента"
+
+#. Template: AgentITSMConfigItemBulk
+msgid "Link to another"
+msgstr "Связать с другим"
+
+#. Template: AgentITSMConfigItemBulk
+msgid "Invalid Configuration Item number!"
+msgstr "Неверный номер конфигурационной единицы!"
+
+#. Template: AgentITSMConfigItemBulk
+msgid "The number of another Configuration Item to link with."
+msgstr "Количество других КЕ для связывания."
+
+#. Template: AgentITSMConfigItemDelete
+msgid "Do you really want to delete this config item?"
+msgstr "Вы действительно хотите удалить эту конфигурационную единицу?"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "The name of this config item"
+msgstr "Имя этого учетного элемента"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
+msgstr "Имя уже используется другой КЕ со следующим номером (ами): %s"
+
+#. Template: AgentITSMConfigItemHistory
+msgid "History of Config Item: %s"
+msgstr "История конфигурационной единицы: %s"
+
+#. Template: AgentITSMConfigItemHistory
+msgid "History Content"
+msgstr "Содержимое истории"
+
+#. Template: AgentITSMConfigItemHistory
+msgid "Createtime"
+msgstr "Время создания"
+
+#. Template: AgentITSMConfigItemHistory
+msgid "Zoom view"
+msgstr "Подробный показ"
+
+#. Template: AgentITSMConfigItemOverviewNavBar
+msgid "Context Settings"
+msgstr "Параметры контекста"
+
+#. Template: AgentITSMConfigItemOverviewNavBar
+msgid "Config Items per page"
+msgstr "Конфигурационных единиц на страницу"
+
+#. Template: AgentITSMConfigItemOverviewSmall
+msgid "A generic ITSM Configuration Item table"
+msgstr "Общая таблица элементов конфигурации ITSM"
+
+#. Template: AgentITSMConfigItemSearch
+msgid "Run Search"
+msgstr "Выполнить поиск"
+
+#. Template: AgentITSMConfigItemSearch
+msgid "Also search in previous versions?"
+msgstr "Искать и в предыдущих версиях?"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Configuration Item"
+msgstr "Конфигурационная единица"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Configuration Item Information"
+msgstr " Информация о Конф. ед."
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Current Deployment State"
+msgstr "Текущее состояние использования"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Last changed by"
+msgstr "Автор последнего изменения"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Show one version"
+msgstr "Показать одну версию"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Show all versions"
+msgstr "Показать все версии"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Version Incident State"
+msgstr "Состояние инцидента версии"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Version Deployment State"
+msgstr "Состояние использования версии объекта"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "Version Number"
+msgstr "Номер версии"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Configuration Item Version Details"
+msgstr "Полная информация о КЕ выбранной версии"
+
+#. Template: AgentITSMConfigItemZoom
+msgid "Property"
+msgstr "Свойство"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
+msgid "No access to Class is given!"
+msgstr "Нет доступа к классу!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
+msgid "Overview: ITSM ConfigItem"
+msgstr "Обзор: ITSM ConfigItem"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
+msgid "No ConfigItemID is given!"
+msgstr "Нет ConfigItemID!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
+msgid "You need at least one selected Configuration Item!"
+msgstr "Вам нужна хотя бы одна выбранная конфигурационная единица!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
+msgid "You don't have write access to this configuration item: %s."
+msgstr "У вас нет доступа на запись этой конфигурационной единицы: %s."
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
+msgid "Config item \"%s\" not found in database!"
+msgstr "Конфигурационная единица \"%s\" не найдена в базе!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
+msgid "Was not able to delete the configitem ID %s!"
+msgstr "Не удалось удалить конфигурационную единицу с ID %s!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
+msgid "No version found for ConfigItemID %s!"
+msgstr "Не найдена версия конфигурационной единицы %s!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
+msgid "No ConfigItemID, DuplicateID or ClassID is given!"
+msgstr "Не присвоен ConfigItemID, DuplicateID или ClassID!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
+msgid "No access is given!"
+msgstr "Нет доступа!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
+msgid "No definition was defined for class %s!"
+msgstr "Класс %s не был определен!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Can't show history, no ConfigItemID is given!"
+msgstr "Невозможно показать историю, нет ConfigItemID!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Can't show history, no access rights given!"
+msgstr "Невозможно показать историю, недостаточно прав!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "New ConfigItem (ID=%s)"
+msgstr "Новая КЕ (ID=%s)"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "New version (ID=%s)"
+msgstr "Новая версия (ID=%s)"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Deployment state updated (new=%s, old=%s)"
+msgstr "Состояние использования обновлено (новое=%s, старое=%s)"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Incident state updated (new=%s, old=%s)"
+msgstr "Состояние инцидента обновлено (новое=%s, старое=%s)"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "ConfigItem (ID=%s) deleted"
+msgstr "КЕ (ID=%s) удалена"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Link to %s (type=%s) added"
+msgstr "Связь с %s (тип=%s) добавлена"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Link to %s (type=%s) deleted"
+msgstr "Связь с %s (тип=%s) удалена"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "ConfigItem definition updated (ID=%s)"
+msgstr "Описание КЕ обновлено (ID=%s)"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Name updated (new=%s, old=%s)"
+msgstr "Имя обновлено (новое=%s, старое=%s)"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Attribute %s updated from \"%s\" to \"%s\""
+msgstr "Атрибут %s обновлен с \"%s\" до \"%s\""
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
+msgid "Version %s deleted"
+msgstr "Версия %s удалена"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
+msgid "No ConfigItemID or VersionID is given!"
+msgstr "Не присвоен ConfigItemID или VersionID!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
+msgid "Can't show config item, no access rights given!"
+msgstr "Невозможно отобразить конфигурационную единицу, нет доступа!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
+msgid "ConfigItemID %s not found in database!"
+msgstr "Конфигурационная единица %s не найдена в базе!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
+msgid "VersionID %s not found in database!"
+msgstr "Версия %s не найдена в базе!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
+msgid "ConfigItem"
+msgstr "Конфигурационная единица"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
+msgid "printed by %s at %s"
+msgstr "напечатано %s в %s"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
+msgid "Invalid ClassID!"
+msgstr "Неверный ClassID!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
+msgid "No ClassID is given!"
+msgstr "ClassID не присвоен!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
+msgid "No access rights for this class given!"
+msgstr "Нет доступа для этого класса!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
+msgid "No Result!"
+msgstr "Нет результата/Решения!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
+msgid "Config Item Search Results"
+msgstr "Результаты поиска конфигурационных единиц"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "Can't show item, no access rights for ConfigItem are given!"
+msgstr "Невозможно отобразить элемент, недостаточно прав для КЕ!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "operational"
+msgstr "оперативная"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "warning"
+msgstr "предупреждение"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "incident"
+msgstr "инцидент"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "The deployment state of this config item"
+msgstr "Состояние использования этой КЕ"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "The incident state of this config item"
+msgstr "Состояние инцидента для этой КЕ"
+
+#. Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
+msgid "Shown config items"
+msgstr "Показанные элементы настройки"
+
+#. Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
+msgid "Between"
+msgstr "Между"
+
+#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
+msgid "Maximum number of one element"
+msgstr "Максимальное количество одного элемента"
+
+#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
+msgid "Empty fields indicate that the current values are kept"
+msgstr "Пустые поля показывают, что текущие значения сохранятся"
+
+#. Perl Module: Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm
+msgid "Skipped"
+msgstr "Пропущено"
+
+#. ITSM class bundles
+msgid "Model"
+msgstr "Модель"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Customer Company"
+msgstr "Клиентская компания"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Serial Number"
+msgstr "Серийный номер"
+
+#. ITSM class bundles
+msgid "CPU"
+msgstr "ЦПУ"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Ram"
+msgstr "ОЗУ"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Hard Disk"
+msgstr "Жесткий диск"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Capacity"
+msgstr "Объем"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Network Adapter"
+msgstr "Сетевой адаптер"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "IP over DHCP"
+msgstr "IP по DHCP"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "IP Address"
+msgstr "IP адрес"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Graphic Adapter"
+msgstr "Видео адаптер"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Other Equipment"
+msgstr "Другое оборудование"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Warranty Expiration Date"
+msgstr "Срок истечения гарантии"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Install Date"
+msgstr "Дата установки"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Phone 1"
+msgstr "Телефон 1"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Phone 2"
+msgstr "Телефон 2"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Network Address"
+msgstr "Сетевой адрес"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Subnet Mask"
+msgstr "Маска подсети"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Gateway"
+msgstr "Шлюз"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Licence Type"
+msgstr "Тип лицензии"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Licence Key"
+msgstr "Лицензионный ключ"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Quantity"
+msgstr "Количество"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Expiration Date"
+msgstr "Срок лицензии"
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "Media"
+msgstr "Мультимедийные средства"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Computer"
+msgstr "Компьютер"
+
+#. ITSM class bundles
+msgid "Hardware"
+msgstr "Аппаратное обеспечение"
+
+#. ITSM class bundles
+msgid "Network"
+msgstr "Сеть"
+
+#. ITSM class bundles
+msgid "Software"
+msgstr "Программное обеспечение"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Expired"
+msgstr "Устарело"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Maintenance"
+msgstr "Техническое обслуживание"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Pilot"
+msgstr "Эксперимент"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Planned"
+msgstr "Запланированно"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Repair"
+msgstr "Ремонт"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Retired"
+msgstr "Списано"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Review"
+msgstr "Экспертиза"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Test/QA"
+msgstr "Тестирование"
+
+#. ITSM class bundles
+msgid "Laptop"
+msgstr "Ноутбук"
+
+#. ITSM class bundles
+msgid "Desktop"
+msgstr "Настольный ПК"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "PDA"
+msgstr "PDA"
+
+#. ITSM class bundles
+msgid "Server"
+msgstr "Сервер"
+
+#. ITSM class bundles
+msgid "Other"
+msgstr "Другое"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Monitor"
+msgstr "Монитор"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Printer"
+msgstr "Принтер"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Switch"
+msgstr "Коммутатор"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Router"
+msgstr "Маршрутизатор"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "WLAN Access Point"
+msgstr "WLAN точка доступа"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Security Device"
+msgstr "Смарт-карта"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Backup Device"
+msgstr "Устройство бэкапа"
+
+#. ITSM class bundles
+msgid "Mouse"
+msgstr "Мышка"
+
+#. ITSM class bundles
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Camera"
+msgstr "Камера"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Beamer"
+msgstr "Проектор"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Modem"
+msgstr "Модем"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "PCMCIA Card"
+msgstr "PCMCIA карта"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "USB Device"
+msgstr "USB устройство"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Docking Station"
+msgstr "Док-станция"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Scanner"
+msgstr "Сканер"
+
+#. ITSM class bundles
+msgid "Building"
+msgstr "Здание"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Office"
+msgstr "Офис"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Floor"
+msgstr "Этаж"
+
+#. ITSM class bundles
+msgid "Room"
+msgstr "Кабинет"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Rack"
+msgstr "Стойка"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Workplace"
+msgstr "Рабочее место"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Outlet"
+msgstr "Розетка"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "IT Facility"
+msgstr "ИТ объект"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "LAN"
+msgstr "Сетевая карта"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "WLAN"
+msgstr "WLAN"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Telco"
+msgstr "Telco"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "GSM"
+msgstr "GSM"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Client Application"
+msgstr "Клиентское приложение"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Middleware"
+msgstr "Промежуточное ПО"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Server Application"
+msgstr "Серверное приложение"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Client OS"
+msgstr "Клиентская ОС"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Server OS"
+msgstr "Серверная ОС"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Admin Tool"
+msgstr "Системные утилиты"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "User Tool"
+msgstr "Пользовательские утилиты"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Embedded"
+msgstr "Встроенный"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Single Licence"
+msgstr "Однократная лицензия"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Per User"
+msgstr "На пользователя"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Per Processor"
+msgstr "На ЦПУ"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Per Server"
+msgstr "На сервер"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Per Node"
+msgstr "На ноду(узел)"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Volume Licence"
+msgstr "Корпоративная лицензия"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Enterprise Licence"
+msgstr "Корпоративная лицензия"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Developer Licence"
+msgstr "Лицензия для разработчика"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Demo"
+msgstr "Демо-версия"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Time Restricted"
+msgstr "Ограниченная по времени"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Freeware"
+msgstr "Бесплатное ПО"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Open Source"
+msgstr "ПО с открытым кодом"
+
+#. Database XML Definition: ITSMConfigurationManagement.sopm
+msgid "Unlimited"
+msgstr "Без ограничений"
+
+#. JS File: ITSM.Agent.ConfigItem.Zoom
+msgid "Ok"
+msgstr "Ok"
+
+#. SysConfig
+msgid "Assigned CIs"
+msgstr "Назначаемые КИ"
+
+#. SysConfig
+msgid "CIs assigned to customer company"
+msgstr "КИ, закрепленные за компанией-клиентом"
+
+#. SysConfig
+msgid "CIs assigned to customer user"
+msgstr "КИ, назначенные пользователю клиента"
+
+#. SysConfig
+msgid "CMDB Settings"
+msgstr "Настройки CMDB"
+
+#. SysConfig
+msgid "Check for a unique name only within the same ConfigItem class ('class') or globally ('global'), which means every existing ConfigItem is taken into account when looking for duplicates."
+msgstr "Проверка уникальности Имени внутри текущего класса КЕ('class') или глобально ('global'),что означает, что любая существующая КЕ учитывается при поиске дубликатов "
+
+#. SysConfig
+msgid "Config Items"
+msgstr "Конфигурационные единицы"
+
+#. SysConfig
+msgid "Config item add."
+msgstr "Создать конфигурационную единицу"
+
+#. SysConfig
+msgid "Config item edit."
+msgstr "Редактировать конфигурационную единицу"
+
+#. SysConfig
+msgid "Config item event module that enables logging to history in the agent interface."
+msgstr "Config item (КЕ) event module ведущий запись в историю в агентском интерфейсе."
+
+#. SysConfig
+msgid "Config item history."
+msgstr "История конфигурационной единицы"
+
+#. SysConfig
+msgid "Config item print."
+msgstr "Печать конфигурационной единицы"
+
+#. SysConfig
+msgid "Config item zoom."
+msgstr "Просмотр конфигурационной единицы"
+
+#. SysConfig
+msgid "ConfigItemNumber"
+msgstr "Номер конфигурационной единицы"
+
+#. SysConfig
+msgid "Configuration Item Limit"
+msgstr " Лимит КЕ"
+
+#. SysConfig
+msgid "Configuration Item limit per page."
+msgstr "Лимит КЕ на страницу"
+
+#. SysConfig
+msgid "Configuration Management Database."
+msgstr "База управления конфигурацией"
+
+#. SysConfig
+msgid "Configuration item bulk module."
+msgstr "Объемный модуль КЕ"
+
+#. SysConfig
+msgid "Configuration item search backend router of the agent interface."
+msgstr "Модуль поиска КЕ в агентском интерфейсе"
+
+#. SysConfig
+msgid "Create and manage the definitions for Configuration Items."
+msgstr "Создание и управление описаниями конфигурационных единиц."
+
+#. SysConfig
+msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr "Задает Действия/Actions когда кнопка настройки доступна в связанном виджете (LinkObject::ViewMode = \"complex\"). Обратите внимание, что эти Действия/Actions должны иметь зарегистрированные JS или CSS файлы: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js и Core.Agent.LinkObject.js."
+
+#. SysConfig
+msgid "Defines Required permissions to create ITSM configuration items using the Generic Interface."
+msgstr "Задать требуемые права для создания ITSM КЕ с использованием Generic Interface."
+
+#. SysConfig
+msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
+msgstr "Задать требуемые права для удаления ITSM КЕ с использованием Generic Interface."
+
+#. SysConfig
+msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
+msgstr "Задает требуемые права для получения ITSM КЕ с использованием Generic Interface."
+
+#. SysConfig
+msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
+msgstr "Задает требуемые права для поиска ITSM КЕ с использованием Generic Interface"
+
+#. SysConfig
+msgid "Defines Required permissions to update ITSM configuration items using the Generic Interface."
+msgstr "Задает требуемые права для одновления ITSM КЕ с использованием Generic Interface"
+
+#. SysConfig
+msgid "Defines an overview module to show the small view of a configuration item list."
+msgstr "Задает модуль просмотра КЕ в кратком виде."
+
+#. SysConfig
+msgid "Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages."
+msgstr "Задает регулярные выражения для каждого отдельного класса для проверки имен КЕ и выдачи сообщений об ошибках."
+
+#. SysConfig
+msgid "Defines the default subobject of the class 'ITSMConfigItem'."
+msgstr "Задает умалчивамый подобъект для класса 'ITSMConfigItem'."
+
+#. SysConfig
+msgid "Defines the number of rows for the CI definition editor in the admin interface."
+msgstr "Задает количество строк для редактора описаний КЕ (CI) в интерфейсе админа."
+
+#. SysConfig
+msgid "Defines the order of incident states from high (e.g. cricital) to low (e.g. functional)."
+msgstr "Задает порядок состояний инцидентов от высоких (например, критических) до низких (например, функциональных)."
+
+#. SysConfig
+msgid "Defines the relevant deployment states where linked tickets can affect the status of a CI."
+msgstr "Задает соответствующие состояния развертывания, когда связанные заявки могут влиять на статус КЕ."
+
+#. SysConfig
+msgid "Defines the search limit for the AgentITSMConfigItem screen."
+msgstr "Задает лимит поиска объектов для экрана AgentITSMConfigItem"
+
+#. SysConfig
+msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
+msgstr "Задает лимит поиска объектов для экрана AgentITSMConfigItemSearch"
+
+#. SysConfig
+msgid "Defines the shown columns in the config item overview. This option has no effect on the position of the column. Note: Class column is always available if filter 'All' is selected."
+msgstr "Задает список показываемых столбцов в обзоре КЕ. Этот параметр не влияет на их порядок. Помните: Столбец Класс доступен только при условии выбора в фильтре \"Все\"(All)"
+
+#. SysConfig
+msgid "Defines the shown columns in the config item search. This option has no effect on the position of the column."
+msgstr "Задает список показываемых столбцов в результатах поиска КЕ. Этот параметр не влияет на порядок их отображения."
+
+#. SysConfig
+msgid "Defines the shown columns of CIs in the config item overview depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that are common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown as defined in the setting ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+msgstr "Задает список отображаемых столбцов при просмотре списков КЕ в зависимости от класса. Каждое имя атрибута должно иметь в качестве префикса - имя класса и два двоеточия (i.e. Computer::). Есть ряд атрибутов, общих для всех классов (например, для класса Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Для отображения индивидуальных атрибутов, специфичных для конкретного класса из описания КЕ (CI-Definition), используется следующий синтаксис (например, для класса Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Если нет атрибутов для конкретного класса, отображаются столбцы заданные параметром ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+
+#. SysConfig
+msgid "Defines the shown columns of CIs in the config item search depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that are common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown as defined in the setting ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+msgstr "Задает список отображаемых столбцов в результатах поиска КЕ в зависимости от выбранного класса. Каждое имя атрибута должно иметь в качестве префикса - имя класса и два двоеточия (i.e. Computer::). Есть ряд атрибутов, общих для всех классов (например, для класса Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Для отображения индивидуальных атрибутов, специфичных для конкретного класса из описания КЕ (CI-Definition), используется следующий синтаксис (например, для класса Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Если нет атрибутов для конкретного класса, отображаются столбцы заданные параметром ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+
+#. SysConfig
+msgid "Defines the shown columns of CIs in the config item widget depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that are common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown as defined in the setting AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany (key DefaultColumns)."
+msgstr "Определяет отображаемые столбцы CI в виджете элемента конфигурации в зависимости от класса CI. Каждая запись должна иметь префикс с именем класса и двойное двоеточие (например, Computer::). Есть несколько CI-атрибутов, общих для всех CI (пример для класса Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Чтобы показать отдельные CI-атрибуты, определенные в CI-определении, необходимо использовать следующую схему (пример для класса Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Если для класса CI нет записи, то отображаются колонки по умолчанию, определенные в настройке AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany (ключ DefaultColumns)."
+
+#. SysConfig
+msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
+msgstr "Определяет отображаемые столбцы КИ в комплексном представлении таблицы связей для всех классов КИ. Если запись отсутствует, то отображаются столбцы по умолчанию."
+
+#. SysConfig
+msgid "Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown."
+msgstr "Задает перечень отображаемых столбцов отображаемых КЕ в таблице при создании связи, в зависимости от класса. Каждое имя атрибута должно иметь в качестве префикса - имя класса и два двоеточия (i.e. Computer::). Есть ряд атрибутов, общих для всех классов (например, для класса Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Для отображения индивидуальных атрибутов, специфичных для конкретного класса из описания КЕ (CI-Definition), используется следующий синтаксис (например, для класса Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Если нет атрибутов для конкретного класса, отображаются столбцы заданные параметром ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+
+#. SysConfig
+msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
+msgstr "Определяет, какой тип связи (названный с точки зрения заявки) может повлиять на статус связанной КЕ."
+
+#. SysConfig
+msgid "Defines which type of ticket can affect the status of a linked CI."
+msgstr "Определяет, какой тип заявки может повлиять на статус связанной КЕ."
+
+#. SysConfig
+msgid "Delete Configuration Item"
+msgstr "Удалить конфигурационную единицу"
+
+#. SysConfig
+msgid "Deployment State Color"
+msgstr "Цвет состояния использования"
+
+#. SysConfig
+msgid "Duplicate"
+msgstr "Резерв"
+
+#. SysConfig
+msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
+msgstr "Включает возможность массовых действий с КЕ для интерфейса агента для работы с несколькими КЕ одновременно."
+
+#. SysConfig
+msgid "Enables configuration item bulk action feature only for the listed groups."
+msgstr "Включает возможность массовых действий с КЕ только для перечисленных групп."
+
+#. SysConfig
+msgid "Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otobo.ITSMConfigItemListDuplicates.pl."
+msgstr "Включает/выключает проверку уникальности имен КЕ. До включения этого параметра, проверьте вашу БД на наличие дубликатов имен КЕ. Вы можете сделать это с помощью скрипта bin/otobo.ITSMConfigItemListDuplicates.pl."
+
+#. SysConfig
+msgid "Event module to set configitem-status on ticket-configitem-link."
+msgstr "Модуль установки статуса КЕ для связанной с ней заявки."
+
+#. SysConfig
+msgid "ITSM config item overview."
+msgstr "Обзор конфигурационных единиц ITSM."
+
+#. SysConfig
+msgid "Module to check the group responsible for a class."
+msgstr "Модуль для проверки группы ответственной за класс"
+
+#. SysConfig
+msgid "Module to check the group responsible for a configuration item."
+msgstr "Модуль для проверки группы ответственной за КЕ"
+
+#. SysConfig
+msgid "Module to generate ITSM config item statistics."
+msgstr "Модуль формирования статистики по КЕ."
+
+#. SysConfig
+msgid "Object backend module registration for the import/export module."
+msgstr "Object backend module registration для модуля Import/Export."
+
+#. SysConfig
+msgid "Overview."
+msgstr "Обзор"
+
+#. SysConfig
+msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
+msgstr "Определяет отображаемые столбцы КИ в комплексном представлении таблицы связей для всех классов КИ. Если запись отсутствует, то отображаются столбцы по умолчанию."
+
+#. SysConfig
+msgid "Parameters for the deployment states color in the preferences view of the agent interface."
+msgstr "Параметры для цветов обозначающих состояния использования КЕ в настройках обзоров в интерфейсе агента."
+
+#. SysConfig
+msgid "Parameters for the deployment states in the preferences view of the agent interface."
+msgstr "Параметры для состояний использования КЕ в настройках обзоров в интерфейсе агента."
+
+#. SysConfig
+msgid "Parameters for the example permission groups of the general catalog attributes."
+msgstr "Параметры для примерных групповых прав для атрибутов Общего каталога"
+
+#. SysConfig
+msgid "Parameters for the pages (in which the configuration items are shown)."
+msgstr "Параметры страниц (на которых отображаются КЕ)"
+
+#. SysConfig
+msgid "Permission Group"
+msgstr "Группа разрешений"
+
+#. SysConfig
+msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
+msgstr "Требуемые права для использования обзора КЕ в CMDB агентом"
+
+#. SysConfig
+msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
+msgstr "Требуемые права для использования поиска в CMDB агентом"
+
+#. SysConfig
+msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
+msgstr "Требуемые права для использования полного просмотра КЕ (zoom view) в CMDB агентом"
+
+#. SysConfig
+msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
+msgstr "Требуемые права для добавления КЕ в CMDB агентом"
+
+#. SysConfig
+msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
+msgstr "Требуемые права для редактирования содержимого КЕ в CMDB агентом"
+
+#. SysConfig
+msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
+msgstr "Требуемые права для просмотра истории содержимого КЕ в CMDB агентом"
+
+#. SysConfig
+msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
+msgstr "Требуемые права для печати характеристик КЕ в CMDB агентом"
+
+#. SysConfig
+msgid "Required privileges to delete config items."
+msgstr "Необходимы права для удаления конфигурационных единиц."
+
+#. SysConfig
+msgid "Search config items."
+msgstr "Поиск конфигурационных единиц."
+
+#. SysConfig
+msgid "Selects the configuration item number generator module. \"AutoIncrement\" increments the configuration item number, the SystemID, the ConfigItemClassID and the counter are used. The format is \"SystemID.ConfigItemClassID.Counter\", e.g. 1205000004, 1205000005."
+msgstr "Выбор модуля генерации номера КЕ. \"AutoIncrement\" последовательно увеличивает номер на 1.Для формирования номера используются SystemID, ConfigItemClassID и счетчик. Формат - \"SystemID.ConfigItemClassID.Counter\", т.е. 1205000004, 1205000005."
+
+#. SysConfig
+msgid "Set the incident state of a CI automatically when a Ticket is Linked to a CI."
+msgstr "Установить состояние инцидента КЕ автоматически, когда заявка связана с КЕ."
+
+#. SysConfig
+msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
+msgstr "Задает состояние использования на экране массовых действий с КЕ в интерфейсе агента."
+
+#. SysConfig
+msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
+msgstr "Задает состояние инцидента на экране массовых действий с КЕ в интерфейсе агента."
+
+#. SysConfig
+msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
+msgstr "Показывает пункт меню Связать (Link) для организации связи КЕ с другим объектом на экране полного (zoom view) просмотра"
+
+#. SysConfig
+msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
+msgstr "Показывает пункт меню для доступа к истории КЕ при просмотре КЕ в интерфейсе агента."
+
+#. SysConfig
+msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
+msgstr "Показывает пункт меню История для просмотра истории КЕ"
+
+#. SysConfig
+msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
+msgstr "Показывает пункт меню для удаления конфигурационной единицы при подробном просмотре в интерфейсе агента."
+
+#. SysConfig
+msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
+msgstr "Показывает пункт меню Дублировать для создания новой КЕ путем копирования характеристик текущей КЕ"
+
+#. SysConfig
+msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
+msgstr "Показывает пункт меню Дублировать для создания новой КЕ путем копирования характеристик текущей КЕ"
+
+#. SysConfig
+msgid "Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface."
+msgstr "Показывает пункт меню Редактировать для изменения характеристик КЕ"
+
+#. SysConfig
+msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
+msgstr "Показывает пункт меню Назад при подробном просмотре конфигурационных единиц в интерфейсе агента."
+
+#. SysConfig
+msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
+msgstr "Показывает пункт меню Печать для печати характеристик КЕ"
+
+#. SysConfig
+msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
+msgstr "Показывает пункт меню для подробного просмотра КЕ при обзоре КЕ в интерфейсе агента"
+
+#. SysConfig
+msgid "Shows the config item history (reverse ordered) in the agent interface."
+msgstr "Показ истории содержимого КЕ (порядок показа)"
+
+#. SysConfig
+msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#."
+msgstr "Идентификатор (префикс) к номеру КЕ, т.е КЕ_№, КЕ#, Учетный_элемент_№. По умолчанию - ConfigItem# (или его перевод)."
+
+#. SysConfig
+msgid "class"
+msgstr "класс"
+
+#. SysConfig
+msgid "global"
+msgstr "глобальный"
+
+#. SysConfig
+msgid "postproductive"
+msgstr "постпродуктивный"
+
+#. SysConfig
+msgid "preproductive"
+msgstr "предпродуктивный"
+
+#. SysConfig
+msgid "productive"
+msgstr "продуктивный"
+
+#. Template: AdminITSMConfigItem
+msgid "Change role definition"
+msgstr "Изменение определения роли"
+
+#. Template: AdminITSMConfigItem
+msgid "Ready2Import Class Bundles"
+msgstr "Пакеты классов Ready2Import"
+
+#. Template: AdminITSMConfigItem
+msgid "Here you can import Ready2Import class bundles showcasing our most usual config items. Please note that some additional configuration may be required."
+msgstr ""
+"Здесь вы можете импортировать пакеты классов Ready2Import, демонстрирующие "
+"наши самые обычные элементы конфигурации. Обратите внимание, что может "
+"потребоваться дополнительная настройка."
+
+#. Template: AdminITSMConfigItem
+msgid "Update existing entities"
+msgstr "Обновление существующих сущностей"
+
+#. Template: AdminITSMConfigItem
+msgid "Import Ready2Adopt class bundles"
+msgstr "Импортируйте пакеты классов Ready2Adopt"
+
+#. Template: AdminITSMConfigItem
+msgid "Config Item Role"
+msgstr "Роль элемента конфигурации"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "The version number of this config item"
+msgstr "Номер версии этого элемента конфигурации"
+
+#. Template: AgentITSMConfigItemEdit
+msgid "Version Number is already in use by the ConfigItems with the following Number(s): %s"
+msgstr ""
+"Номер версии уже используется ConfigItems со следующим номером (номерами): %s"
+
+#. Template: AgentITSMConfigItemOverviewSmall
+msgid "No config item data found."
+msgstr "Данные об элементах конфигурации не найдены."
+
+#. Template: AgentITSMConfigItemOverviewSmall
+msgid "Select this config item"
+msgstr "Выберите этот элемент конфигурации"
+
+#. Template: AgentITSMConfigItemTreeView
+msgid "TreeView for ConfigItem"
+msgstr "TreeView для ConfigItem"
+
+#. Template: AgentITSMConfigItemTreeView
+msgid "Depth Level"
+msgstr "Уровень глубины"
+
+#. Template: AgentITSMConfigItemTreeView
+msgid "Zoom In/Out"
+msgstr "Увеличение/уменьшение"
+
+#. Template: AgentITSMConfigItemTreeView
+msgid "Max links level reached for ConfigItem!"
+msgstr "Достигнут максимальный уровень ссылок для ConfigItem!"
+
+#. Template: CustomerITSMConfigItem
+msgid "Your ConfigItems"
+msgstr "Ваши ConfigItems"
+
+#. Template: CustomerITSMConfigItemSearch
+msgid "ConfigItem Search"
+msgstr "Поиск ConfigItem"
+
+#. Template: AdminACL
+msgid "Object Type"
+msgstr "Тип объекта"
+
+#. JS Template: ClassImportConfirm
+msgid "The following classes will be imported"
+msgstr "Будут импортированы следующие классы"
+
+#. JS Template: ClassImportConfirm
+msgid "The following roles will be imported"
+msgstr "Следующие роли будут импортированы"
+
+#. JS Template: ClassImportConfirm
+msgid "Note that also corresponding dynamic fields and GeneralCatalog classes will be created and there is no automatic removal."
+msgstr ""
+"Обратите внимание, что также будут созданы соответствующие динамические поля "
+"и классы GeneralCatalog, и автоматического удаления не произойдет."
+
+#. JS Template: ClassImportConfirm
+msgid "Do you want to proceed?"
+msgstr "Желаете продолжить?"
+
+#. Perl Module: Kernel/Modules/AdminITSMConfigItem.pm
+msgid "Need ExampleClasses!"
+msgstr "Нужны примеры классов!"
+
+#. Perl Module: Kernel/Modules/AdminITSMConfigItem.pm
+msgid "Definition is no valid YAML hash."
+msgstr "Определение не является действительным хэшем YAML."
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "ConfigItem not found!"
+msgstr "ConfigItem не найден!"
+
+#. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
+msgid "No versions found!"
+msgstr "Версии не найдены!"
+
+#. Perl Module: Kernel/Modules/CustomerITSMConfigItemSearch.pm
+msgid "No permission"
+msgstr "Нет разрешения"
+
+#. Perl Module: Kernel/Modules/CustomerITSMConfigItemSearch.pm
+msgid "Filter invalid!"
+msgstr "Фильтр недействителен!"
+
+#. Perl Module: Kernel/Modules/CustomerITSMConfigItemSearch.pm
+msgid "Search params invalid!"
+msgstr "Недопустимые параметры поиска!"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Class restrictions for the config item"
+msgstr "Ограничения класса для элемента конфигурации"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select one or more classes to restrict selectable config items"
+msgstr ""
+"Выберите один или несколько классов, чтобы ограничить выбор элементов "
+"конфигурации"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Link type"
+msgstr "Тип ссылки"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select the link type."
+msgstr "Выберите тип ссылки."
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Forwards: Referencing (Source) -> Referenced (Target)"
+msgstr "Форварды: Ссылающийся (Источник) -> Ссылающийся (Цель)"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Backwards: Referenced (Source) -> Referencing (Target)"
+msgstr "Обратно: Ссылающийся (Источник) -> Ссылающийся (Цель)"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Link Direction"
+msgstr "Направление ссылки"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "The referencing object is the one containing this dynamic field, the referenced object is the one selected as value of the dynamic field."
+msgstr ""
+"Ссылающийся объект - это объект, содержащий данное динамическое поле, а "
+"ссылающийся объект - это объект, выбранный в качестве значения динамического "
+"поля."
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Dynamic (ConfigItem)"
+msgstr "Динамический (ConfigItem)"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Static (Version)"
+msgstr "Статика (версия)"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Link Referencing Type"
+msgstr "Тип ссылки"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Whether this link applies to the ConfigItem or the static version of the referencing object. Current Incident State calculation only is performed on dynamic links."
+msgstr ""
+"Применяется ли эта ссылка к ConfigItem или к статической версии ссылающегося "
+"объекта. Расчет текущего состояния инцидента выполняется только для "
+"динамических ссылок."
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select the attribute which config items will be searched by"
+msgstr ""
+"Выберите атрибут, по которому будет осуществляться поиск элементов "
+"конфигурации"
+
+#. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
+msgid "Starting the YAML string with '---' is required."
+msgstr "Необходимо начинать строку YAML с '---'."
+
+#. Perl Module: Kernel/System/ITSMConfigItem/Link.pm
+msgid "Could not purge the table configitem_link."
+msgstr "Не удалось очистить таблицу configitem_link."
+
+#. Perl Module: Kernel/System/ITSMConfigItem/Link.pm
+msgid "No relevant dynamic fields were found"
+msgstr "Соответствующие динамические поля не найдены"
+
+#. Perl Module: Kernel/System/ITSMConfigItem/Link.pm
+msgid "Could not insert into the table configitem_link"
+msgstr "Не удалось вставить в таблицу configitem_link"
+
+#. Perl Module: Kernel/System/ITSMConfigItem/Link.pm
+msgid "Inserted 0 rows into the table configitem_link"
+msgstr "Вставлено 0 строк в таблицу configitem_link"
+
+#. Perl Module: Kernel/Modules/AdminDynamicField.pm
+msgid "Error synchronizing the definitions. Please check the log."
+msgstr "Ошибка синхронизации определений. Пожалуйста, проверьте журнал."
+
+#. Perl Module: Kernel/Modules/AdminDynamicField.pm
+msgid "You have ITSMConfigItem definitions which are not synchronized. Please deploy your ITSMConfigItem dynamic field changes."
+msgstr ""
+"У вас есть определения ITSMConfigItem, которые не синхронизированы. "
+"Пожалуйста, разверните изменения динамических полей ITSMConfigItem."
+
+#. JS File: ITSM.Admin.ITSMConfigItem
+msgid "Overview and Confirmation"
+msgstr "Обзор и подтверждение"
+
+#. JS File: ITSM.Admin.ITSMConfigItem
+msgid "An error occurred during class import."
+msgstr "Во время импорта класса произошла ошибка."
+
+#. SysConfig
+msgid "0 - Hidden"
+msgstr "0 - Скрытый"
+
+#. SysConfig
+msgid "1 - Shown"
+msgstr "1 - показано"
+
+#. SysConfig
+msgid "Allows extended search conditions in config item search of the agent interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"Позволяет расширить условия поиска при поиске элементов конфигурации в "
+"интерфейсе агента. С помощью этой функции вы можете искать, например, имя "
+"элемента конфигурации с такими условиями, как \"(*key1*&&*key2*)\" или \""
+"(*key1*||*key2*)\"."
+
+#. SysConfig
+msgid "Allows extended search conditions in config item search of the customer interface. With this feature you can search e. g. config item name with this kind of conditions like \"(*key1*&&*key2*)\" or \"(*key1*||*key2*)\"."
+msgstr ""
+"Позволяет расширить условия поиска при поиске элементов конфигурации в "
+"клиентском интерфейсе. С помощью этой функции вы можете искать, например, "
+"имя элемента конфигурации с такими условиями, как \"(*key1*&&*key2*)\" или \""
+"(*key1*||*key2*)\"."
+
+#. SysConfig
+msgid "Choose a module to enforce a naming scheme."
+msgstr "Выберите модуль для применения схемы именования."
+
+#. SysConfig
+msgid "Choose a module to enforce a number scheme."
+msgstr "Выберите модуль для применения схемы счисления."
+
+#. SysConfig
+msgid "Choose a module to enforce a version string scheme."
+msgstr "Выберите модуль для применения схемы строк версий."
+
+#. SysConfig
+msgid "Choose attributes to trigger the creation of a new version."
+msgstr "Выберите атрибуты для запуска создания новой версии."
+
+#. SysConfig
+msgid "Choose categories to assign to this config item class."
+msgstr ""
+"Выберите категории, которые будут назначены этому классу элементов "
+"конфигурации."
+
+#. SysConfig
+msgid "Column config item filters for ConfigItem Overview."
+msgstr "Фильтры столбцов элементов конфигурации для ConfigItem Overview."
+
+#. SysConfig
+msgid "Columns that can be filtered in the config item overview of the agent interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
+msgstr ""
+"Столбцы, которые можно фильтровать в обзоре элементов конфигурации в "
+"интерфейсе агента. Примечание: Разрешены только атрибуты элементов "
+"конфигурации и динамические поля (DynamicField_NameX)."
+
+#. SysConfig
+msgid "Columns that can be filtered in the config item overview of the customer interface. Note: Only Config Item attributes and Dynamic Fields (DynamicField_NameX) are allowed."
+msgstr ""
+"Столбцы, которые можно фильтровать в обзоре элементов конфигурации в "
+"интерфейсе клиента. Примечание: Разрешены только атрибуты элементов "
+"конфигурации и динамические поля (DynamicField_NameX)."
+
+#. SysConfig
+msgid "Config item event module that updates config items to their current definition."
+msgstr ""
+"Модуль событий элементов конфигурации, который обновляет элементы "
+"конфигурации в соответствии с их текущим определением."
+
+#. SysConfig
+msgid "Config item event module that updates the table configitem_ĺink."
+msgstr ""
+"Модуль событий элементов конфигурации, который обновляет таблицу "
+"configitem_ĺink."
+
+#. SysConfig
+msgid "Config item event module updates the current incident state."
+msgstr ""
+"Модуль событий элемента конфигурации обновляет текущее состояние инцидента."
+
+#. SysConfig
+msgid "ConfigItem Tree View"
+msgstr "Древовидное представление ConfigItem"
+
+#. SysConfig
+msgid "ConfigItem Version"
+msgstr "Версия ConfigItem"
+
+#. SysConfig
+msgid "ConfigItems of the following classes will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
+msgstr ""
+"ConfigItems следующих классов не будут храниться на сервере Elasticsearch. "
+"Чтобы применить это к существующим CI, необходимо запустить миграцию CI "
+"через консоль после изменения этой опции."
+
+#. SysConfig
+msgid "ConfigItems with the following deployment states will not be stored on the Elasticsearch server. To apply this to existing CIs, the CI migration has to be run via console, after changing this option."
+msgstr ""
+"ConfigItems со следующими состояниями развертывания не будут храниться на "
+"сервере Elasticsearch. Чтобы применить это к существующим CI, необходимо "
+"запустить миграцию CI через консоль после изменения этой опции."
+
+#. SysConfig
+msgid "Customers can see historic CI versions."
+msgstr "Клиенты могут видеть исторические версии CI."
+
+#. SysConfig
+msgid "Customers have the possibility to manually switch between historic CI versions."
+msgstr ""
+"У клиентов есть возможность вручную переключаться между историческими "
+"версиями CI."
+
+#. SysConfig
+msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigItemCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+msgstr ""
+"Данные по умолчанию, используемые в атрибуте для экрана поиска элементов "
+"конфигурации. Пример: \"ITSMConfigItemCreateTimePointFormat=year;ITSMConfigIt"
+"emCreateTimePointStart=Last;ITSMConfigItemCreateTimePoint=2;\"."
+
+#. SysConfig
+msgid "Default data to use on attribute for config item search screen. Example: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItemCreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCreateTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreateTimeStopDay=3;\"."
+msgstr ""
+"Данные по умолчанию, используемые в атрибуте для экрана поиска элементов "
+"конфигурации. Пример: \"ITSMConfigItemCreateTimeStartYear=2010;ITSMConfigItem"
+"CreateTimeStartMonth=10;ITSMConfigItemCreateTimeStartDay=4;ITSMConfigItemCrea"
+"teTimeStopYear=2010;ITSMConfigItemCreateTimeStopMonth=11;ITSMConfigItemCreate"
+"TimeStopDay=3;\"."
+
+#. SysConfig
+msgid "Define a Template::Toolkit scheme for version strings. Only used if Version String Module is set to TemplateToolkit."
+msgstr ""
+"Определяет схему Template::Toolkit для строк версий. Используется только в "
+"том случае, если для Version String Module установлено значение "
+"TemplateToolkit."
+
+#. SysConfig
+msgid "Define a set of conditions under which a customer is allowed to see a config item. Conditions can optionally be restricted to certain customer groups. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category."
+msgstr ""
+"Определите набор условий, при которых клиенту разрешается видеть элемент "
+"конфигурации. Условия могут быть ограничены определенными группами клиентов. "
+"Название - единственный обязательный атрибут. Если другие параметры не "
+"указаны, все элементы конфигурации будут видны в этой категории."
+
+#. SysConfig
+msgid "Defines if the link type labels must be shown in the node connections."
+msgstr ""
+"Определяет, должны ли метки типов связей отображаться в соединениях узлов."
+
+#. SysConfig
+msgid "Defines the available columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
+msgstr ""
+"Определяет доступные столбцы CI в обзоре элементов конфигурации в "
+"зависимости от класса CI. Каждая запись должна состоять из имени класса и "
+"массива доступных полей для соответствующего класса. Записи динамических "
+"полей должны соответствовать схеме DynamicField_FieldName."
+
+#. SysConfig
+msgid "Defines the default config item attribute for config item sorting of the config item search result of the agent interface."
+msgstr ""
+"Определяет атрибут элемента конфигурации по умолчанию для сортировки "
+"элементов конфигурации в результатах поиска элементов конфигурации в "
+"интерфейсе агента."
+
+#. SysConfig
+msgid "Defines the default config item attribute for config item sorting of the config item search result of the customer interface."
+msgstr ""
+"Определяет атрибут элемента конфигурации по умолчанию для сортировки "
+"элементов конфигурации в результатах поиска элементов конфигурации в "
+"клиентском интерфейсе."
+
+#. SysConfig
+msgid "Defines the default config item attribute for config item sorting of the config item search result of this operation."
+msgstr ""
+"Определяет атрибут элемента конфигурации по умолчанию для сортировки "
+"элементов конфигурации в результате поиска элементов конфигурации в этой "
+"операции."
+
+#. SysConfig
+msgid "Defines the default config item order in the config item search result of the agent interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Определяет порядок элементов конфигурации по умолчанию в результатах поиска "
+"элементов конфигурации в интерфейсе агента. Вверх: самый старый сверху. Вниз:"
+" самый последний сверху."
+
+#. SysConfig
+msgid "Defines the default config item order in the config item search result of the customer interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Определяет порядок элементов конфигурации по умолчанию в результатах поиска "
+"элементов конфигурации в интерфейсе клиента. Вверх: самый старый сверху. "
+"Вниз: самый последний сверху."
+
+#. SysConfig
+msgid "Defines the default config item order in the config item search result of the this operation. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Определяет порядок элементов конфигурации по умолчанию в результатах поиска "
+"элементов конфигурации при выполнении этой операции. Вверх: самый старый "
+"сверху. Вниз: самый последний сверху."
+
+#. SysConfig
+msgid "Defines the default displayed columns of CIs in the config item overview depending on the CI class. Each entry must consist of a class name and an array of available fields for the corresponding class. Dynamic field entries have to honor the scheme DynamicField_FieldName."
+msgstr ""
+"Определяет отображаемые по умолчанию столбцы CI в обзоре элементов "
+"конфигурации в зависимости от класса CI. Каждая запись должна состоять из "
+"имени класса и массива доступных полей для соответствующего класса. Записи "
+"динамических полей должны соответствовать схеме DynamicField_FieldName."
+
+#. SysConfig
+msgid "Defines the default relations depth to be shown."
+msgstr "Определяет глубину отображения отношений по умолчанию."
+
+#. SysConfig
+msgid "Defines the default shown config item search attribute for config item search screen."
+msgstr ""
+"Определяет отображаемый по умолчанию атрибут поиска элемента конфигурации "
+"для экрана поиска элемента конфигурации."
+
+#. SysConfig
+msgid "Defines the default shown config item search attribute for config item search screen. Example: \"Key\" must have the name of the Dynamic Field in this case 'X', \"Content\" must have the value of the Dynamic Field depending on the Dynamic Field type,  Text: 'a text', Dropdown: '1', Date/Time: 'Search_DynamicField_XTimeSlotStartYear=1974; Search_DynamicField_XTimeSlotStartMonth=01; Search_DynamicField_XTimeSlotStartDay=26; Search_DynamicField_XTimeSlotStartHour=00; Search_DynamicField_XTimeSlotStartMinute=00; Search_DynamicField_XTimeSlotStartSecond=00; Search_DynamicField_XTimeSlotStopYear=2013; Search_DynamicField_XTimeSlotStopMonth=01; Search_DynamicField_XTimeSlotStopDay=26; Search_DynamicField_XTimeSlotStopHour=23; Search_DynamicField_XTimeSlotStopMinute=59; Search_DynamicField_XTimeSlotStopSecond=59;' and or 'Search_DynamicField_XTimePointFormat=week; Search_DynamicField_XTimePointStart=Before; Search_DynamicField_XTimePointValue=7';."
+msgstr ""
+"Определяет отображаемый по умолчанию атрибут поиска элемента конфигурации "
+"для экрана поиска элемента конфигурации. Пример: \"Key\" должно содержать "
+"имя динамического поля, в данном случае 'X', \"Content\" должно содержать "
+"значение динамического поля в зависимости от типа динамического поля, Text: "
+"'a text', Dropdown: '1', Date/Time: "
+"'Search_DynamicField_XTimeSlotStartYear=1974; "
+"Search_DynamicField_XTimeSlotStartMonth=01; "
+"Search_DynamicField_XTimeSlotStartDay=26; "
+"Search_DynamicField_XTimeSlotStartHour=00; "
+"Search_DynamicField_XTimeSlotStartMinute=00; "
+"Search_DynamicField_XTimeSlotStartSecond=00; "
+"Search_DynamicField_XTimeSlotStopYear=2013; "
+"Search_DynamicField_XTimeSlotStopMonth=01; "
+"Search_DynamicField_XTimeSlotStopDay=26; "
+"Search_DynamicField_XTimeSlotStopHour=23; "
+"Search_DynamicField_XTimeSlotStopMinute=59; "
+"Search_DynamicField_XTimeSlotStopSecond=59;' и или "
+"'Search_DynamicField_XTimePointFormat=week; "
+"Search_DynamicField_XTimePointStart=Before; "
+"Search_DynamicField_XTimePointValue=7';."
+
+#. SysConfig
+msgid "Defines the search limit for the CustomerITSMConfigItem screen."
+msgstr "Определяет предел поиска для экрана CustomerITSMConfigItem."
+
+#. SysConfig
+msgid "Defines the search limit for the CustomerITSMConfigItemSearch screen."
+msgstr "Определяет предел поиска для экрана CustomerITSMConfigItemSearch."
+
+#. SysConfig
+msgid "Defines which items are available for 'Action' in third level of the ITSM Config Item ACL structure."
+msgstr ""
+"Определяет, какие элементы доступны для \"Действия\" на третьем уровне "
+"структуры ITSM Config Item ACL."
+
+#. SysConfig
+msgid "Defines which items are available in first level of the ITSM Config Item ACL structure."
+msgstr ""
+"Определяет, какие элементы доступны на первом уровне структуры ITSM Config "
+"Item ACL."
+
+#. SysConfig
+msgid "Defines which items are available in second level of the ITSM Config Item ACL structure."
+msgstr ""
+"Определяет, какие элементы доступны на втором уровне структуры ITSM Config "
+"Item ACL."
+
+#. SysConfig
+msgid "Definition Update"
+msgstr "Обновление определений"
+
+#. SysConfig
+msgid "DeplState"
+msgstr "DeplState"
+
+#. SysConfig
+msgid "DeploymentState"
+msgstr "DeploymentState"
+
+#. SysConfig
+msgid "Dynamic field event module that marks config item definitions as out of sync, if containing dynamic fields change."
+msgstr ""
+"Модуль событий динамических полей, который помечает определения элементов "
+"конфигурации как рассинхронизированные, если содержащиеся в них динамические "
+"поля изменяются."
+
+#. SysConfig
+msgid "Dynamic fields shown in the additional ITSM field screen of the agent interface."
+msgstr ""
+"Динамические поля, показанные на дополнительном экране поля ITSM интерфейса "
+"агента."
+
+#. SysConfig
+msgid "Dynamic fields shown in the config item overview screen of the customer interface."
+msgstr ""
+"Динамические поля, отображаемые на экране обзора элементов конфигурации в "
+"интерфейсе клиента."
+
+#. SysConfig
+msgid "Dynamic fields shown in the config item search screen of the agent interface."
+msgstr ""
+"Динамические поля, отображаемые на экране поиска элементов конфигурации в "
+"интерфейсе агента."
+
+#. SysConfig
+msgid "Enables/disables the functionality to check ITSM onfiguration items for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the console command Admin::ITSM::Configitem::ListDuplicates."
+msgstr ""
+"Включает/выключает функцию проверки элементов конфигурации ITSM на наличие "
+"уникальных имен. Перед включением этой опции необходимо проверить систему на "
+"наличие уже существующих элементов конфигурации с дублирующимися именами. "
+"Это можно сделать с помощью консольной команды "
+"Admin::ITSM::Configitem::ListDuplicates."
+
+#. SysConfig
+msgid "Fields of the configuration item index, used for the fulltext search. Fields are also stored, but are not mandatory for the overall functionality. Inclusion of attachments can be disabled by setting the entry to 0 or deleting it."
+msgstr ""
+"Поля индекса элемента конфигурации, используемые для полнотекстового поиска. "
+"Поля также сохраняются, но не являются обязательными для общей "
+"функциональности. Включение вложений можно отключить, установив для записи "
+"значение 0 или удалив ее."
+
+#. SysConfig
+msgid "Fields stored in the configuration item index which are used for other things besides fulltext searches. For the complete functionality all fields are mandatory."
+msgstr ""
+"Поля, хранящиеся в индексе элемента конфигурации, которые используются не "
+"только для полнотекстового поиска. Для полной функциональности все поля "
+"являются обязательными."
+
+#. SysConfig
+msgid "For every webservice (key) an array of classes (value) can be defined on which the import is restricted. For all chosen classes, or all existing classes the identifying attributes will have to be chosen in the invoker config."
+msgstr ""
+"Для каждого веб-сервиса (ключ) может быть определен массив классов (значение)"
+", для которых импорт ограничен. Для всех выбранных классов или для всех "
+"существующих классов в конфигурации инвокера необходимо будет выбрать "
+"идентифицирующие атрибуты."
+
+#. SysConfig
+msgid "GenericInterface module registration for the ConfigItemFetch invoker layer."
+msgstr ""
+"Регистрация модуля GenericInterface для уровня инвокера ConfigItemFetch."
+
+#. SysConfig
+msgid "ITSM ConfigItem"
+msgstr "ITSM ConfigItem"
+
+#. SysConfig
+msgid "InciState"
+msgstr "InciState"
+
+#. SysConfig
+msgid "IncidentState"
+msgstr "IncidentState"
+
+#. SysConfig
+msgid "Includes deployment states in the config item search of the customer interface."
+msgstr ""
+"Включает состояния развертывания в поиск элементов конфигурации в интерфейсе "
+"клиента."
+
+#. SysConfig
+msgid "Includes incident states in the config item search of the customer interface."
+msgstr ""
+"Включает состояния инцидента в поиск элементов конфигурации в интерфейсе "
+"клиента."
+
+#. SysConfig
+msgid "Maximum number of config items to be displayed in the result of this operation."
+msgstr ""
+"Максимальное количество элементов конфигурации, которые будут отображаться в "
+"результате этой операции."
+
+#. SysConfig
+msgid "Name Module"
+msgstr "Модуль имени"
+
+#. SysConfig
+msgid "Number Module"
+msgstr "Номерной модуль"
+
+#. SysConfig
+msgid "Number of config items to be displayed in each page of a search result in the agent interface."
+msgstr ""
+"Количество элементов конфигурации, отображаемых на каждой странице "
+"результатов поиска в интерфейсе агента."
+
+#. SysConfig
+msgid "Number of config items to be displayed in each page of a search result in the customer interface."
+msgstr ""
+"Количество элементов конфигурации, отображаемых на каждой странице "
+"результатов поиска в интерфейсе клиента."
+
+#. SysConfig
+msgid "Objects to search for, how many entries and which attributs to show. ConfigItem attributes have to explicitly be stored via Elasticsearch."
+msgstr ""
+"Объекты для поиска, количество записей и атрибуты для отображения. Атрибуты "
+"ConfigItem должны быть явно сохранены через Elasticsearch."
+
+#. SysConfig
+msgid "Parameters for the categories for config item classes in the preferences view of the agent interface."
+msgstr ""
+"Параметры для категорий классов элементов конфигурации в представлении "
+"предпочтений интерфейса агента."
+
+#. SysConfig
+msgid "Parameters for the column filters of the small config item overview. Please note: setting 'Active' to 0 will only prevent agents from editing settings of this group in their personal preferences, but will still allow administrators to edit the settings of another user's behalf. Use 'PreferenceGroup' to control in which area these settings should be shown in the user interface."
+msgstr ""
+"Параметры для фильтров столбцов обзора элементов малой конфигурации. "
+"Обратите внимание: при установке значения 'Active' в 0 агенты не смогут "
+"редактировать настройки этой группы в своих личных предпочтениях, но "
+"администраторы смогут редактировать настройки от имени другого пользователя. "
+"Используйте 'PreferenceGroup' для управления тем, в какой области "
+"пользовательского интерфейса должны отображаться эти настройки."
+
+#. SysConfig
+msgid "Parameters for the name module for config item classes in the preferences view of the agent interface."
+msgstr ""
+"Параметры модуля имени для классов элементов конфигурации в представлении "
+"предпочтений интерфейса агента."
+
+#. SysConfig
+msgid "Parameters for the number module for config item classes in the preferences view of the agent interface."
+msgstr ""
+"Параметры для модуля количества классов элементов конфигурации в "
+"представлении предпочтений интерфейса агента."
+
+#. SysConfig
+msgid "Parameters for the version string module for config item classes in the preferences view of the agent interface."
+msgstr ""
+"Параметры модуля строки версии для классов элементов конфигурации в "
+"представлении предпочтений интерфейса агента."
+
+#. SysConfig
+msgid "Parameters for the version string template toolkit module for config item classes in the preferences view of the agent interface."
+msgstr ""
+"Параметры модуля инструментария шаблона строки версии для классов элементов "
+"конфигурации в представлении предпочтений интерфейса агента."
+
+#. SysConfig
+msgid "Parameters for the version trigger for config item classes in the preferences view of the agent interface."
+msgstr ""
+"Параметры для триггера версии для классов элементов конфигурации в "
+"представлении предпочтений интерфейса агента."
+
+#. SysConfig
+msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
+msgstr ""
+"Выполняет заданное действие для каждого события (как Invoker) для каждого "
+"настроенного Webservice."
+
+#. SysConfig
+msgid "Required permissions to use the ITSM configuration item attachment action in the agent interface."
+msgstr ""
+"Необходимые разрешения для использования действия прикрепления элемента "
+"конфигурации ITSM в интерфейсе агента."
+
+#. SysConfig
+msgid "Required permissions to use the ITSM configuration item search screen in the customer interface."
+msgstr ""
+"Необходимые разрешения для использования экрана поиска элементов "
+"конфигурации ITSM в интерфейсе клиента."
+
+#. SysConfig
+msgid "Required permissions to use the ITSM configuration item tree view screen in the agent interface."
+msgstr ""
+"Необходимые разрешения для использования экрана просмотра дерева элементов "
+"конфигурации ITSM в интерфейсе агента."
+
+#. SysConfig
+msgid "Required permissions to use the bulk ITSM configuration item screen in the agent interface."
+msgstr ""
+"Необходимые разрешения для использования экрана элементов конфигурации ITSM "
+"в интерфейсе агента."
+
+#. SysConfig
+msgid "Shows a link in the menu to display the configuration item links as a Tree View."
+msgstr ""
+"Указывает ссылку в меню для отображения ссылок на элементы конфигурации в "
+"виде древовидного представления."
+
+#. SysConfig
+msgid "The default category which is shown, if none is selected."
+msgstr ""
+"Категория по умолчанию, которая отображается, если не выбрана ни одна из них."
+
+#. SysConfig
+msgid "Triggers ConfigItemFetch invoker automatically."
+msgstr "Автоматически запускает инвокер ConfigItemFetch."
+
+#. SysConfig
+msgid "Version String Expression"
+msgstr "Версия Строковое выражение"
+
+#. SysConfig
+msgid "Version String Module"
+msgstr "Модуль строк версий"
+
+#. SysConfig
+msgid "Version Trigger"
+msgstr "Триггер версии"
+
+#. SysConfig
+msgid "Whether the execution of ConfigItemACL can be avoided by checking cached field dependencies. This can improve loading times of formulars, but has to be disabled, if ACLModules are to be used for ITSMConfigItem- and Form-ReturnTypes."
+msgstr ""
+"Можно ли избежать выполнения ConfigItemACL, проверяя кэшированные "
+"зависимости полей. Это может улучшить время загрузки формуляров, но должно "
+"быть отключено, если ACLM-модули будут использоваться для ITSMConfigItem- и "
+"Form-ReturnTypes."
+
+#. SysConfig
+msgid "Which general information is shown in the header."
+msgstr "Какая общая информация отображается в заголовке."
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "General invoker data"
+msgstr "Общие данные инвокера"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "This OTOBO invoker backend module will be called to prepare the data to be sent to the remote system, and to process its response data."
+msgstr ""
+"Этот модуль OTOBO invoker будет вызываться для подготовки данных, "
+"отправляемых в удаленную систему и для обработки ответных данных."
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "Settings for outgoing request data"
+msgstr "Настройки для данных исходящего запроса"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "Mapping"
+msgstr "Отображение"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "The data from the invoker of OTOBO will be processed by this mapping, to transform it to the kind of data the remote system expects."
+msgstr ""
+"Данные полученные из OTOBO Invoker будут обработаны, для преобразования их в "
+"данные которые ожидает удаленная сторона."
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "The response data will be processed by this mapping, to transform it to the kind of data the invoker of OTOBO expects."
+msgstr ""
+"Запрашиваемые данные будут обработаны, преобразованы в формат поддерживаемый "
+"OTOBO"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "Settings for incoming response data"
+msgstr "Настройки для входящих ответных данных"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "Event data"
+msgstr "Данные о событиях"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "Add Event"
+msgstr "Добавить событие"
+
+#. Template: AdminGenericInterfaceInvokerConfigItem
+msgid "Asynchronous event triggers are handled by the OTOBO Scheduler Daemon in background (recommended)."
+msgstr ""
+"Асинхронные триггеры событий будут обрабатываться Планировщиком OTOBO в "
+"фоновом режиме (рекомендуется)."
+
+#. Template: AdminITSMConfigItem
+msgid "Auto Indent Code"
+msgstr "Код с автоматическим отступом"
+
+#. Template: AdminITSMConfigItem
+msgid "Comment/Uncomment Code"
+msgstr "Код комментария/некомментария"
+
+#. Template: AdminITSMConfigItem
+msgid "Search & Replace"
+msgstr "Поиск и замена"
+
+#. Template: AdminITSMConfigItem
+msgid "Select All"
+msgstr "Выбрать все"
+
+#. Template: AdminITSMConfigItem
+msgid "Full Screen"
+msgstr "Полный экран"
+
+#. Template: CustomerITSMConfigItem
+msgid "ConfigItems"
+msgstr "ConfigItems"
+
+#. Template: CustomerITSMConfigItem
+msgid "Sort"
+msgstr "Сортировать"
+
+#. Template: AdminACL
+msgid "Filter by valid state"
+msgstr "Фильтр по действующему состоянию"
+
+#. Template: AdminACL
+msgid "Include invalid ACLs"
+msgstr "Включение недействительных ACL"
+
+#. Template: AdminACLEdit
+msgid "Check the official %sdocumentation%s."
+msgstr "Проверьте в официальной %документации%s."
+
+#. Template: AdminDynamicField
+msgid "Include invalid dynamic fields"
+msgstr "Включение недопустимых динамических полей"
+
+#. Template: AdminDynamicField
+msgid "Filter field by object type"
+msgstr "Фильтр полей по типу объекта"
+
+#. Template: AdminDynamicField
+msgid "Filter field by namespace"
+msgstr "Фильтр полей по пространству имен"
+
+#. Template: AdminDynamicField
+msgid "New Dynamic Fields"
+msgstr "Новые динамические поля"
+
+#. Template: AdminDynamicField
+msgid "Would you like to benefit from additional dynamic field types? You have full access to the following field types:"
+msgstr ""
+"Хотите воспользоваться дополнительными типами динамических полей? У вас есть "
+"полный доступ к следующим типам полей:"
+
+#. Template: AdminDynamicField
+msgid "Copy this field"
+msgstr "Скопируйте это поле"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Attribute which will be searched on autocomplete"
+msgstr "Атрибут, который будет искаться в автозаполнении"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "External-source key"
+msgstr "Ключ внешнего источника"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "When set via an external source (e.g. web service or import / export), the value will be interpreted as this attribute."
+msgstr ""
+"При установке через внешний источник (например, веб-сервис или "
+"импорт/экспорт) значение будет интерпретироваться как этот атрибут."
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Attribute which is displayed for values"
+msgstr "Атрибут, который отображается для значений"
+
+#. Perl Module: Kernel/System/DynamicField/Driver/ConfigItem.pm
+msgid "Select the type of display"
+msgstr "Выберите тип дисплея"
+
+#. Perl Module: Kernel/System/ITSMConfigItem/Definition.pm
+msgid "Base structure is not valid. Please provide an array with data in YAML format."
+msgstr ""
+"Базовая структура недействительна. Пожалуйста, предоставьте массив с данными "
+"в формате YAML."
+
+#. Perl Module: Kernel/Modules/AdminACL.pm
+msgid "ACLs could not be Imported due to a unknown error, please check OTOBO logs for more information"
+msgstr ""
+"ACL не могут быть импортированы из-за неизвестной ошибки, проверьте, "
+"пожалуйста, логи OTOBO для получения более детальной информации"
+
+#. Perl Module: Kernel/Modules/AdminACL.pm
+msgid "%s (copy) %s"
+msgstr "%s (копия) %s"
+
+#. SysConfig
+msgid "A precentage value of the minimal translation progress per language, to be usable for documentations."
+msgstr ""
+"Процентное значение минимального прогресса в переводе на один язык для "
+"использования в документах."
+
+#. SysConfig
+msgid "Access repos via http or https."
+msgstr "Доступ к репозиториям через http или https."
+
+#. SysConfig
+msgid "Autoloading of Znuny4OTRSRepo extensions."
+msgstr "Автозагрузка расширений Znuny4OTRSRepo."
+
+#. SysConfig
+msgid "Backend module registration for the config conflict check module."
+msgstr "Регистрация бэкенд-модуля для модуля проверки конфликтов конфигурации."
+
+#. SysConfig
+msgid "Backend module registration for the file conflict check module."
+msgstr "Регистрация бэкэнд-модуля для модуля проверки конфликтов файлов."
+
+#. SysConfig
+msgid "Backend module registration for the function redefine check module."
+msgstr "Регистрация бэкэнд-модуля для функции redefine check module."
+
+#. SysConfig
+msgid "Backend module registration for the manual set module."
+msgstr "Регистрация бэкэнд-модуля для модуля ручного набора."
+
+#. SysConfig
+msgid "Block hooks to be created for BS ad removal."
+msgstr "Для удаления рекламы BS необходимо создать блокирующие крючки."
+
+#. SysConfig
+msgid "Block hooks to be created for package manager output filter."
+msgstr ""
+"Блочные крючки, которые необходимо создать для фильтра вывода менеджера "
+"пакетов."
+
+#. SysConfig
+msgid "Branch View commit limit"
+msgstr "Ограничение фиксации в ветви"
+
+#. SysConfig
+msgid "CodePolicy"
+msgstr "CodePolicy"
+
+#. SysConfig
+msgid "Commit limit per page for Branch view screen"
+msgstr "Ограничение по количеству страниц для экрана просмотра филиала"
+
+#. SysConfig
+msgid "Create analysis file"
+msgstr "Создание файла анализа"
+
+#. SysConfig
+msgid "Creates a analysis file from this ticket and sends to Znuny."
+msgstr "Создает файл анализа из этого тикета и отправляет его в Znuny."
+
+#. SysConfig
+msgid "Creates a analysis file from this ticket."
+msgstr "Создает файл анализа из этого билета."
+
+#. SysConfig
+msgid "Define private addon repos."
+msgstr "Определите частные репозитории аддонов."
+
+#. SysConfig
+msgid "Defines the filter that processes the HTML templates."
+msgstr "Определяет фильтр, обрабатывающий HTML-шаблоны."
+
+#. SysConfig
+msgid "Defines the test module for checking code policy."
+msgstr "Определяет тестовый модуль для проверки политики кода."
+
+#. SysConfig
+msgid "Definition of GIT clone/push URL Prefix."
+msgstr "Определение GIT clone/push URL Prefix."
+
+#. SysConfig
+msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgstr ""
+"Определение динамического поля: Group => Группа с доступом к динамическим "
+"полям; AlwaysVisible => Поле может быть удалено (0|1); InformationAreaName "
+"=> Название виджетов; InformationAreaSize => Размер и положение виджетов "
+"(Large|Small); Name => Название динамического поля, которое должно быть "
+"использовано; Priority => Порядок динамических полей; State =>. Состояние "
+"полей (0 = отключено, 1 = активно, 2 = обязательно), FilterRelease => Regex, "
+"которому должно соответствовать название репозитория, FilterPackage => "
+"Regex, которому должно соответствовать название пакета, FilterBranch => "
+"Regex, которому должно соответствовать название ветки, FilterRelease => "
+"Regex, которому должна соответствовать строка версии репозитория."
+
+#. SysConfig
+msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgstr ""
+"Определение динамического поля: Group => Группа с доступом к динамическим "
+"полям; AlwaysVisible => Поле может быть удалено (0|1); InformationAreaName "
+"=> Название виджетов; InformationAreaSize => Размер и положение виджетов "
+"(Large|Small); Name => Название динамического поля, которое должно быть "
+"использовано; Priority => Порядок динамических полей; State =>. Состояние "
+"полей (0 = отключено, 1 = активно, 2 = обязательно), FilterRepository => "
+"Regex, которому должно соответствовать имя репозитория, FilterPackage => "
+"Regex, которому должно соответствовать имя пакета, FilterBranch => Regex, "
+"которому должно соответствовать имя ветки, FilterRelease => Regex, которому "
+"должна соответствовать строка версии репозитория."
+
+#. SysConfig
+msgid "Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date)."
+msgstr ""
+"Определение внешней MD5-суммы (ключ => MD5, значение => Vendor, PackageName, "
+"Version, Date)."
+
+#. SysConfig
+msgid "Definition of mappings between public repository requests and internal OPMS repositories."
+msgstr ""
+"Определение сопоставлений между запросами публичных репозиториев и "
+"внутренними репозиториями OPMS."
+
+#. SysConfig
+msgid "Definition of package states."
+msgstr "Определение состояний пакета."
+
+#. SysConfig
+msgid "Definition of renamed OPMS packages."
+msgstr "Определение переименованных пакетов OPMS."
+
+#. SysConfig
+msgid "Directory, which is used by Git to cache repositories."
+msgstr "Каталог, который используется Git'ом для кэширования репозиториев."
+
+#. SysConfig
+msgid "Directory, which is used by Git to store temporary data."
+msgstr "Каталог, который используется Git'ом для хранения временных данных."
+
+#. SysConfig
+msgid "Directory, which is used by Git to store working copies."
+msgstr "Каталог, который используется Git'ом для хранения рабочих копий."
+
+#. SysConfig
+msgid "Disable online repositories."
+msgstr "Отключите онлайн-репозитории."
+
+#. SysConfig
+msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
+msgstr ""
+"Не регистрируйте результаты авторизации git ssh-соединения для этих "
+"пользователей. Полезно для автоматизации."
+
+#. SysConfig
+msgid "Dynamic Fields Screens"
+msgstr "Экраны динамичных полей"
+
+#. SysConfig
+msgid "DynamicFieldScreen"
+msgstr "DynamicFieldScreen"
+
+#. SysConfig
+msgid "Export all available public keys to authorized_keys file."
+msgstr "Экспортируйте все доступные открытые ключи в файл authorized_keys."
+
+#. SysConfig
+msgid "Export all relevant releases to ftp server."
+msgstr "Экспортируйте все необходимые релизы на ftp-сервер."
+
+#. SysConfig
+msgid "Frontend module registration for the OPMS object in the agent interface."
+msgstr "Регистрация модуля Frontend для объекта OPMS в интерфейсе агента."
+
+#. SysConfig
+msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
+msgstr ""
+"Регистрация модуля фронтенда для объекта PublicOPMSRepository в публичном "
+"интерфейсе."
+
+#. SysConfig
+msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
+msgstr ""
+"Регистрация модуля фронтенда для объекта PublicOPMSRepositoryLookup в "
+"публичном интерфейсе."
+
+#. SysConfig
+msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
+msgstr ""
+"Регистрация фронтенд-модуля для объекта PublicOPMSTestBuild в публичном "
+"интерфейсе."
+
+#. SysConfig
+msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
+msgstr ""
+"Регистрация фронтального модуля для объекта PublicPackageVerification в "
+"публичном интерфейсе."
+
+#. SysConfig
+msgid "Frontend module registration for the admin interface."
+msgstr "Регистрация фронтального модуля для интерфейса администратора."
+
+#. SysConfig
+msgid "GIT Author registration."
+msgstr "Регистрация автора GIT."
+
+#. SysConfig
+msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
+msgstr ""
+"Создайте крючки HTML-комментариев для указанных блоков, чтобы фильтры могли "
+"их использовать."
+
+#. SysConfig
+msgid "Generate documentations once per night."
+msgstr "Создавайте документацию один раз за ночь."
+
+#. SysConfig
+msgid "Git"
+msgstr "Git"
+
+#. SysConfig
+msgid "Git Management"
+msgstr "Управление гитом"
+
+#. SysConfig
+msgid "Git Repository"
+msgstr "Git-репозиторий"
+
+#. SysConfig
+msgid "Group, whose members have delete admin permissions in OPMS."
+msgstr "Группа, члены которой имеют права администратора на удаление в OPMS."
+
+#. SysConfig
+msgid "Group, whose members have repository admin permissions in OPMS."
+msgstr "Группа, члены которой имеют права администратора репозитория в OPMS."
+
+#. SysConfig
+msgid "Group, whose members will see CI test result information in OPMS screens."
+msgstr ""
+"Группа, члены которой будут видеть информацию о результатах теста CI на "
+"экранах OPMS."
+
+#. SysConfig
+msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
+msgstr ""
+"Группы, в которых должен состоять аутентифицированный пользователь (по "
+"логину и паролю), чтобы собирать тестовые пакеты через публичный интерфейс."
+
+#. SysConfig
+msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
+msgstr ""
+"Группы, которые будут заданы в процессе создания git-проекта при добавлении "
+"репозиториев OPMS."
+
+#. SysConfig
+msgid "Manage dynamic field in screens."
+msgstr "Управление динамическими полями в экранах."
+
+#. SysConfig
+msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
+msgstr ""
+"Здесь вы можете управлять своим открытым SSH-ключом (ключами) для доступа к "
+"Git. Не забудьте сохранить это предпочтение при добавлении нового ключа."
+
+#. SysConfig
+msgid "Module to generate statistics about the added code lines."
+msgstr "Модуль для генерации статистики о добавленных строках кода."
+
+#. SysConfig
+msgid "Module to generate statistics about the growth of code."
+msgstr "Модуль для генерации статистики о росте кода."
+
+#. SysConfig
+msgid "Module to generate statistics about the number of git commits."
+msgstr "Модуль для генерации статистики о количестве git-коммитов."
+
+#. SysConfig
+msgid "Module to generate statistics about the removed code lines."
+msgstr "Модуль для генерации статистики об удаленных строках кода."
+
+#. SysConfig
+msgid "OPMS"
+msgstr "OPMS"
+
+#. SysConfig
+msgid "Only users who have rw permissions in one of these groups may access git."
+msgstr ""
+"Только пользователи, имеющие права rw в одной из этих групп, могут получить "
+"доступ к git."
+
+#. SysConfig
+msgid "Option to set a package compatibility manually."
+msgstr "Опция для установки совместимости пакетов вручную."
+
+#. SysConfig
+msgid "Parameters for the pages in the BranchView screen."
+msgstr "Параметры для страниц на экране BranchView."
+
+#. SysConfig
+msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgstr ""
+"Предварительное определение динамического поля 'GITProjectName': Group => "
+"Группа с доступом к динамическим полям; AlwaysVisible => Поле может быть "
+"удалено (0|1); InformationAreaName => Название виджетов; InformationAreaSize "
+"=> Размер и положение виджетов (Large|Small); Name => Название динамического "
+"поля, которое должно быть использовано; Priority => Порядок динамических "
+"полей; State =>. Состояние полей (0 = отключено, 1 = активно, 2 = "
+"обязательно), FilterRepository => Regex, которому должно соответствовать имя "
+"репозитория, FilterPackage => Regex, которому должно соответствовать имя "
+"пакета, FilterBranch => Regex, которому должно соответствовать имя ветки, "
+"FilterRelease => Regex, которому должна соответствовать строка версии "
+"репозитория."
+
+#. SysConfig
+msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgstr ""
+"Предварительное определение динамического поля 'GITRepositoryName': Group => "
+"Группа с доступом к динамическим полям; AlwaysVisible => Поле может быть "
+"удалено (0|1); InformationAreaName => Название виджетов; InformationAreaSize "
+"=> Размер и положение виджетов (Large|Small); Name => Название динамического "
+"поля, которое должно быть использовано; Priority => Порядок динамических "
+"полей; State =>. Состояние полей (0 = отключено, 1 = активно, 2 = "
+"обязательно), FilterRepository => Regex, которому должно соответствовать имя "
+"репозитория, FilterPackage => Regex, которому должно соответствовать имя "
+"пакета, FilterBranch => Regex, которому должно соответствовать имя ветки, "
+"FilterRelease => Regex, которому должна соответствовать строка версии "
+"репозитория."
+
+#. SysConfig
+msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgstr ""
+"Предварительное определение динамического поля 'PackageDeprecated': Group => "
+"Группа с доступом к динамическим полям; AlwaysVisible => Поле может быть "
+"удалено (0|1); InformationAreaName => Название виджетов; InformationAreaSize "
+"=> Размер и положение виджетов (Large|Small); Name => Название динамического "
+"поля, которое должно быть использовано; Priority => Порядок динамических "
+"полей; State =>. Состояние полей (0 = отключено, 1 = активно, 2 = "
+"обязательно), FilterRepository => Regex, которому должно соответствовать имя "
+"репозитория, FilterPackage => Regex, которому должно соответствовать имя "
+"пакета, FilterBranch => Regex, которому должно соответствовать имя ветки, "
+"FilterRelease => Regex, которому должна соответствовать строка версии "
+"репозитория."
+
+#. SysConfig
+msgid "Recipients that will be informed by email in case of errors."
+msgstr ""
+"Получатели, которые будут проинформированы по электронной почте в случае "
+"ошибок."
+
+#. SysConfig
+msgid "SSH Keys for Git Access"
+msgstr "Ключи SSH для доступа к Git"
+
+#. SysConfig
+msgid "Send analysis file"
+msgstr "Отправить файл анализа"
+
+#. SysConfig
+msgid "Sets the git clone address to be used in repository listings."
+msgstr ""
+"Устанавливает адрес git-клона, который будет использоваться в листингах "
+"репозитория."
+
+#. SysConfig
+msgid "Sets the home directory for git repositories."
+msgstr "Устанавливает домашний каталог для репозиториев git."
+
+#. SysConfig
+msgid "Sets the path for the BugzillaAddComment post receive script location."
+msgstr ""
+"Устанавливает путь к местоположению скрипта получения сообщения "
+"BugzillaAddComment."
+
+#. SysConfig
+msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
+msgstr ""
+"Устанавливает путь к местоположению скрипта OTRSCodePolicy. Рекомендуется "
+"иметь отдельный клон модуля OTRSCodePolicy, который обновляется через cron."
+
+#. SysConfig
+msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
+msgstr ""
+"Устанавливает путь для размещения скрипта предварительного получения "
+"OTRSCodePolicy. Рекомендуется иметь отдельный клон модуля OTRSCodePolicy, "
+"который обновляется через cron."
+
+#. SysConfig
+msgid "Show latest commits in git repositories."
+msgstr "Показывать последние коммиты в git-репозиториях."
+
+#. SysConfig
+msgid "Shows a link in the menu to go create a unit test from the current ticket."
+msgstr ""
+"Показывает ссылку в меню для перехода к созданию юнит-теста из текущего "
+"тикета."
+
+#. SysConfig
+msgid "Synchronize OPMS tables with a remote database."
+msgstr "Синхронизация таблиц OPMS с удаленной базой данных."
+
+#. SysConfig
+msgid "The minimum version of the sphinx library."
+msgstr "Минимальная версия библиотеки sphinx."
+
+#. SysConfig
+msgid "The name of the sphinx theme to be used."
+msgstr "Имя темы сфинкса, которая будет использоваться."
+
+#. SysConfig
+msgid "The path to the OTRS CSS file (relative below the static path)."
+msgstr "Путь к файлу OTRS CSS (относительно статического пути)."
+
+#. SysConfig
+msgid "The path to the OTRS logo (relative below the static path)."
+msgstr "Путь к логотипу OTRS (относительно статического пути)."
+
+#. SysConfig
+msgid "The path to the static folder, containing images and css files."
+msgstr "Путь к папке static, содержащей изображения и css-файлы."
+
+#. SysConfig
+msgid "The path to the theme folder, containing the sphinx themes."
+msgstr "Путь к папке с темами, содержащей темы sphinx."
+
+#. SysConfig
+msgid "This configuration defines all possible screens to enable or disable default columns."
+msgstr ""
+"Эта конфигурация определяет все возможные экраны для включения или "
+"отключения столбцов по умолчанию."
+
+#. SysConfig
+msgid "This configuration defines all possible screens to enable or disable dynamic fields."
+msgstr ""
+"Эта конфигурация определяет все возможные экраны для включения или "
+"отключения динамических полей."
+
+#. SysConfig
+msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
+msgstr ""
+"Эта конфигурация определяет, должны ли отображаться только валидные или все "
+"(невалидные) динамические поля."
+
+#. SysConfig
+msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
+msgstr ""
+"Эта конфигурация определяет, должна ли проверка пакетов OTRS быть активной "
+"или отключенной. При отключении все пакеты будут отображаться как "
+"проверенные. Тем не менее, рекомендуется использовать только проверенные "
+"пакеты."
+
+#. SysConfig
+msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
+msgstr ""
+"Эта конфигурация определяет URL-адрес прокси-сервиса OTRS CloudService. "
+"Префикс http или https будет добавлен в зависимости от выбора SysConfig "
+"'Znuny4OTRSRepoType'."
+
+#. SysConfig
+msgid "This configuration registers a Output post-filter to extend package verification."
+msgstr ""
+"Эта конфигурация регистрирует постфильтр Output для расширения проверки "
+"пакетов."
+
+#. SysConfig
+msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
+msgstr ""
+"Эта конфигурация регистрирует модуль OutputFilter, который удаляет рекламу "
+"OTRS Business Solution TM."
+
+#. SysConfig
+msgid "This configuration registers an output filter to hide online repository selection in package manager."
+msgstr ""
+"Эта конфигурация регистрирует выходной фильтр для скрытия выбора онлайн-"
+"репозитория в менеджере пакетов."
+
+#. SysConfig
+msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
+msgstr ""
+"Убирает необработанный релиз, который долгое время не проходил проверки "
+"pomules."
+
+#. SysConfig
+msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
+msgstr ""
+"Пользователям, имеющим права rw в одной из этих групп, разрешено выполнять "
+"force pushes 'git push --force'."
+
+#. SysConfig
+msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
+msgstr ""
+"Пользователи, имеющие права rw в одной из этих групп, могут управлять "
+"проектами. Кроме того, члены группы имеют права администрирования на "
+"управление git."
+
+#. ITSM class bundles
+msgid "1"
+msgstr "1"
+
+#. ITSM class bundles
+msgid "1 GB"
+msgstr "1 ГБ"
+
+#. ITSM class bundles
+msgid "1024 GB"
+msgstr "1024 ГБ"
+
+#. ITSM class bundles
+msgid "10U: 17.5 inches (44.45 cm)"
+msgstr "10U: 17,5 дюймов (44,45 см)"
+
+#. ITSM class bundles
+msgid "11 GB"
+msgstr "11 ГБ"
+
+#. ITSM class bundles
+msgid "12 GB"
+msgstr "12 ГБ"
+
+#. ITSM class bundles
+msgid "128 GB"
+msgstr "128 ГБ"
+
+#. ITSM class bundles
+msgid "12U: 21 inches (53.34 cm)"
+msgstr "12U: 21 дюйм (53,34 см)"
+
+#. ITSM class bundles
+msgid "15U: 26.25 inches (66.68 cm)"
+msgstr "15U: 26,25 дюйма (66,68 см)"
+
+#. ITSM class bundles
+msgid "16 GB"
+msgstr "16 ГБ"
+
+#. ITSM class bundles
+msgid "18U: 31.5 inches (80.01 cm)"
+msgstr "18U: 31,5 дюйма (80,01 см)"
+
+#. ITSM class bundles
+msgid "19-inch Rack"
+msgstr "19-дюймовая стойка"
+
+#. ITSM class bundles
+msgid "1U: 1.75 inches (4.45 cm)"
+msgstr "1U: 1,75 дюйма (4,45 см)"
+
+#. ITSM class bundles
+msgid "2"
+msgstr "2"
+
+#. ITSM class bundles
+msgid "2 GB"
+msgstr "2 ГБ"
+
+#. ITSM class bundles
+msgid "20U: 35 inches (88.9 cm)"
+msgstr "20U: 35 дюймов (88,9 см)"
+
+#. ITSM class bundles
+msgid "21-inch Rack"
+msgstr "21-дюймовая стойка"
+
+#. ITSM class bundles
+msgid "22U: 38.5 inches (97.79 cm)"
+msgstr "22U: 38,5 дюймов (97,79 см)"
+
+#. ITSM class bundles
+msgid "23-inch Rack"
+msgstr "23-дюймовая стойка"
+
+#. ITSM class bundles
+msgid "23.6 inches (600 mm)"
+msgstr "23,6 дюйма (600 мм)"
+
+#. ITSM class bundles
+msgid "24 GB"
+msgstr "24 ГБ"
+
+#. ITSM class bundles
+msgid "24U: 42 inches (106.68 cm)"
+msgstr "24U: 42 дюйма (106,68 см)"
+
+#. ITSM class bundles
+msgid "256 GB"
+msgstr "256 ГБ"
+
+#. ITSM class bundles
+msgid "27\""
+msgstr "27\""
+
+#. ITSM class bundles
+msgid "27U: 47.25 inches (120.02 cm)"
+msgstr "27U: 47,25 дюйма (120,02 см)"
+
+#. ITSM class bundles
+msgid "2K (2048 x 1080)"
+msgstr "2K (2048 x 1080)"
+
+#. ITSM class bundles
+msgid "2U: 3.5 inches (8.89 cm)"
+msgstr "2U: 3,5 дюйма (8,89 см)"
+
+#. ITSM class bundles
+msgid "3"
+msgstr "3"
+
+#. ITSM class bundles
+msgid "30U: 52.5 inches (133.35 cm)"
+msgstr "30U: 52,5 дюйма (133,35 см)"
+
+#. ITSM class bundles
+msgid "31.5 inches (800 mm)"
+msgstr "31,5 дюйма (800 мм)"
+
+#. ITSM class bundles
+msgid "32 GB"
+msgstr "32 ГБ"
+
+#. ITSM class bundles
+msgid "32\""
+msgstr "32\""
+
+#. ITSM class bundles
+msgid "33U: 57.75 inches (146.68 cm)"
+msgstr "33U: 57,75 дюйма (146,68 см)"
+
+#. ITSM class bundles
+msgid "34\""
+msgstr "34\""
+
+#. ITSM class bundles
+msgid "35\""
+msgstr "35\""
+
+#. ITSM class bundles
+msgid "35.4 inches (900 mm)"
+msgstr "35,4 дюйма (900 мм)"
+
+#. ITSM class bundles
+msgid "36U: 63 inches (160.02 cm)"
+msgstr "36U: 63 дюйма (160,02 см)"
+
+#. ITSM class bundles
+msgid "39.4 inches (1000 mm)"
+msgstr "39,4 дюйма (1000 мм)"
+
+#. ITSM class bundles
+msgid "39U: 68.25 inches (173.35 cm)"
+msgstr "39U: 68,25 дюйма (173,35 см)"
+
+#. ITSM class bundles
+msgid "3U: 5.25 inches (13.34 cm)"
+msgstr "3U: 5,25 дюйма (13,34 см)"
+
+#. ITSM class bundles
+msgid "4"
+msgstr "4"
+
+#. ITSM class bundles
+msgid "4 GB"
+msgstr "4 ГБ"
+
+#. ITSM class bundles
+msgid "40\""
+msgstr "40\""
+
+#. ITSM class bundles
+msgid "42U: 73.5 inches (186.69 cm)"
+msgstr "42U: 73,5 дюйма (186,69 см)"
+
+#. ITSM class bundles
+msgid "43\""
+msgstr "43\""
+
+#. ITSM class bundles
+msgid "43.3 inches (1100 mm):"
+msgstr "43,3 дюйма (1100 мм):"
+
+#. ITSM class bundles
+msgid "45U: 78.75 inches (200.02 cm)"
+msgstr "45U: 78,75 дюйма (200,02 см)"
+
+#. ITSM class bundles
+msgid "47.2 inches (1200 mm)"
+msgstr "47,2 дюйма (1200 мм)"
+
+#. ITSM class bundles
+msgid "48 GB"
+msgstr "48 ГБ"
+
+#. ITSM class bundles
+msgid "48U: 84 inches (213.36 cm)"
+msgstr "48U: 84 дюйма (213,36 см)"
+
+#. ITSM class bundles
+msgid "49\""
+msgstr "49\""
+
+#. ITSM class bundles
+msgid "4K Ultra HD (3840 x 2160):"
+msgstr "4K Ultra HD (3840 x 2160):"
+
+#. ITSM class bundles
+msgid "4U: 7 inches (17.78 cm)"
+msgstr "4U: 7 дюймов (17,78 см)"
+
+#. ITSM class bundles
+msgid "5"
+msgstr "5"
+
+#. ITSM class bundles
+msgid "512 GB"
+msgstr "512 ГБ"
+
+#. ITSM class bundles
+msgid "55\""
+msgstr "55\""
+
+#. ITSM class bundles
+msgid "5K (5120 x 2880)"
+msgstr "5K (5120 x 2880)"
+
+#. ITSM class bundles
+msgid "5U: 8.75 inches (22.23 cm)"
+msgstr "5U: 8,75 дюйма (22,23 см)"
+
+#. ITSM class bundles
+msgid "6"
+msgstr "6"
+
+#. ITSM class bundles
+msgid "64 GB"
+msgstr "64 ГБ"
+
+#. ITSM class bundles
+msgid "6U: 10.5 inches (26.67 cm)"
+msgstr "6U: 10,5 дюймов (26,67 см)"
+
+#. ITSM class bundles
+msgid "7"
+msgstr "7"
+
+#. ITSM class bundles
+msgid "7U: 12.25 inches (31.12 cm)"
+msgstr "7U: 12,25 дюйма (31,12 см)"
+
+#. ITSM class bundles
+msgid "8"
+msgstr "8"
+
+#. ITSM class bundles
+msgid "8 GB"
+msgstr "8 ГБ"
+
+#. ITSM class bundles
+msgid "8K Ultra HD (7680 x 4320)"
+msgstr "8K Ultra HD (7680 x 4320)"
+
+#. ITSM class bundles
+msgid "8U: 14 inches (35.56 cm)"
+msgstr "8U: 14 дюймов (35,56 см)"
+
+#. ITSM class bundles
+msgid "9"
+msgstr "9"
+
+#. ITSM class bundles
+msgid "96 GB"
+msgstr "96 ГБ"
+
+#. ITSM class bundles
+msgid "9U: 15.75 inches (40.01 cm)"
+msgstr "9U: 15,75 дюйма (40,01 см)"
+
+#. ITSM class bundles
+msgid "AGP"
+msgstr "AGP"
+
+#. ITSM class bundles
+msgid "Accounting"
+msgstr "Бухгалтерский учет"
+
+#. ITSM class bundles
+msgid "Address Allocation"
+msgstr "Распределение адресов"
+
+#. ITSM class bundles
+msgid "Administrator"
+msgstr "Администратор"
+
+#. ITSM class bundles
+msgid "Appliance Type"
+msgstr "Тип прибора"
+
+#. ITSM class bundles
+msgid "Backlinks"
+msgstr "Обратные ссылки"
+
+#. ITSM class bundles
+msgid "Battery Capacity (Ah)"
+msgstr "Емкость аккумулятора (Ач)"
+
+#. ITSM class bundles
+msgid "Battery Type"
+msgstr "Тип батареи"
+
+#. ITSM class bundles
+msgid "Bus Interface"
+msgstr "Интерфейс шины"
+
+#. ITSM class bundles
+msgid "CIDR"
+msgstr "CIDR"
+
+#. ITSM class bundles
+msgid "CPU Class"
+msgstr "Класс процессора"
+
+#. ITSM class bundles
+msgid "Capacity (GB)"
+msgstr "Емкость (ГБ)"
+
+#. ITSM class bundles
+msgid "Capacity per graphics card"
+msgstr "Емкость на одну видеокарту"
+
+#. ITSM class bundles
+msgid "Card Number"
+msgstr "Номер карты"
+
+#. ITSM class bundles
+msgid "Card Type"
+msgstr "Тип карты"
+
+#. ITSM class bundles
+msgid "Chroma DB"
+msgstr "Chroma DB"
+
+#. ITSM class bundles
+msgid "Client Certificates"
+msgstr "Сертификаты клиента"
+
+#. ITSM class bundles
+msgid "Client Software"
+msgstr "Клиентское программное обеспечение"
+
+#. ITSM class bundles
+msgid "Client category"
+msgstr "Категория клиентов"
+
+#. ITSM class bundles
+msgid "Clockrate"
+msgstr "Часовой пояс"
+
+#. ITSM class bundles
+msgid "Clockspeed"
+msgstr "Clockspeed"
+
+#. ITSM class bundles
+msgid "Code Signing Certificates"
+msgstr "Сертификаты подписи кода"
+
+#. ITSM class bundles
+msgid "Contact"
+msgstr "Связаться с"
+
+#. ITSM class bundles
+msgid "Contact Distributor"
+msgstr "Связаться с дистрибьютором"
+
+#. ITSM class bundles
+msgid "Contract"
+msgstr "Контракт"
+
+#. ITSM class bundles
+msgid "Contract Type"
+msgstr "Тип контракта"
+
+#. ITSM class bundles
+msgid "Contract period from"
+msgstr "Срок действия контракта с"
+
+#. ITSM class bundles
+msgid "Contract period until"
+msgstr "Срок действия контракта до"
+
+#. ITSM class bundles
+msgid "Cost unit"
+msgstr "Единица измерения стоимости"
+
+#. ITSM class bundles
+msgid "Count of licenses"
+msgstr "Количество лицензий"
+
+#. ITSM class bundles
+msgid "Creation Date"
+msgstr "Дата создания"
+
+#. ITSM class bundles
+msgid "Custom Rack"
+msgstr "Индивидуальная стойка"
+
+#. ITSM class bundles
+msgid "DHCP"
+msgstr "DHCP"
+
+#. ITSM class bundles
+msgid "DHCP Reserved"
+msgstr "DHCP Зарезервировано"
+
+#. ITSM class bundles
+msgid "DVI"
+msgstr "DVI"
+
+#. ITSM class bundles
+msgid "Date of Invoice"
+msgstr "Дата счета-фактуры"
+
+#. ITSM class bundles
+msgid "Date of Order"
+msgstr "Дата заказа"
+
+#. ITSM class bundles
+msgid "Date of Warrenty"
+msgstr "Дата выдачи гарантии"
+
+#. ITSM class bundles
+msgid "Date of release"
+msgstr "Дата выхода"
+
+#. ITSM class bundles
+msgid "DisplayPort"
+msgstr "DisplayPort"
+
+#. ITSM class bundles
+msgid "Document Signing Certificates"
+msgstr "Сертификаты подписи документов"
+
+#. ITSM class bundles
+msgid "EISA"
+msgstr "EISA"
+
+#. ITSM class bundles
+msgid "ETSI Rack"
+msgstr "Стойка ETSI"
+
+#. ITSM class bundles
+msgid "Elasticsearch"
+msgstr "Elasticsearch"
+
+#. ITSM class bundles
+msgid "Email Certificates (S/MIME Certificates)"
+msgstr "Сертификаты электронной почты (сертификаты S/MIME)"
+
+#. ITSM class bundles
+msgid "End IP Address"
+msgstr "Конечный IP-адрес"
+
+#. ITSM class bundles
+msgid "End of support"
+msgstr "Окончание поддержки"
+
+#. ITSM class bundles
+msgid "Expiry Date"
+msgstr "Дата истечения срока действия"
+
+#. ITSM class bundles
+msgid "FireWire (IEEE 1394)"
+msgstr "FireWire (IEEE 1394)"
+
+#. ITSM class bundles
+msgid "Firmware"
+msgstr "Прошивка"
+
+#. ITSM class bundles
+msgid "Flywheel Energy Storage"
+msgstr "Накопители энергии на маховиках"
+
+#. ITSM class bundles
+msgid "Form Factor"
+msgstr "Форм-фактор"
+
+#. ITSM class bundles
+msgid "Full HD (1920 x 1080)"
+msgstr "Full HD (1920 x 1080)"
+
+#. ITSM class bundles
+msgid "General Information"
+msgstr "Общая информация"
+
+#. ITSM class bundles
+msgid "Graphics Cards"
+msgstr "Графические карты"
+
+#. ITSM class bundles
+msgid "Graphics card"
+msgstr "Графическая карта"
+
+#. ITSM class bundles
+msgid "HD (1280 x 720)"
+msgstr "HD (1280 x 720)"
+
+#. ITSM class bundles
+msgid "HDMI"
+msgstr "HDMI"
+
+#. ITSM class bundles
+msgid "Hardware Model"
+msgstr "Модель оборудования"
+
+#. ITSM class bundles
+msgid "Hardware Weight"
+msgstr "Вес оборудования"
+
+#. ITSM class bundles
+msgid "IBM Db2"
+msgstr "IBM Db2"
+
+#. ITSM class bundles
+msgid "IP Protocol"
+msgstr "Протокол IP"
+
+#. ITSM class bundles
+msgid "IPv4"
+msgstr "IPv4"
+
+#. ITSM class bundles
+msgid "IPv6"
+msgstr "IPv6"
+
+#. ITSM class bundles
+msgid "ISA"
+msgstr "ISA"
+
+#. ITSM class bundles
+msgid "Inventory Number"
+msgstr "Инвентарный номер"
+
+#. ITSM class bundles
+msgid "Inverstment costs"
+msgstr "Инверсионные расходы"
+
+#. ITSM class bundles
+msgid "Invoice Number"
+msgstr "Номер счета-фактуры"
+
+#. ITSM class bundles
+msgid "LCD Monitor (Liquid Crystal Display)"
+msgstr "ЖК-монитор (жидкокристаллический дисплей)"
+
+#. ITSM class bundles
+msgid "LED Monitor (Light Emitting Diode)"
+msgstr "Светодиодный монитор (светоизлучающий диод)"
+
+#. ITSM class bundles
+msgid "LPC (Low Pin Count)"
+msgstr "LPC (Low Pin Count)"
+
+#. ITSM class bundles
+msgid "Latitude"
+msgstr "Широта"
+
+#. ITSM class bundles
+msgid "Layer 1: Physical Layer"
+msgstr "Уровень 1: физический уровень"
+
+#. ITSM class bundles
+msgid "Layer 2: Data Link Layer"
+msgstr "Уровень 2: уровень передачи данных"
+
+#. ITSM class bundles
+msgid "Layer 3: Network Layer"
+msgstr "Уровень 3: сетевой уровень"
+
+#. ITSM class bundles
+msgid "Layer 3: Network Layer (Supernet)"
+msgstr "Уровень 3: сетевой уровень (Суперсеть)"
+
+#. ITSM class bundles
+msgid "Layer 4: Transport Layer"
+msgstr "Уровень 4: Транспортный уровень"
+
+#. ITSM class bundles
+msgid "Layer 5: Session Layer"
+msgstr "Уровень 5: сеансовый уровень"
+
+#. ITSM class bundles
+msgid "Layer 6: Presentation Layer"
+msgstr "Уровень 6: уровень представления"
+
+#. ITSM class bundles
+msgid "Layer 7: Application Layer"
+msgstr "Уровень 7: Прикладной уровень"
+
+#. ITSM class bundles
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#. ITSM class bundles
+msgid "License Type"
+msgstr "Тип лицензии"
+
+#. ITSM class bundles
+msgid "License period from"
+msgstr "Срок действия лицензии от"
+
+#. ITSM class bundles
+msgid "License period until"
+msgstr "Срок действия лицензии до"
+
+#. ITSM class bundles
+msgid "Lithium Iron Phosphate (LiFePO4) Battery"
+msgstr "Литий-железо-фосфатная (LiFePO4) батарея"
+
+#. ITSM class bundles
+msgid "Lithium-Ion (Li-ion) Battery"
+msgstr "Литий-ионный (Li-ion) аккумулятор"
+
+#. ITSM class bundles
+msgid "Located in"
+msgstr "Находится в"
+
+#. ITSM class bundles
+msgid "Longitude"
+msgstr "Долгота"
+
+#. ITSM class bundles
+msgid "MCA (Micro Channel Architecture)"
+msgstr "MCA (микроканальная архитектура)"
+
+#. ITSM class bundles
+msgid "Manufacturer"
+msgstr "Производитель"
+
+#. ITSM class bundles
+msgid "MariaDB"
+msgstr "MariaDB"
+
+#. ITSM class bundles
+msgid "Maximum Load Capacity (W)"
+msgstr "Максимальная грузоподъемность (Вт)"
+
+#. ITSM class bundles
+msgid "Memory"
+msgstr "Память"
+
+#. ITSM class bundles
+msgid "Memory Type"
+msgstr "Тип памяти"
+
+#. ITSM class bundles
+msgid "Microsoft SQL Server"
+msgstr "Microsoft SQL Server"
+
+#. ITSM class bundles
+msgid "Mini-Rack"
+msgstr "Мини-стойка"
+
+#. ITSM class bundles
+msgid "Mobile Number"
+msgstr "Номер мобильного телефона"
+
+#. ITSM class bundles
+msgid "Model Description"
+msgstr "Описание модели"
+
+#. ITSM class bundles
+msgid "MongoDB"
+msgstr "MongoDB"
+
+#. ITSM class bundles
+msgid "Monitor Resolution"
+msgstr "Разрешение монитора"
+
+#. ITSM class bundles
+msgid "Monitor Size"
+msgstr "Размер монитора"
+
+#. ITSM class bundles
+msgid "MySQL"
+msgstr "MySQL"
+
+#. ITSM class bundles
+msgid "Network Info"
+msgstr "Информация о сети"
+
+#. ITSM class bundles
+msgid "Network Information"
+msgstr "Информация о сети"
+
+#. ITSM class bundles
+msgid "Network Layer"
+msgstr "Сетевой уровень"
+
+#. ITSM class bundles
+msgid "Nickel-Cadmium (NiCd) Battery"
+msgstr "Никель-кадмиевая (NiCd) батарея"
+
+#. ITSM class bundles
+msgid "Nickel-Metal Hydride (NiMH) Battery"
+msgstr "Никель-металлгидридный (NiMH) аккумулятор"
+
+#. ITSM class bundles
+msgid "NuBus"
+msgstr "NuBus"
+
+#. ITSM class bundles
+msgid "Number of CPUs"
+msgstr "Количество процессоров"
+
+#. ITSM class bundles
+msgid "Number of RAM modules"
+msgstr "Количество модулей оперативной памяти"
+
+#. ITSM class bundles
+msgid "Number of graphics cards"
+msgstr "Количество видеокарт"
+
+#. ITSM class bundles
+msgid "OLED Monitor (Organic Light Emitting Diode)"
+msgstr "OLED-монитор (органический светоизлучающий диод)"
+
+#. ITSM class bundles
+msgid "Operating costs"
+msgstr "Операционные расходы"
+
+#. ITSM class bundles
+msgid "Oracle Database"
+msgstr "Oracle Database"
+
+#. ITSM class bundles
+msgid "Order Number"
+msgstr "Номер заказа"
+
+#. ITSM class bundles
+msgid "Outputs"
+msgstr "Выходы"
+
+#. ITSM class bundles
+msgid "PCI"
+msgstr "PCI"
+
+#. ITSM class bundles
+msgid "PCI Express (PCIe)"
+msgstr "PCI Express (PCIe)"
+
+#. ITSM class bundles
+msgid "PCI-X"
+msgstr "PCI-X"
+
+#. ITSM class bundles
+msgid "PIN"
+msgstr "PIN"
+
+#. ITSM class bundles
+msgid "PIN 2"
+msgstr "PIN 2"
+
+#. ITSM class bundles
+msgid "PUK"
+msgstr "PUK"
+
+#. ITSM class bundles
+msgid "PUK 2"
+msgstr "PUK 2"
+
+#. ITSM class bundles
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#. ITSM class bundles
+msgid "Phone Type"
+msgstr "Тип телефона"
+
+#. ITSM class bundles
+msgid "Physical Cores"
+msgstr "Физические ядра"
+
+#. ITSM class bundles
+msgid "PostgreSQL"
+msgstr "PostgreSQL"
+
+#. ITSM class bundles
+msgid "Power Delivery"
+msgstr "Доставка электроэнергии"
+
+#. ITSM class bundles
+msgid "Purchased at"
+msgstr "Приобретено в"
+
+#. ITSM class bundles
+msgid "Quad HD (2560 x 1440)"
+msgstr "Quad HD (2560 x 1440)"
+
+#. ITSM class bundles
+msgid "Rack Depth"
+msgstr "Глубина стойки"
+
+#. ITSM class bundles
+msgid "Rack Units (U)"
+msgstr "Стойки (U)"
+
+#. ITSM class bundles
+msgid "Redis"
+msgstr "Redis"
+
+#. ITSM class bundles
+msgid "Reference to Customer"
+msgstr "Ссылка на клиента"
+
+#. ITSM class bundles
+msgid "SIM Card"
+msgstr "SIM-карта"
+
+#. ITSM class bundles
+msgid "SQLite"
+msgstr "SQLite"
+
+#. ITSM class bundles
+msgid "SSL/TLS Certificates"
+msgstr "Сертификаты SSL/TLS"
+
+#. ITSM class bundles
+msgid "Sealed Lead-Acid (SLA) Battery"
+msgstr "Герметичная свинцово-кислотная батарея (SLA)"
+
+#. ITSM class bundles
+msgid "Serialnumber"
+msgstr "Серийный номер"
+
+#. ITSM class bundles
+msgid "Server Software"
+msgstr "Серверное программное обеспечение"
+
+#. ITSM class bundles
+msgid "Service Tag"
+msgstr "Сервисная метка"
+
+#. ITSM class bundles
+msgid "Socket Type"
+msgstr "Тип розетки"
+
+#. ITSM class bundles
+msgid "Start IP Address"
+msgstr "Стартовый IP-адрес"
+
+#. ITSM class bundles
+msgid "Storage"
+msgstr "Хранение"
+
+#. ITSM class bundles
+msgid "Storage Partition"
+msgstr "Раздел для хранения"
+
+#. ITSM class bundles
+msgid "Subsidiary"
+msgstr "Дочерняя компания"
+
+#. ITSM class bundles
+msgid "Summary"
+msgstr "Резюме"
+
+#. ITSM class bundles
+msgid "Threads"
+msgstr "Нитки"
+
+#. ITSM class bundles
+msgid "Thunderbolt"
+msgstr "Thunderbolt"
+
+#. ITSM class bundles
+msgid "Total Graphics card RAM (GB)"
+msgstr "Общая оперативная память видеокарты (ГБ)"
+
+#. ITSM class bundles
+msgid "Total RAM (GB)"
+msgstr "Общая оперативная память (ГБ)"
+
+#. ITSM class bundles
+msgid "Touchscreen Monitor"
+msgstr "Сенсорный монитор"
+
+#. ITSM class bundles
+msgid "Tower"
+msgstr "Башня"
+
+#. ITSM class bundles
+msgid "USB (Universal Serial Bus)"
+msgstr "USB (универсальная последовательная шина)"
+
+#. ITSM class bundles
+msgid "USB-C"
+msgstr "USB-C"
+
+#. ITSM class bundles
+msgid "UWQHD (3440 x 1440)"
+msgstr "UWQHD (3440 x 1440)"
+
+#. ITSM class bundles
+msgid "VESA Local Bus (VLB)"
+msgstr "Локальная шина VESA (VLB)"
+
+#. ITSM class bundles
+msgid "VGA"
+msgstr "VGA"
+
+#. ITSM class bundles
+msgid "VirtualLink"
+msgstr "VirtualLink"
+
+#. ITSM class bundles
+msgid "WUXGA (1920 x 1200)"
+msgstr "WUXGA (1920 x 1200)"
+
+#. ITSM class bundles
+msgid "WXGA (1366 x 768)"
+msgstr "WXGA (1366 x 768)"
+
+#. ITSM class bundles
+msgid "Analog Phone"
+msgstr "Аналоговый телефон"
+
+#. ITSM class bundles
+msgid "Card Reader"
+msgstr "Устройство для чтения карт"
+
+#. ITSM class bundles
+msgid "Conference Phone"
+msgstr "Конференц-телефон"
+
+#. ITSM class bundles
+msgid "Consulting Agreement"
+msgstr "Соглашение о консультировании"
+
+#. ITSM class bundles
+msgid "Container Management"
+msgstr "Управление контейнерами"
+
+#. ITSM class bundles
+msgid "Cordless Phone (DECT Phone)"
+msgstr "Беспроводной телефон (DECT Phone)"
+
+#. ITSM class bundles
+msgid "DNS-Server"
+msgstr "DNS-сервер"
+
+#. ITSM class bundles
+msgid "Employment Contract"
+msgstr "Трудовой договор"
+
+#. ITSM class bundles
+msgid "External Hard Drive"
+msgstr "Внешний жесткий диск"
+
+#. ITSM class bundles
+msgid "Firewall"
+msgstr "Брандмауэр"
+
+#. ITSM class bundles
+msgid "Franchise Agreement"
+msgstr "Договор франшизы"
+
+#. ITSM class bundles
+msgid "Headset"
+msgstr "Гарнитура"
+
+#. ITSM class bundles
+msgid "Identity and Access Management (IAM)"
+msgstr "Управление идентификацией и доступом (IAM)"
+
+#. ITSM class bundles
+msgid "Landline Phone"
+msgstr "Стационарный телефон"
+
+#. ITSM class bundles
+msgid "Lease Agreement"
+msgstr "Договор аренды"
+
+#. ITSM class bundles
+msgid "License Agreement"
+msgstr "Лицензионное соглашение"
+
+#. ITSM class bundles
+msgid "Loan Agreement"
+msgstr "Договор займа"
+
+#. ITSM class bundles
+msgid "Mobile/Embedded"
+msgstr "Мобильный/встроенный"
+
+#. ITSM class bundles
+msgid "Non-Disclosure Agreement (NDA)"
+msgstr "Соглашение о неразглашении (NDA)"
+
+#. ITSM class bundles
+msgid "Notebook"
+msgstr "Блокнот"
+
+#. ITSM class bundles
+msgid "OTOBO"
+msgstr "OTOBO"
+
+#. ITSM class bundles
+msgid "Partnership Agreement"
+msgstr "Партнерское соглашение"
+
+#. ITSM class bundles
+msgid "Phone / VOIP"
+msgstr "Телефон / VOIP"
+
+#. ITSM class bundles
+msgid "Sales Contract"
+msgstr "Договор купли-продажи"
+
+#. ITSM class bundles
+msgid "Satellite Phone"
+msgstr "Спутниковый телефон"
+
+#. ITSM class bundles
+msgid "Service Agreement"
+msgstr "Договор об оказании услуг"
+
+#. ITSM class bundles
+msgid "Speakers"
+msgstr "Динамики"
+
+#. ITSM class bundles
+msgid "Thin Client"
+msgstr "Тонкий клиент"
+
+#. ITSM class bundles
+msgid "USB Hub"
+msgstr "USB-концентратор"
+
+#. ITSM class bundles
+msgid "VPN"
+msgstr "VPN"
+
+#. ITSM class bundles
+msgid "VR Headset"
+msgstr "Гарнитура VR"
+
+#. ITSM class bundles
+msgid "VoIP Phone"
+msgstr "VoIP-телефон"
+
+#. ITSM class bundles
+msgid "Webcam"
+msgstr "Веб-камера"

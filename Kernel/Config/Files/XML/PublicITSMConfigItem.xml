@@ -437,4 +437,84 @@
         </Value>
     </Setting>
 
+    <Setting Name="Loader::Module::PublicITSMConfigItem###003-ITSMConfigItem" Required="0" Valid="1">
+        <Description Translatable="1">Loader module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>Core.Agent.DynamicFieldReferenceSearch.js</Item>
+                        <Item>ITSM.Agent.ConfigItem.Search.js</Item>
+                        <Item>ITSM.Customer.ConfigItemList.js</Item>
+                        <Item>ITSM.Customer.ConfigItem.Overview.js</Item>
+                        <Item>Core.Customer.Search.js</Item>
+                        <!-- TODO relevant for column settings
+                        <Item>Core.UI.AllocationList.js</Item>
+                        <Item>Core.Agent.TableFilters.js</Item>
+                        -->
+                    </Array>
+                </Item>
+                <Item Key="CSS">
+                    <Array>
+                        <Item>ITSM.Customer.ConfigItemList.css</Item>
+                        <Item>ITSM.Customer.ConfigItemOverview.css</Item>
+                        <Item>ITSM.Table.css</Item>
+                        <!--- TODO relevant for column settings
+                        <Item>Core.AllocationList.css</Item>
+                        <Item>ITSM.Agent.Default.css</Item>
+                        -->
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+
+    <Setting Name="Loader::Module::PublicITSMConfigItemSearch###003-ITSMConfigItem" Required="0" Valid="1">
+        <Description Translatable="1">Loader module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="CSS">
+                    <Array>
+                        <Item>ITSM.Customer.ConfigItemList.css</Item>
+                        <Item>ITSM.Customer.ConfigItemOverview.css</Item>
+                        <Item>ITSM.Customer.ConfigItemSearch.css</Item>
+                        <Item>ITSM.Agent.Detail.css</Item>
+                        <Item>ITSM.Table.css</Item>
+                        <Item>ITSM.Print.css</Item>
+                    </Array>
+                </Item>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>Core.Agent.DynamicFieldReferenceSearch.js</Item>
+                        <Item>ITSM.Agent.ConfigItem.Search.js</Item>
+                        <Item>ITSM.Customer.ConfigItem.Overview.js</Item>
+                        <Item>ITSM.Customer.ConfigItemList.js</Item>
+                        <Item>Core.Customer.Search.js</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+
+    <Setting Name="Loader::Module::PublicITSMConfigItemZoom###003-ITSMConfigItem" Required="0" Valid="1">
+        <Description Translatable="1">Loader module registration for the public interface.</Description>
+        <Navigation>Frontend::Public::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="CSS">
+                    <Array>
+                        <Item>ITSM.Customer.ConfigItem.Zoom.css</Item>
+                    </Array>
+                </Item>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>ITSM.Customer.ConfigItem.Zoom.js</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+
 </otobo_config>

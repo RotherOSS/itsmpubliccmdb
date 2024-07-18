@@ -723,9 +723,6 @@ sub Run {
     # the public module should have no authentication 
     $LayoutObject->{ForceSkipUserID} = 1;
 
-    # build NavigationBar
-    $Output .= $LayoutObject->PublicNavigationBar();
-
     # get page footer
     $Output .= $LayoutObject->PublicFooter();
 

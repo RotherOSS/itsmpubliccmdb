@@ -68,8 +68,10 @@ sub Run {
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
     # check permission
+    
+# Rother OSS / ITSM Public CMDB  
     if ( !$Param{NoPermissionsCheck} && $Action && ( @{$GroupsRo} || @{$GroupsRw} ) ) {
-
+# EO ITSM Public CMDB
         # deny access by default, when there are groups to check
         $Access = 0;
 

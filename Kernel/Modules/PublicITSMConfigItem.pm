@@ -533,9 +533,6 @@ sub Run {
         },
     );
 
-    # build NavigationBar
-    $Output .= $LayoutObject->PublicNavigationBar();
-
     ## get page footer
     $Output .= $LayoutObject->PublicFooter();
 #

@@ -28,8 +28,6 @@ use List::Util qw(first);
 # OTOBO modules
 use Kernel::System::VariableCheck qw(IsHashRefWithData IsArrayRefWithData);
 
-use Data::Dumper;
-
 our @ObjectDependencies = (
     'Kernel::System::Log',
     'Kernel::Output::HTML::Layout',
@@ -479,19 +477,24 @@ sub _RenderDescriptionSection {
         },
     );
 
+# Rother OSS / ITSM Public CMDB
     my $Frontend;
     if ( $Param{LayoutObject}{UserType} ) {
         $Frontend = $Param{LayoutObject}{UserType} eq 'User' ? 'Agent' : 'Customer',        
     }
     else {
         $Frontend = 'Public';
-    }
+    }   
+# EO ITSM Public CMDB
     $Param{LayoutObject}->Block(
         Name => 'FieldDisplayCell',
         Data => {
             ConfigItemID => $Param{ConfigItem}{ConfigItemID},
             VersionID    => $Param{ConfigItem}{VersionID},
+            
+# Rother OSS / ITSM Public CMDB
             Frontend     => $Frontend,
+# EO ITSM Public CMDB
             Type         => 'Iframe',
         },
     );

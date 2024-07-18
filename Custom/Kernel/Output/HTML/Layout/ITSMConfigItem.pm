@@ -303,7 +303,11 @@ in F<Kernel/Output/HTML/LayoutTicket.pm>.
         Env           => $Self,
         LinkPage      => $LinkPage,
         LinkSort      => $LinkSort,
+        
+# Rother OSS / ITSM Public CMDB
         Frontend      => 'Agent',                           # optional (Agent|Customer|Public), default: Agent, indicates from which frontend this function was called
+# EO ITSM Public CMDB
+        
     );
 
 =cut
@@ -325,6 +329,7 @@ sub ITSMConfigItemListShow {
     # set default view mode to 'small'
     my $View = $Param{View} || 'Small';
 
+# Rother OSS / ITSM Public CMDB
     # store latest view mode
     if ( $Param{Frontend} ne 'Public' ) {
         $Kernel::OM->Get('Kernel::System::AuthSession')->UpdateSessionID(
@@ -332,13 +337,16 @@ sub ITSMConfigItemListShow {
             Key       => 'UserITSMConfigItemOverview' . $Env->{Action},
             Value     => $View,
         );
-    }
+    }   
+# EO ITSM Public CMDB
 
     # get config object
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # update preferences if needed
     my $Key = 'UserITSMConfigItemOverview' . $Env->{Action};
+
+# Rother OSS / ITSM Public CMDB
     if ( $Param{Frontend} ne 'Customer' && $Param{Frontend} ne 'Public' ) {
         if ( !$ConfigObject->Get('DemoSystem') && ( $Self->{$Key} // '' ) ne $View ) {
             $Kernel::OM->Get('Kernel::System::User')->SetPreferences(
@@ -361,6 +369,8 @@ sub ITSMConfigItemListShow {
         # public frontend
         $Backends = $ConfigObject->Get('ITSMConfigItem::Frontend::PublicOverview');
     }
+# EO ITSM Public CMDB
+    
     if ( !$Backends ) {
         return $Self->FatalError(
             Message => 'Need config option ITSMConfigItem::Frontend::Overview',
@@ -664,7 +674,10 @@ sub ITSMConfigItemListShow {
 
     # create nav bar and run overview backend module
     my $NavBarHTML = '';
+
+# Rother OSS / ITSM Public CMDB
     if ( $Param{Frontend} ne 'Customer' && $Param{Frontend} ne 'Public' ) {
+# EO ITSM Public CMDB
         $NavBarHTML = $Self->Output(
             TemplateFile => 'AgentITSMConfigItemOverviewNavBar',
             Data         => { %Param, },

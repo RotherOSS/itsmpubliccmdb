@@ -1412,49 +1412,6 @@ sub _GetColumnValues {
         $ConfigItemIDs = $Param{OriginalConfigItemIDs};
     }
 
-    #if ( $HeaderColumn !~ m/^DynamicField_/ ) {
-    #    my $FunctionName = $HeaderColumn . 'FilterValuesGet';
-    #    $ColumnFilterValues{$HeaderColumn} = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::ColumnFilter')->$FunctionName(
-    #        ConfigItemIDs => $ConfigItemIDs,
-    #        HeaderColumn  => $HeaderColumn,
-    #        UserID        => $Self->{UserID},
-    #    );
-    #}
-    #else {
-        DYNAMICFIELD:
-        for my $DynamicFieldConfig ( @{ $Self->{DynamicField} } ) {
-            next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
-            my $FieldName = 'DynamicField_' . $DynamicFieldConfig->{Name};
-            next DYNAMICFIELD if $FieldName ne $HeaderColumn;
-
-            # get dynamic field backend object
-            my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
-            my $IsFiltrable               = $DynamicFieldBackendObject->HasBehavior(
-                DynamicFieldConfig => $DynamicFieldConfig,
-                Behavior           => 'IsFiltrable',
-            );
-            next DYNAMICFIELD if !$IsFiltrable;
-            $Self->{ValidFiltrableColumns}->{$HeaderColumn} = $IsFiltrable;
-            if ( IsArrayRefWithData($ConfigItemIDs) ) {
-
-                # get the historical values for the field
-                $ColumnFilterValues{$HeaderColumn} = $DynamicFieldBackendObject->ColumnFilterValuesGet(
-                    DynamicFieldConfig => $DynamicFieldConfig,
-                    LayoutObject       => $Kernel::OM->Get('Kernel::Output::HTML::Layout'),
-                    ITSMConfigItemIDs  => $ConfigItemIDs,
-                );
-            }
-            else {
-
-                # get PossibleValues
-                $ColumnFilterValues{$HeaderColumn} = $DynamicFieldBackendObject->PossibleValuesGet(
-                    DynamicFieldConfig => $DynamicFieldConfig,
-                );
-            }
-            last DYNAMICFIELD;
-        }
-    #}
-
     return \%ColumnFilterValues;
 }
 

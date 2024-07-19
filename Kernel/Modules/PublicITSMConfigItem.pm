@@ -336,7 +336,7 @@ sub Run {
     }
 
     # get page shown count
-    my $PageShown = 10;     # PERHAPS CONFIGURE?
+    my $PageShown = $Config->{PageShown};
     my %PageNav;
 
     # do shown config item lookup
@@ -435,36 +435,6 @@ sub Run {
     # TODO Maybe there is a more elegant way to do this?
     $Self->{Filter}  = $Filter;
     $Self->{Filters} = \%Filters;
-
-    if ( $Self->{Subaction} eq 'AJAXFilterUpdate' ) {
-
-        my $FilterContent = $LayoutObject->ITSMConfigItemListShow(
-            FilterContentOnly     => 1,
-            HeaderColumn          => $HeaderColumn,
-            ElementChanged        => $ElementChanged,
-            OriginalConfigItemIDs => \@OriginalViewableConfigItems,
-            Action                => 'PublicITSMConfigItem',
-            Env                   => $Self,
-            View                  => $View,
-            EnableColumnFilters   => 1,
-            Frontend              => 'Public',
-            Filter                => $Filter,
-            Filters               => \%Filters,
-        );
-
-        if ( !$FilterContent ) {
-            $LayoutObject->FatalError(
-                Message => $LayoutObject->{LanguageObject}->Translate( 'Can\'t get filter content data of %s!', $HeaderColumn ),
-            );
-        }
-
-        return $LayoutObject->Attachment(
-            ContentType => 'application/json',
-            Content     => $FilterContent,
-            Type        => 'inline',
-            NoCache     => 1,
-        );
-    }
 
     my $CountTotal = 0;
     my %NavBarFilter;

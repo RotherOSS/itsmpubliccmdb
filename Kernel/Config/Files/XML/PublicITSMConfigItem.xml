@@ -222,6 +222,13 @@
             <Item ValueType="String" ValueRegex="^\d+$">10000</Item>
         </Value>
     </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SuppressFuzzyLogic" Required="1" Valid="1">
+        <Description Translatable="1">Defines the search limit for the PublicITSMConfigItemSearch screen.</Description>
+        <Navigation>Frontend::Public::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
 
     <Setting Name="PublicFrontend::Navigation###PublicITSMConfigItem###003-ITSMConfigItem" Required="0" Valid="1">
         <Description Translatable="1">Main menu item registration.</Description>

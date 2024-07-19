@@ -192,7 +192,9 @@ sub Run {
             # fetch single value params
             $GetParam{$SearchParam} = $ParamObject->GetParam( Param => $SearchParam );
             # supress fuzzy logic operators
-            $GetParam{$SearchParam} =~ s/[\*%_]//g;
+            if ( $Config->{SuppressFuzzyLogic} ) {
+                $GetParam{$SearchParam} =~ s/[\*%_]//g;
+            }
             $LinkPage .= ";$SearchParam=" . $LayoutObject->Ascii2Html( Text => $GetParam{$SearchParam} );
             $LinkSort .= ";$SearchParam=" . $LayoutObject->Ascii2Html( Text => $GetParam{$SearchParam} );
         }
@@ -600,6 +602,24 @@ sub Run {
                                 $Data->{$Key} = $HistoricalValues->{$Key};
                             }
                         }
+                    }
+
+                    # convert possible values key => value to key => key for ACLs using a Hash slice
+                    my %AclData = %{$Data};
+                    @AclData{ keys %AclData } = keys %AclData;
+
+                    # set possible values filter from ACLs
+                    my $ACL = $ConfigItemObject->ConfigItemAcl(
+                        Action         => $Self->{Action},
+                        ReturnType     => 'ITSMConfigItem',
+                        ReturnSubType  => 'DynamicField_' . $DynamicFieldConfig->{Name},
+                        Data           => \%AclData,
+                    );
+                    if ($ACL) {
+                        my %Filter = $ConfigItemObject->ConfigItemAclData();
+
+                        # convert Filer key => key back to key => value using map
+                        %{$PossibleValuesFilter} = map { $_ => $Data->{$_} } keys %Filter;
                     }
                 }
             }

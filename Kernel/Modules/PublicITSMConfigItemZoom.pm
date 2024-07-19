@@ -367,7 +367,6 @@ sub Run {
                 StyleClasses  => $StyleClasses,
             },
         ),
-        $LayoutObject->PublicNavigationBar,
         $LayoutObject->PublicFooter;
 }
 

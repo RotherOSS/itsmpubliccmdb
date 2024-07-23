@@ -47,8 +47,6 @@ sub new {
     return $Self;
 }
 
-use Data::Dumper;
-
 sub Run {
     my ( $Self, %Param ) = @_;
 
@@ -70,8 +68,16 @@ sub Run {
     }
 
     # get needed object
-    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::Permission::PublicPermission');
     my $ConfigObject     = $Kernel::OM->Get('Kernel::Config');
+
+    # check for access rights
+    my $HasAccess = $ConfigItemObject->PublicPermission(
+        ConfigItemID => $ConfigItemID,
+    );
+    if ( !$HasAccess ) {
+        return $LayoutObject->PublicNoPermission( WithHeader => 'yes' );
+    }
 
     my $Config = $ConfigObject->Get('ITSMConfigItem::Frontend::PublicITSMConfigItemZoom') // {};
    

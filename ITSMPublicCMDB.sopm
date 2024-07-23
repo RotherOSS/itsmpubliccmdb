@@ -28,6 +28,7 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItemSearch.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItem.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItemZoom.tt" />
+        <File Permission="660" Location="Kernel/System/ITSMConfigItem/Permission/PublicPermission.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Base.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />

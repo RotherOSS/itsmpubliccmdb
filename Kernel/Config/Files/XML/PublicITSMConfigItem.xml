@@ -271,11 +271,8 @@
         <Value>
             <Hash>
                 <Item Key="Name"></Item>
-                <Item Key="Groups"><Array></Array></Item>
                 <Item Key="Classes"><Array></Array></Item>
                 <Item Key="DeploymentStates"><Array></Array></Item>
-                <Item Key="PublicUserDynamicField"></Item>
-                <Item Key="PublicCompanyDynamicField"></Item>
                 <Item Key="DynamicFieldValues">
                     <Hash>
                         <DefaultItem ValueType="String"></DefaultItem>
@@ -290,11 +287,8 @@
         <Value>
             <Hash>
                 <Item Key="Name"></Item>
-                <Item Key="Groups"><Array></Array></Item>
                 <Item Key="Classes"><Array></Array></Item>
                 <Item Key="DeploymentStates"><Array></Array></Item>
-                <Item Key="PublicUserDynamicField"></Item>
-                <Item Key="PublicCompanyDynamicField"></Item>
                 <Item Key="DynamicFieldValues">
                     <Hash>
                         <DefaultItem ValueType="String"></DefaultItem>
@@ -309,11 +303,8 @@
         <Value>
             <Hash>
                 <Item Key="Name"></Item>
-                <Item Key="Groups"><Array></Array></Item>
                 <Item Key="Classes"><Array></Array></Item>
                 <Item Key="DeploymentStates"><Array></Array></Item>
-                <Item Key="PublicUserDynamicField"></Item>
-                <Item Key="PublicCompanyDynamicField"></Item>
                 <Item Key="DynamicFieldValues">
                     <Hash>
                         <DefaultItem ValueType="String"></DefaultItem>
@@ -328,11 +319,8 @@
         <Value>
             <Hash>
                 <Item Key="Name"></Item>
-                <Item Key="Groups"><Array></Array></Item>
                 <Item Key="Classes"><Array></Array></Item>
                 <Item Key="DeploymentStates"><Array></Array></Item>
-                <Item Key="PublicUserDynamicField"></Item>
-                <Item Key="PublicCompanyDynamicField"></Item>
                 <Item Key="DynamicFieldValues">
                     <Hash>
                         <DefaultItem ValueType="String"></DefaultItem>
@@ -347,11 +335,8 @@
         <Value>
             <Hash>
                 <Item Key="Name"></Item>
-                <Item Key="Groups"><Array></Array></Item>
                 <Item Key="Classes"><Array></Array></Item>
                 <Item Key="DeploymentStates"><Array></Array></Item>
-                <Item Key="PublicUserDynamicField"></Item>
-                <Item Key="PublicCompanyDynamicField"></Item>
                 <Item Key="DynamicFieldValues">
                     <Hash>
                         <DefaultItem ValueType="String"></DefaultItem>

@@ -25,12 +25,10 @@ use v5.24;
 # CPAN modules
 
 # OTOBO modules
-use Kernel::Language              qw(Translatable);
+use Kernel::Language qw(Translatable);
 use Kernel::System::VariableCheck qw(IsHashRefWithData);
 
 our $ObjectManagerDisabled = 1;
-
-use Data::Dumper;
 
 sub new {
     my ( $Type, %Param ) = @_;
@@ -72,7 +70,7 @@ sub Run {
         return $LayoutObject->ErrorScreen();
     }
 
-    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::Permission::PublicPermission');
 
     # fetch config item
     my $ConfigItem = $ConfigItemObject->ConfigItemGet(
@@ -87,6 +85,14 @@ sub Run {
         );
 
         return $LayoutObject->ErrorScreen();
+    }
+
+    # check permissions
+    my $HasAccess = $ConfigItemObject->PublicPermission(
+        ConfigItemID => $ConfigItem->{ConfigItemID},
+    );
+    if ( !$HasAccess ) {
+        return $LayoutObject->PublicNoPermission( WithHeader => 'yes' );
     }
 
     my $HTMLUtilsObject = $Kernel::OM->Get('Kernel::System::HTMLUtils');
@@ -130,7 +136,8 @@ sub Run {
             Disposition => 'inline',
         );
 
-        my $URL = "Action=PublicITSMConfigItemAttachment;Subaction=DownloadAttachment;ConfigItemID=$ConfigItem->{ConfigItemID};VersionID=$ConfigItem->{VersionID};Filename=";
+        my $URL
+            = "Action=PublicITSMConfigItemAttachment;Subaction=DownloadAttachment;ConfigItemID=$ConfigItem->{ConfigItemID};VersionID=$ConfigItem->{VersionID};Filename=";
 
         # reformat rich text document to have correct charset and links to
         # inline documents

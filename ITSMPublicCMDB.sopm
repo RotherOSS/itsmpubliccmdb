@@ -15,7 +15,6 @@
     <Filelist>    
         <!-- TODO: move to Kernel? -->
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Base.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
         <File Permission="660" Location="Custom/var/httpd/htdocs/js/ITSM.Customer.ConfigItem.Overview.js" />
@@ -26,7 +25,6 @@
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemSearch.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemZoom.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/PublicOverviewSmall.pm" />
-        <File Permission="660" Location="Kernel/Output/HTML/Layout/Public.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFooter.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicHeader.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItemOverviewSmall.tt" />

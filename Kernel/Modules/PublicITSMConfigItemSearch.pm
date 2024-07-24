@@ -71,7 +71,7 @@ sub Run {
         $Refresh = 60 * $Self->{UserRefreshTime};
     }
 
-    my $Output = $LayoutObject->PublicHeader(
+    my $Output = $LayoutObject->CustomerHeader(
         Refresh => $Refresh,
     );
 
@@ -99,13 +99,13 @@ sub Run {
     # fetch filters from config
     my $PermissionConditionConfigs = $ConfigObject->Get('Public::ConfigItem::PermissionConditions');
     if ( !IsHashRefWithData($PermissionConditionConfigs) ) {
-        my $Output = $LayoutObject->PublicHeader(
+        my $Output = $LayoutObject->CustomerHeader(
             Title => Translatable('Error'),
         );
         $Output .= $LayoutObject->PublicError(
             Message => Translatable('No permission'),
         );
-        $Output .= $LayoutObject->PublicFooter();
+        $Output .= $LayoutObject->CustomerFooter();
 
         return $Output;
     }
@@ -113,13 +113,13 @@ sub Run {
     my $PermissionConditionConfig = $PermissionConditionConfigs->{ sprintf( "%02d", $Filter ) };
     if ( !IsHashRefWithData($PermissionConditionConfig) ) {
 
-        my $Output = $LayoutObject->PublicHeader(
+        my $Output = $LayoutObject->CustomerHeader(
             Title => Translatable('Error'),
         );
         $Output .= $LayoutObject->PublicError(
             Message => Translatable('Filter invalid!'),
         );
-        $Output .= $LayoutObject->PublicFooter();
+        $Output .= $LayoutObject->CustomerFooter();
 
         return $Output;
     }
@@ -304,13 +304,13 @@ sub Run {
         }
 
         if ( !$SearchConfig{Classes}->@* ) {
-            my $Output = $LayoutObject->PublicHeader(
+            my $Output = $LayoutObject->CustomerHeader(
                 Title => Translatable('Error'),
             );
             $Output .= $LayoutObject->PublicError(
                 Message => Translatable('No permission'),
             );
-            $Output .= $LayoutObject->PublicFooter();
+            $Output .= $LayoutObject->CustomerFooter();
 
             return $Output;
         }
@@ -334,13 +334,13 @@ sub Run {
             }
 
             if ( !@SearchDeplStates ) {
-                my $Output = $LayoutObject->PublicHeader(
+                my $Output = $LayoutObject->CustomerHeader(
                     Title => Translatable('Error'),
                 );
                 $Output .= $LayoutObject->PublicError(
                     Message => Translatable('No permission'),
                 );
-                $Output .= $LayoutObject->PublicFooter();
+                $Output .= $LayoutObject->CustomerFooter();
 
                 return $Output;
             }
@@ -389,13 +389,13 @@ sub Run {
         );
 
         if ( !%SearchConfig ) {
-            my $Output = $LayoutObject->PublicHeader(
+            my $Output = $LayoutObject->CustomerHeader(
                 Title => Translatable('Error'),
             );
             $Output .= $LayoutObject->PublicError(
                 Message => Translatable('Search params invalid!'),
             );
-            $Output .= $LayoutObject->PublicFooter();
+            $Output .= $LayoutObject->CustomerFooter();
 
             return $Output;
         }
@@ -512,13 +512,13 @@ sub Run {
         my $PermissionConditionConfigs = $ConfigObject->Get('Public::ConfigItem::PermissionConditions');
 
         if ( !IsHashRefWithData($PermissionConditionConfigs) ) {
-            my $Output = $LayoutObject->PublicHeader(
+            my $Output = $LayoutObject->CustomerHeader(
                 Title => Translatable('Error'),
             );
             $Output .= $LayoutObject->PublicError(
                 Message => Translatable('No permission!'),
             );
-            $Output .= $LayoutObject->PublicFooter();
+            $Output .= $LayoutObject->CustomerFooter();
 
             return $Output;
         }
@@ -720,13 +720,13 @@ sub Run {
         }
     }
     else {
-        my $Output = $LayoutObject->PublicHeader(
+        my $Output = $LayoutObject->CustomerHeader(
             Title => Translatable('Error'),
         );
         $Output .= $LayoutObject->PublicError(
             Message => Translatable('No permission!'),
         );
-        $Output .= $LayoutObject->PublicFooter();
+        $Output .= $LayoutObject->CustomerFooter();
 
         return $Output;
     }
@@ -742,7 +742,7 @@ sub Run {
     $LayoutObject->{ForceSkipUserID} = 1;
 
     # get page footer
-    $Output .= $LayoutObject->PublicFooter();
+    $Output .= $LayoutObject->CustomerFooter();
 
     return $Output;
 }

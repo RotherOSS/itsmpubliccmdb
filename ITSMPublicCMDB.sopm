@@ -14,12 +14,16 @@
     <Description Lang="hu">Az OTOBO::ITSM Public CMDB csomag.</Description>
     <Filelist>
         <!-- TODO: move to Kernel? -->
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Base.pm" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout.pm" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
+        <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
+        <File Permission="660" Location="Kernel/Config/Files/XML/PublicFramework.xml" />
+        <File Permission="660" Location="Kernel/Config/Files/XML/PublicITSMConfigItem.xml" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemAttachment.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItem.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemSearch.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemZoom.pm" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/PublicFramework.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/PublicITSMConfigItem.xml" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/PublicOverviewSmall.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Layout/Public.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFooter.tt" />
@@ -29,11 +33,6 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItem.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItemZoom.tt" />
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/Permission/PublicPermission.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Base.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/MenuGeneric.pm" />
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
     </Filelist>
     <DatabaseInstall Type="post">
     </DatabaseInstall>

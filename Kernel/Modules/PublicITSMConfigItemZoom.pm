@@ -75,6 +75,7 @@ sub Run {
     my $HasAccess = $ConfigItemObject->PublicPermission(
         ConfigItemID => $ConfigItemID,
     );
+
     if ( !$HasAccess ) {
         return $LayoutObject->PublicNoPermission( WithHeader => 'yes' );
     }
@@ -208,7 +209,9 @@ sub Run {
         for my $Page ( $Definition->{DefinitionRef}{Pages}->@* ) {
             next PAGE unless $Page->{Interfaces};
             next PAGE unless any { $_ eq 'Public' } $Page->{Interfaces}->@*;
+
             push @Pages, $Page;
+
             if ( $PageRequested && $Page->{Name} eq $PageRequested ) {
                 $PageShown = $Page;
             }
@@ -297,8 +300,10 @@ sub Run {
         State  => 'Valid',
         UserID => $Self->{UserID},
     );
+
     # get link table view mode
     my $LinkTableViewMode = $ConfigObject->Get('LinkObject::ViewMode');
+
     # create the link table
     my $LinkTableStrg = $LayoutObject->LinkObjectTableCreate(
         LinkListWithData => $LinkListWithData,
@@ -306,6 +311,7 @@ sub Run {
         Object           => 'ITSMConfigItem',
         Key              => $ConfigItemID,
     );
+
     # output the link table
     if ($LinkTableStrg) {
         $LayoutObject->Block(
@@ -315,20 +321,26 @@ sub Run {
             },
         );
     }
+
     my @Attachments = $ConfigItemObject->ConfigItemAttachmentList(
         ConfigItemID => $ConfigItemID,
     );
+
     if (@Attachments) {
+
         $LayoutObject->Block(
             Name => 'Attachments',
         );
+
         ATTACHMENT:
         for my $Attachment (@Attachments) {
+
             # get the metadata of the current attachment
             my $AttachmentData = $ConfigItemObject->ConfigItemAttachmentGet(
                 ConfigItemID => $ConfigItemID,
                 Filename     => $Attachment,
             );
+
             $LayoutObject->Block(
                 Name => 'AttachmentRow',
                 Data => {
@@ -339,14 +351,17 @@ sub Run {
             );
         }
     }
+
     # handle DownloadAttachment
     if ( $Self->{Subaction} eq 'DownloadAttachment' ) {
+
         # get data for attachment
         my $Filename       = $ParamObject->GetParam( Param => 'Filename' );
         my $AttachmentData = $ConfigItemObject->ConfigItemAttachmentGet(
             ConfigItemID => $ConfigItemID,
             Filename     => $Filename,
         );
+
         # return error if file does not exist
         if ( !$AttachmentData ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
@@ -355,6 +370,7 @@ sub Run {
             );
             return $LayoutObject->ErrorScreen();
         }
+
         return $LayoutObject->Attachment(
             %{$AttachmentData},
             Type => 'attachment',

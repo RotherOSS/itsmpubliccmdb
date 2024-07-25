@@ -126,7 +126,7 @@ sub Run {
 
     my %PageNav;
     if ( $Self->{Subaction} eq 'SearchAction' ) {
-      
+
         my $SortBy = $ParamObject->GetParam( Param => 'SortBy' )
             || $Config->{'SortBy::Default'}
             || 'Age';
@@ -477,6 +477,13 @@ sub Run {
                 ITSMConfigItemListHTML => $ConfigItemListHTML,
             },
         );
+
+        if ( defined $ConfigObject->Get("PublicFrontend::Module")->{"PublicITSMConfigItemSearch"} ) {
+            $LayoutObject->Block(
+                Name => 'SearchBox',
+            );
+        }
+
     }
     elsif ( !$Self->{Subaction} ) {
 

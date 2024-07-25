@@ -387,6 +387,7 @@ sub _RenderCILinks {
     my $Types     = IsArrayRefWithData( $Param{Section}{LinkTypes} ) ? $Param{Section}{LinkTypes} : undef;
 
     my $LinkedConfigItems = $ConfigItemObject->LinkedConfigItems(
+
         # TODO: What about versions
         ConfigItemID => $Param{ConfigItem}{ConfigItemID},
         Direction    => $Direction,
@@ -476,22 +477,20 @@ sub _RenderDescriptionSection {
             Widths => '1fr',
         },
     );
-
 # Rother OSS / ITSM Public CMDB
     my $Frontend;
     if ( $Param{LayoutObject}{UserType} ) {
-        $Frontend = $Param{LayoutObject}{UserType} eq 'User' ? 'Agent' : 'Customer',        
+        $Frontend = $Param{LayoutObject}{UserType} eq 'User' ? 'Agent' : 'Customer';
     }
     else {
         $Frontend = 'Public';
-    }   
+    }
 # EO ITSM Public CMDB
     $Param{LayoutObject}->Block(
         Name => 'FieldDisplayCell',
         Data => {
             ConfigItemID => $Param{ConfigItem}{ConfigItemID},
             VersionID    => $Param{ConfigItem}{VersionID},
-            
 # Rother OSS / ITSM Public CMDB
             Frontend     => $Frontend,
 # EO ITSM Public CMDB

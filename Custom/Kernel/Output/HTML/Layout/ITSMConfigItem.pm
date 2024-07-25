@@ -26,7 +26,7 @@ use namespace::autoclean;
 
 # OTOBO modules
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language              qw(Translatable);
+use Kernel::Language qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -362,7 +362,7 @@ sub ITSMConfigItemListShow {
     if ( $Param{Frontend} eq 'Agent' ) {
         $Backends = $ConfigObject->Get('ITSMConfigItem::Frontend::Overview');
     }
-    elsif ($Param{Frontend} eq 'Customer') {
+    elsif ( $Param{Frontend} eq 'Customer' ) {
         $Backends = $ConfigObject->Get('ITSMConfigItem::Frontend::CustomerOverview');
     }
     else {

@@ -26,7 +26,7 @@ use List::Util qw(any none);
 
 # OTOBO modules
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language              qw(Translatable);
+use Kernel::Language qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -503,7 +503,7 @@ sub Run {
 
     ## get page footer
     $Output .= $LayoutObject->CustomerFooter();
-#
+    #
     return $Output;
 }
 

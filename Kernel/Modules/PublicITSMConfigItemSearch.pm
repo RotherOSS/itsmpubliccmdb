@@ -26,7 +26,7 @@ use List::Util qw(any);
 
 # OTOBO modules
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language              qw(Translatable);
+use Kernel::Language qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -64,7 +64,7 @@ sub Run {
         ObjectType  => ['ITSMConfigItem'],
         FieldFilter => $Config->{DynamicField},
     );
-       
+
     # build NavigationBar & to get the output faster!
     my $Refresh = '';
     if ( $Self->{UserRefreshTime} ) {
@@ -95,7 +95,7 @@ sub Run {
 
     # get filter from web request
     my $Filter = $ParamObject->GetParam( Param => 'PermissionCondition' ) || $ParamObject->GetParam( Param => 'Filter' ) || '';
-  
+
     # fetch filters from config
     my $PermissionConditionConfigs = $ConfigObject->Get('Public::ConfigItem::PermissionConditions');
     if ( !IsHashRefWithData($PermissionConditionConfigs) ) {
@@ -189,6 +189,7 @@ sub Run {
 
             # fetch single value params
             $GetParam{$SearchParam} = $ParamObject->GetParam( Param => $SearchParam );
+
             # supress fuzzy logic operators
             if ( $Config->{SuppressFuzzyLogic} ) {
                 $GetParam{$SearchParam} =~ s/[\*%_]//g;
@@ -615,10 +616,10 @@ sub Run {
 
                     # set possible values filter from ACLs
                     my $ACL = $ConfigItemObject->ConfigItemAcl(
-                        Action         => $Self->{Action},
-                        ReturnType     => 'ITSMConfigItem',
-                        ReturnSubType  => 'DynamicField_' . $DynamicFieldConfig->{Name},
-                        Data           => \%AclData,
+                        Action        => $Self->{Action},
+                        ReturnType    => 'ITSMConfigItem',
+                        ReturnSubType => 'DynamicField_' . $DynamicFieldConfig->{Name},
+                        Data          => \%AclData,
                     );
                     if ($ACL) {
                         my %Filter = $ConfigItemObject->ConfigItemAclData();
@@ -745,7 +746,7 @@ sub Run {
         },
     );
 
-    # the public module should have no authentication 
+    # the public module should have no authentication
     $LayoutObject->{ForceSkipUserID} = 1;
 
     # get page footer
@@ -753,6 +754,5 @@ sub Run {
 
     return $Output;
 }
-
 
 1;

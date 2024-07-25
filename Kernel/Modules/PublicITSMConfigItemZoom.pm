@@ -81,7 +81,7 @@ sub Run {
     }
 
     my $Config = $ConfigObject->Get('ITSMConfigItem::Frontend::PublicITSMConfigItemZoom') // {};
-   
+
     if ( !$Config->{VersionsEnabled} ) {
         $VersionID = undef;
     }
@@ -93,6 +93,7 @@ sub Run {
         DynamicFields => 1,
     );
     if ( !$ConfigItem->{ConfigItemID} ) {
+
         # additional sanety check - PublicPermission should handle this case usually
         return $LayoutObject->PublicErrorScreen(
             Message => $LayoutObject->{LanguageObject}->Translate('ConfigItem not found!'),
@@ -201,7 +202,6 @@ sub Run {
             DefinitionID => $ConfigItem->{DefinitionID},
         );
 
-        my %GroupLookup;
         my @Pages;
         my $PageShown;
         my $PageRequested = $ParamObject->GetParam( Param => 'Page' );

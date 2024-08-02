@@ -62,9 +62,6 @@
 [% RenderBlockStart("OverviewNavBarPageColumn") %]
                     <th class="OverviewHeader [% Data.HeaderColumnName | html %] [% Data.CSS | html %]">
 [% RenderBlockStart("OverviewNavBarPageColumnFilter") %]
-                        <a href="#" class="ColumnSettingsTrigger" title="[% Data.FilterTitle | html %]">
-                            <i class="fa fa-filter"></i>
-                        </a>
                         <div class="ColumnSettingsContainer DontPrint">
                             <div class="ColumnSettingsBox">
                                 [% Data.ColumnFilterStrg %]
@@ -73,9 +70,6 @@
                         <span class="Gray" title="[% Data.Title | html %]">[% Data.ColumnNameTranslated | html %]</span>
 [% RenderBlockEnd("OverviewNavBarPageColumnFilter") %]
 [% RenderBlockStart("OverviewNavBarPageColumnFilterLink") %]
-                        <a href="#" class="ColumnSettingsTrigger" title="[% Data.FilterTitle | html %]">
-                            <i class="fa fa-filter"></i>
-                        </a>
                         <div class="ColumnSettingsContainer DontPrint">
                             <div class="ColumnSettingsBox">
                                 [% Data.ColumnFilterStrg %]
@@ -104,9 +98,6 @@
                         <span class="Gray" title="[% Data.Title | html %]">[% Translate(Data.Label) | html %]</span>
 [% RenderBlockEnd("OverviewNavBarPageDynamicFieldNotSortable") %]
 [% RenderBlockStart("OverviewNavBarPageDynamicFieldFiltrableSortable") %]
-                        <a href="#" class="ColumnSettingsTrigger" title="[% Data.FilterTitle | html %]">
-                            <i class="fa fa-filter"></i>
-                        </a>
                         <div class="ColumnSettingsContainer DontPrint">
                             <div class="ColumnSettingsBox">
                                 [% Data.ColumnFilterStrg %]
@@ -116,9 +107,6 @@
 [% RenderBlockEnd("OverviewNavBarPageDynamicFieldFiltrableSortable") %]
 
 [% RenderBlockStart("OverviewNavBarPageDynamicFieldFiltrableNotSortable") %]
-                        <a href="#" class="ColumnSettingsTrigger" title="[% Data.FilterTitle | html %]">
-                            <i class="fa fa-filter"></i>
-                        </a>
                         <div class="ColumnSettingsContainer DontPrint">
                             <div class="ColumnSettingsBox">
                                 [% Data.ColumnFilterStrg %]

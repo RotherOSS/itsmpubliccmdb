@@ -132,7 +132,7 @@ sub Run {
 
     my $Output;
     if ( $Self->{Subaction} ne 'AJAXFilterUpdate' ) {
-        $Output = $LayoutObject->CustomerHeader(
+        $Output = $LayoutObject->PublicHeader(
             Refresh => $Refresh,
         );
     }
@@ -502,7 +502,7 @@ sub Run {
     );
 
     ## get page footer
-    $Output .= $LayoutObject->CustomerFooter();
+    $Output .= $LayoutObject->PublicFooter();
     #
     return $Output;
 }

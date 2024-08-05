@@ -16,7 +16,6 @@
             </Item>
         </Value>
     </Setting>
-
     <Setting Name="PublicFrontend::Module###PublicITSMConfigItemZoom" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration</Navigation>
@@ -38,7 +37,6 @@
             </Item>
         </Value>
     </Setting>
-
     <Setting Name="PublicFrontend::Module###PublicITSMConfigItemSearch" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration</Navigation>
@@ -60,7 +58,6 @@
             </Item>
         </Value>
     </Setting>
-
     <Setting Name="PublicFrontend::Module###PublicITSMConfigItemAttachment" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration</Navigation>
@@ -83,7 +80,6 @@
             </Item>
         </Value>
     </Setting>
-
     <Setting Name="ITSMConfigItem::Frontend::PublicOverview###Small" Required="0" Valid="1">
         <Description Translatable="1">Defines an overview module to show the small view of a configuration item list.</Description>
         <Navigation>Frontend::Public::ITSMConfigItemOverview</Navigation>
@@ -96,7 +92,6 @@
             </Hash>
         </Value>
     </Setting>
-
     <!-- ITSMConfigItem::Frontend::PublicITSMConfigItem -->
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItem###PageShown" Required="1" Valid="1">
         <Description Translatable="1">Number of config items to be displayed in each page of the public interface.</Description>
@@ -105,7 +100,6 @@
             <Item ValueType="String" ValueRegex="^\d+$">10</Item>
         </Value>
     </Setting>
-
     <!-- ITSMConfigItem::Frontend::PublicITSMConfigItemSearch -->
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Permission" Required="1" Valid="1">
         <Description Translatable="1">Required permissions to use the ITSM configuration item search screen in the public interface.</Description>
@@ -229,7 +223,6 @@
             <Item ValueType="Checkbox">0</Item>
         </Value>
     </Setting>
-
     <Setting Name="PublicFrontend::Navigation###PublicITSMConfigItem###003-ITSMConfigItem" Required="0" Valid="1">
         <Description Translatable="1">Main menu item registration.</Description>
         <Navigation>Frontend::Public::ModuleRegistration::MainMenu</Navigation>
@@ -264,7 +257,6 @@
             </Array>
         </Value>
     </Setting>
-
     <Setting Name="Public::ConfigItem::PermissionConditions###01" Required="0" Valid="0">
         <Description Translatable="1">Define a set of conditions under which a config item can be publicly seen. Name is the only mandatory attribute. If no other options are given, all config items will be visible under that category.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
@@ -429,7 +421,6 @@
             </Array>
         </Value>
     </Setting>
-
     <Setting Name="Loader::Module::PublicITSMConfigItem###003-ITSMConfigItem" Required="0" Valid="1">
         <Description Translatable="1">Loader module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration::Loader</Navigation>
@@ -462,7 +453,6 @@
             </Hash>
         </Value>
     </Setting>
-
     <Setting Name="Loader::Module::PublicITSMConfigItemSearch###003-ITSMConfigItem" Required="0" Valid="1">
         <Description Translatable="1">Loader module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration::Loader</Navigation>
@@ -490,7 +480,6 @@
             </Hash>
         </Value>
     </Setting>
-
     <Setting Name="Loader::Module::PublicITSMConfigItemZoom###003-ITSMConfigItem" Required="0" Valid="1">
         <Description Translatable="1">Loader module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration::Loader</Navigation>
@@ -506,6 +495,38 @@
                         <Item>ITSM.Customer.ConfigItem.Zoom.js</Item>
                     </Array>
                 </Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsEnabled" Required="0" Valid="1">
+        <Description Translatable="1">Public users can see historic CI versions.</Description>
+        <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsSelectable" Required="0" Valid="1">
+        <Description Translatable="1">Public users have the possibility to manually switch between historic CI versions.</Description>
+        <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###GeneralInfo" Required="0" Valid="1">
+        <Description Translatable="1">Which general information is shown in the header.</Description>
+        <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
+        <Value>
+            <Hash>
+                <DefaultItem ValueType="Select">
+                    <Item ValueType="Option" Value="0" Translatable="1">0 - Hidden</Item>
+                    <Item ValueType="Option" Value="1" Translatable="1">1 - Shown</Item>
+                </DefaultItem>
+                <Item Key="Class" SelectedID="1"></Item>
+                <Item Key="Number" SelectedID="1"></Item>
+                <Item Key="DeploymentState" SelectedID="1"></Item>
+                <Item Key="IncidentState" SelectedID="1"></Item>
+                <Item Key="CreatedTime" SelectedID="1"></Item>
+                <Item Key="ChangedTime" SelectedID="1"></Item>
             </Hash>
         </Value>
     </Setting>

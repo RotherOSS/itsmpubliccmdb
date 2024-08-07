@@ -198,7 +198,7 @@ sub Run {
             $LinkSort .= ";$SearchParam=" . $LayoutObject->Ascii2Html( Text => $GetParam{$SearchParam} );
         }
 
-        my @ArraySearchParams = qw(Classes);
+        my @ArraySearchParams = qw(ClassIDs);
 
         if ( $Config->{DeploymentState} ) {
             push @ArraySearchParams, 'DeplStateIDs';
@@ -212,6 +212,7 @@ sub Run {
 
             # fetch multi value params
             my @Array = $ParamObject->GetArray( Param => $SearchParamArray );
+
             if ( grep {$_} @Array ) {
                 $GetParam{$SearchParamArray} = \@Array;
                 $LinkPage .= join( '', map { ";$SearchParamArray=" . $LayoutObject->Ascii2Html( Text => $_ ) } @Array );
@@ -314,10 +315,6 @@ sub Run {
             $Output .= $LayoutObject->PublicFooter();
 
             return $Output;
-        }
-
-        else {
-            $SearchConfig{Classes} = $PermissionConditionConfig->{Classes};
         }
 
         # merge filtered deployment states with permission condition deployment states

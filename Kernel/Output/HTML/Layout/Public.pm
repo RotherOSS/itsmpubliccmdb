@@ -23,19 +23,19 @@ use namespace::autoclean;
 use utf8;
 
 # core modules
-use Digest::MD5    qw(md5_hex);
-use Scalar::Util   qw(blessed);
+use Digest::MD5 qw(md5_hex);
+use Scalar::Util qw(blessed);
 use File::Basename qw(fileparse);
 
 # CPAN modules
-use URI::Escape     qw(uri_escape_utf8);
+use URI::Escape qw(uri_escape_utf8);
 use Plack::Response ();
 use Plack::Util     ();
 
 # OTOBO modules
-use Kernel::System::VariableCheck  qw(:all);
+use Kernel::System::VariableCheck qw(:all);
 use Kernel::System::Web::Exception ();
-use Kernel::Language               qw(Translatable);
+use Kernel::Language qw(Translatable);
 
 our @ObjectDependencies = (
     'Kernel::Config',
@@ -309,7 +309,7 @@ sub PublicFooter {
         SessionID                => $Self->{SessionID},
         SessionUseCookie         => $ConfigObject->Get('SessionUseCookie'),
         ChallengeToken           => $Self->{UserChallengeToken},
-        PublicPanelSessionName   => $ConfigObject->Get('PublicPanelSessionName'),
+        CustomerPanelSessionName => $ConfigObject->Get('CustomerPanelSessionName'),    # Borrow the Customer configuration
         UserLanguage             => $Self->{UserLanguage},
         CheckEmailAddresses      => $ConfigObject->Get('CheckEmailAddresses'),
         InputFieldsActivated     => 1,

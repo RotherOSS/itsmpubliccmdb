@@ -38,7 +38,6 @@ sub new {
 
     # clear any active login to enforce security
     delete $Self->{UserID};
-    $Self->{ForceSkipUserID} = 1;
 
     bless( $Self, $Type );
 
@@ -742,9 +741,6 @@ sub Run {
             %PageNav,
         },
     );
-
-    # the public module should have no authentication
-    $LayoutObject->{ForceSkipUserID} = 1;
 
     # get page footer
     $Output .= $LayoutObject->PublicFooter();

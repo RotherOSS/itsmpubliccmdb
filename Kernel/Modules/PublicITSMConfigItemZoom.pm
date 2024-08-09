@@ -40,7 +40,6 @@ sub new {
 
     # clear any active login to enforce security
     delete $Self->{UserID};
-    $Self->{ForceSkipUserID} = 1;
 
     bless( $Self, $Type );
 

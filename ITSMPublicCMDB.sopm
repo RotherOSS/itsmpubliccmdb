@@ -14,7 +14,6 @@
     <Description Lang="hu">Az OTOBO::ITSM Public CMDB csomag.</Description>
     <Filelist>    
         <!-- TODO: move to Kernel? -->
-        <File Permission="660" Location="Custom/Kernel/Output/HTML/Base.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
         <File Permission="660" Location="Custom/var/httpd/htdocs/js/ITSM.Customer.ConfigItem.Overview.js" />

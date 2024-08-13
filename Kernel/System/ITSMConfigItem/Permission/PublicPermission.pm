@@ -46,7 +46,16 @@ sub new {
     my ( $Type, %Param ) = @_;
 
     # allocate new hash for object
-    return bless {}, $Type;
+    my $Self = {%Param};
+
+    $Self->{CacheType} = 'ITSMConfigurationManagement';
+    $Self->{CacheTTL}  = 60 * 60 * 24 * 20;
+
+    # allocate new hash for object
+    bless( $Self, $Type );
+
+    return $Self;
+
 }
 
 =head1 NAME

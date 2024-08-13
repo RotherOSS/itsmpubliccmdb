@@ -39,6 +39,9 @@ sub new {
     # clear any active login to enforce security
     delete $Self->{UserID};
 
+    $Self->{CacheType} = 'ITSMConfigurationManagement';
+    $Self->{CacheTTL}  = 60 * 60 * 24 * 20;
+
     bless( $Self, $Type );
 
     # set debug

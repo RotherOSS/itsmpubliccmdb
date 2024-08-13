@@ -49,6 +49,7 @@
         </div>
     </div>
     <div id='oooMainBox'>
+        <div class="BacklinkBox"><a class="Backlink" title="Back to Overview" href="[% Env("Baselink") %]Action=PublicITSMConfigItem"><i class="ooofo ooofo-arrow_l"></i><span>[% Translate("Back to Overview") | html %]</span></a></div>
         <div class="ContentColumn">
             <div id="ActionRow">
                 <div id="PageSelection">

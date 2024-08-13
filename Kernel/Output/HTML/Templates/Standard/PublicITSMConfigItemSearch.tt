@@ -25,6 +25,7 @@
     </div>
     <div id='oooMainBox'>
         <div id="oooITSMConfigItemListHeader">
+            <a class="Backlink" title="Back to Overview" href="[% Env("Baselink") %]Action=PublicITSMConfigItem"><i class="ooofo ooofo-arrow_l"></i><span>[% Translate("Back to Overview") | html %]</span></a>
 [% IF Data.SiteNavBar %]
             <div class="ooo12g ooor">
                 <p>[% Translate("Page") | html %]</p>

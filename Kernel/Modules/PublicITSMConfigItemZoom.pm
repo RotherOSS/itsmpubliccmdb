@@ -300,7 +300,7 @@ sub Run {
         Object => 'ITSMConfigItem',
         Key    => $ConfigItemID,
         State  => 'Valid',
-        UserID => $Self->{UserID},
+        UserID => 1,    # This is necessary and DOES NOT represent a security breach
     );
 
     # get link table view mode

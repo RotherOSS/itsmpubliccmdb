@@ -498,14 +498,14 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsEnabled" Required="0" Valid="1">
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsEnabled" Required="0" Valid="0">
         <Description Translatable="1">Public users can see historic CI versions.</Description>
         <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
         <Value>
             <Item ValueType="Checkbox">1</Item>
         </Value>
     </Setting>
-    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsSelectable" Required="0" Valid="1">
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsSelectable" Required="0" Valid="0">
         <Description Translatable="1">Public users have the possibility to manually switch between historic CI versions.</Description>
         <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
         <Value>

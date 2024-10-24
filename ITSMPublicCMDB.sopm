@@ -14,6 +14,7 @@
     <Filelist>    
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
+        <File Permission="660" Location="Custom/Kernel/System/ITSMConfigItem/Permission.pm" />
         <File Permission="660" Location="Kernel/Config/Files/XML/PublicITSMConfigItem.xml" />
         <File Permission="660" Location="Kernel/Output/HTML/Layout/Public.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/PublicOverviewSmall.pm" />
@@ -23,7 +24,6 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicFooter.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItemOverviewSmall.tt" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItem.tt" />
-        <File Permission="660" Location="Kernel/System/ITSMConfigItem/Permission/PublicPermission.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItem.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemSearch.pm" />
         <File Permission="660" Location="Kernel/Modules/PublicITSMConfigItemAttachment.pm" />

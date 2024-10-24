@@ -423,9 +423,18 @@ sub _RenderCILinks {
         );
     }
 
-    my $Action = $Param{LayoutObject}{UserType} && $Param{LayoutObject}{UserType} eq 'Customer'
-        ? 'CustomerITSMConfigItemZoom'
-        : 'AgentITSMConfigItemZoom';
+# Rother OSS / ITSM Public CMDB
+#    my $Action = $Param{LayoutObject}{UserType} && $Param{LayoutObject}{UserType} eq 'Customer'
+#        ? 'CustomerITSMConfigItemZoom'
+#        : 'AgentITSMConfigItemZoom';
+    my $Action;
+    if ( $Param{LayoutObject}{UserType} ) {
+        $Action = $Param{LayoutObject}{UserType} eq 'Customer' ? 'CustomerITSMConfigItemZoom' : 'AgentITSMConfigItemZoom';
+    }
+    else {
+        $Action = 'PublicITSMConfigItemZoom';
+    }
+# EO ITSM Public CMDB
 
     for my $Class ( sort keys %LinkedClasses ) {
         $Param{LayoutObject}->Block(

@@ -70,7 +70,7 @@ sub Run {
     }
 
     # get needed object
-    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::Permission::PublicPermission');
+    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
     my $ConfigObject     = $Kernel::OM->Get('Kernel::Config');
 
     # check for access rights
@@ -96,7 +96,7 @@ sub Run {
     );
     if ( !$ConfigItem->{ConfigItemID} ) {
 
-        # additional sanety check - PublicPermission should handle this case usually
+        # additional sanity check - PublicPermission should handle this case usually
         return $LayoutObject->PublicErrorScreen(
             Message => $LayoutObject->{LanguageObject}->Translate('ConfigItem not found!'),
         );
@@ -293,35 +293,6 @@ sub Run {
                 }
             );
         }
-    }
-
-    # get linked objects
-    my $LinkListWithData = $Kernel::OM->Get('Kernel::System::LinkObject')->LinkListWithData(
-        Object => 'ITSMConfigItem',
-        Key    => $ConfigItemID,
-        State  => 'Valid',
-        UserID => 1,    # This is necessary and DOES NOT represent a security breach
-    );
-
-    # get link table view mode
-    my $LinkTableViewMode = $ConfigObject->Get('LinkObject::ViewMode');
-
-    # create the link table
-    my $LinkTableStrg = $LayoutObject->LinkObjectTableCreate(
-        LinkListWithData => $LinkListWithData,
-        ViewMode         => $LinkTableViewMode,
-        Object           => 'ITSMConfigItem',
-        Key              => $ConfigItemID,
-    );
-
-    # output the link table
-    if ($LinkTableStrg) {
-        $LayoutObject->Block(
-            Name => 'LinkTable' . $LinkTableViewMode,
-            Data => {
-                LinkTableStrg => $LinkTableStrg,
-            },
-        );
     }
 
     my @Attachments = $ConfigItemObject->ConfigItemAttachmentList(

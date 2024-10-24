@@ -72,7 +72,7 @@ sub Run {
         return $LayoutObject->ErrorScreen();
     }
 
-    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::Permission::PublicPermission');
+    my $ConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
 
     # fetch config item
     my $ConfigItem = $ConfigItemObject->ConfigItemGet(

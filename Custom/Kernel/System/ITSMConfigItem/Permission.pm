@@ -251,6 +251,7 @@ sub CustomerPermission {
     return;
 }
 
+# Rother OSS / ITSM Public CMDB
 sub PublicPermission {
     my ( $Self, %Param ) = @_;
 
@@ -307,5 +308,6 @@ sub PublicPermission {
     # don't grant access
     return;
 }
+# EO ITSM Public CMDB
 
 1;

@@ -495,9 +495,11 @@ sub Run {
         );
     }
 
+    my $HeaderTitle = $ConfigObject->Get("ITSMConfigItem::Frontend::PublicITSMConfigItem")->{Title} || "ConfigItems";
     $Output .= $LayoutObject->Output(
         TemplateFile => 'PublicITSMConfigItem',
         Data         => {
+            Title    => $HeaderTitle,
             ITSMConfigItemListHTML => $ConfigItemListHTML,
             %PageNav,
         },

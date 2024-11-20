@@ -567,5 +567,18 @@
             </Hash>
         </Value>
     </Setting>
-
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItem###Title" Required="0" Valid="1">
+        <Description Translatable="1">Title for the public interface overview.</Description>
+        <Navigation>Frontend::Public::View::ConfigItem</Navigation>
+        <Value>
+            <Item ValueType="String">ConfigItems</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Title" Required="0" Valid="1">
+        <Description Translatable="1">Title for the public interface search.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">ConfigItem Search</Item>
+        </Value>
+    </Setting>
 </otobo_config>

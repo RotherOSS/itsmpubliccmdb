@@ -738,9 +738,11 @@ sub Run {
         return $Output;
     }
 
+    my $HeaderTitle = $ConfigObject->Get("ITSMConfigItem::Frontend::PublicITSMConfigItemSearch")->{Title} || "ConfigItem Search";
     $Output .= $LayoutObject->Output(
         TemplateFile => 'PublicITSMConfigItemSearch',
         Data         => {
+            Title    => $HeaderTitle,
             %PageNav,
         },
     );

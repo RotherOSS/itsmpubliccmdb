@@ -41,6 +41,8 @@ Basic Configuration
 Open the Package Manager module from the Administration group in the Agent Interface. Select the package named ITSMPublicCMDB from the Online Repository. Click the associated  *Install* link on that line and
 respond affirmatively to any confirmation questions that may follow.
 
+For every class intended to be viewed, add the *Public* item to its Interfaces list (*Admin->Config Items->Change Class Definition*).
+
 Custom Configuration and Advanced Features
 ------------------------------------------
 By default, item version details are not traceable. However, that feature may be activated by enabling the system configs *ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsEnabled* and *ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsSelectable*.

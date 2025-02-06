@@ -427,6 +427,12 @@ sub Run {
             Result => 'ARRAY',
         );
 
+        if ( scalar @OriginalViewableConfigItems == 1 ) {
+            return $LayoutObject->Redirect(
+                OP => "Action=PublicITSMConfigItemZoom;ConfigItemID=$OriginalViewableConfigItems[0]",
+            );
+        }
+
         my $Total = scalar @OriginalViewableConfigItems;
 
         my $StartHit = $ParamObject->GetParam( Param => 'StartHit' ) || 1;

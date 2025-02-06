@@ -472,18 +472,22 @@ sub Run {
         );
 
         $LayoutObject->Block(
+            Name => 'SearchBox',
+        );
+
+        my %PublicActions = %{ $ConfigObject->Get('PublicFrontend::Module') // {} };
+        if ( $PublicActions{PublicITSMConfigItem} ) {
+            $LayoutObject->Block(
+                Name => 'OverviewLink',
+            );
+        }
+
+        $LayoutObject->Block(
             Name => 'SearchResult',
             Data => {
                 ITSMConfigItemListHTML => $ConfigItemListHTML,
             },
         );
-
-        if ( defined $ConfigObject->Get("PublicFrontend::Module")->{"PublicITSMConfigItemSearch"} ) {
-            $LayoutObject->Block(
-                Name => 'SearchBox',
-            );
-        }
-
     }
     elsif ( !$Self->{Subaction} ) {
 
@@ -528,6 +532,13 @@ sub Run {
             $Output .= $LayoutObject->PublicFooter();
 
             return $Output;
+        }
+
+        my %PublicActions = %{ $ConfigObject->Get('PublicFrontend::Module') // {} };
+        if ( $PublicActions{PublicITSMConfigItem} ) {
+            $LayoutObject->Block(
+                Name => 'OverviewLink',
+            );
         }
 
         $LayoutObject->Block(

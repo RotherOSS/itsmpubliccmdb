@@ -49,7 +49,9 @@
         </div>
     </div>
     <div id='oooMainBox'>
+[% RenderBlockStart("OverviewLink") %]
         <div class="BacklinkBox"><a class="Backlink" title="Back to Overview" href="[% Env("Baselink") %]Action=PublicITSMConfigItem"><i class="ooofo ooofo-arrow_l"></i><span>[% Translate("Back to Overview") | html %]</span></a></div>
+[% RenderBlockEnd("OverviewLink") %]
         <div class="ContentColumn">
             <div id="ActionRow">
                 <div id="PageSelection">

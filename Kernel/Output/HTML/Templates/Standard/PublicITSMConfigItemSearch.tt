@@ -20,7 +20,7 @@
 [% RenderBlockStart("SearchBox") %]
         <div id="oooSearchBox">
         </div>
-        <a id='oooHeaderButton' href="[% Env("Baselink") %]Action=PublicITSMConfigItemSearch;Filter=1;View=Small;SortBy=Age;OrderBy=Up" title="[% Translate("Search") | html %]" accesskey="[% Data.AccessKey | html %]"><button><span> [% Translate("Search") | html %]</span></button></a>
+        <a id='oooHeaderButton' href="[% Env("Baselink") %]Action=PublicITSMConfigItemSearch" title="[% Translate("Search") | html %]" accesskey="[% Data.AccessKey | html %]"><button><span> [% Translate("Search") | html %]</span></button></a>
 [% RenderBlockEnd("SearchBox") %]
     </div>
     <div id='oooMainBox'>

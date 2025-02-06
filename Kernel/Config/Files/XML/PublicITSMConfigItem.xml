@@ -108,6 +108,27 @@
             <Item ValueType="String" ValueRegex="">ro</Item>
         </Value>
     </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Class" Required="0" Valid="1">
+        <Description Translatable="1">Includes classes in the config item search of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Name" Required="0" Valid="1">
+        <Description Translatable="1">Includes the name in the config item search of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Number" Required="0" Valid="1">
+        <Description Translatable="1">Includes the number in the config item search of the public interface.</Description>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">1</Item>
+        </Value>
+    </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###DeploymentState" Required="0" Valid="1">
         <Description Translatable="1">Includes deployment states in the config item search of the public interface.</Description>
         <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>

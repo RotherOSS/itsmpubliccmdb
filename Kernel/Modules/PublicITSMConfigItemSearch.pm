@@ -187,7 +187,9 @@ sub Run {
 
         # get search params from web request
         my %GetParam;
+        PARAM:
         for my $SearchParam (qw(Number Name)) {
+            next PARAM if !$Config->{ $SearchParam };
 
             # fetch single value params
             $GetParam{$SearchParam} = $ParamObject->GetParam( Param => $SearchParam );
@@ -200,7 +202,11 @@ sub Run {
             $LinkSort .= ";$SearchParam=" . $LayoutObject->Ascii2Html( Text => $GetParam{$SearchParam} );
         }
 
-        my @ArraySearchParams = qw(ClassIDs);
+        my @ArraySearchParams;
+
+        if ( $Config->{Class} ) {
+            push @ArraySearchParams, 'ClassIDs';
+        }
 
         if ( $Config->{DeploymentState} ) {
             push @ArraySearchParams, 'DeplStateIDs';
@@ -677,29 +683,34 @@ sub Run {
             }
         }
 
-        $LayoutObject->Block(
-            Name => 'Number',
-        );
+        if ( $Config->{Number} ) {
+            $LayoutObject->Block(
+                Name => 'Number',
+            );
+        }
 
-        $LayoutObject->Block(
-            Name => 'Name',
-        );
+        if ( $Config->{Name} ) {
+            $LayoutObject->Block(
+                Name => 'Name',
+            );
 
-        my $ClassStrg = $LayoutObject->BuildSelection(
-            Data         => $SearchableParams{Class},
-            Name         => 'ClassIDs',
-            Class        => 'Modernize',
-            SelectedID   => $Defaults{ClassIDs},
-            PossibleNone => 1,
-            Multiple     => 1,
-        );
+        if ( $Config->{Class} ) {
+            my $ClassStrg = $LayoutObject->BuildSelection(
+                Data         => $SearchableParams{Class},
+                Name         => 'ClassIDs',
+                Class        => 'Modernize',
+                SelectedID   => $Defaults{ClassIDs},
+                PossibleNone => 1,
+                Multiple     => 1,
+            );
 
-        $LayoutObject->Block(
-            Name => 'Class',
-            Data => {
-                ClassStrg => $ClassStrg,
-            },
-        );
+            $LayoutObject->Block(
+                Name => 'Class',
+                Data => {
+                    ClassStrg => $ClassStrg,
+                },
+            );
+        }
 
         if ( $Config->{DeploymentState} ) {
 

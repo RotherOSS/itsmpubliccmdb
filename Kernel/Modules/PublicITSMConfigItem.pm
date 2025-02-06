@@ -489,7 +489,8 @@ sub Run {
         Output => 1,
     );
 
-    if ( defined $ConfigObject->Get("PublicFrontend::Module")->{"PublicITSMConfigItemSearch"} ) {
+    my %PublicActions = %{ $ConfigObject->Get('PublicFrontend::Module') // {} };
+    if ( $PublicActions{PublicITSMConfigItemSearch} ) {
         $LayoutObject->Block(
             Name => 'SearchBox',
         );

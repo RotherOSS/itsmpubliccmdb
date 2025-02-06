@@ -198,6 +198,13 @@ sub Run {
         }
     }
 
+    my %PublicActions = %{ $ConfigObject->Get('PublicFrontend::Module') // {} };
+    if ( $PublicActions{PublicITSMConfigItem} ) {
+        $LayoutObject->Block(
+            Name => 'OverviewLink',
+        );
+    }
+
     # if a version already exists (TODO: When does it not?)
     if ( $ConfigItem->{Name} ) {
         my $Definition = $ConfigItemObject->DefinitionGet(

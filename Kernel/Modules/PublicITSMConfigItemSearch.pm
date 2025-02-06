@@ -95,9 +95,6 @@ sub Run {
         Valid => 1,
     );
 
-    # get filter from web request
-    my $Filter = $ParamObject->GetParam( Param => 'PermissionCondition' ) || $ParamObject->GetParam( Param => 'Filter' ) || '';
-
     # fetch filters from config
     my $PermissionConditionConfigs = $ConfigObject->Get('Public::ConfigItem::PermissionConditions');
     if ( !IsHashRefWithData($PermissionConditionConfigs) ) {
@@ -111,6 +108,12 @@ sub Run {
 
         return $Output;
     }
+
+    # get filter from web request or use first valid permission condition
+    my $Filter =
+        $ParamObject->GetParam( Param => 'PermissionCondition' ) ||
+        $ParamObject->GetParam( Param => 'Filter' ) ||
+        ( sort { $a <=> $b } keys $PermissionConditionConfigs->%* )[0];
 
     my $PermissionConditionConfig = $PermissionConditionConfigs->{ sprintf( "%02d", $Filter ) };
     if ( !IsHashRefWithData($PermissionConditionConfig) ) {

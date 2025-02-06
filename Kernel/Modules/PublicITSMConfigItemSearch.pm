@@ -693,6 +693,7 @@ sub Run {
             $LayoutObject->Block(
                 Name => 'Name',
             );
+        }
 
         if ( $Config->{Class} ) {
             my $ClassStrg = $LayoutObject->BuildSelection(

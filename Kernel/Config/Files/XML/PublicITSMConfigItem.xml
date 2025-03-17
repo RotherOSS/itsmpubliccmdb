@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otobo_config version="2.0" init="Config">
 
-    <!-- Public ITSM Config Items related settings -->
-    
     <Setting Name="PublicFrontend::Module###PublicITSMConfigItem" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the public interface.</Description>
         <Navigation>Frontend::Public::ModuleRegistration</Navigation>
@@ -82,7 +80,7 @@
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicOverview###Small" Required="0" Valid="1">
         <Description Translatable="1">Defines an overview module to show the small view of a configuration item list.</Description>
-        <Navigation>Frontend::Public::ITSMConfigItemOverview</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemOverview</Navigation>
         <Value>
             <Hash>
                 <Item Key="Module">Kernel::Output::HTML::ITSMConfigItem::PublicOverviewSmall</Item>
@@ -92,7 +90,6 @@
             </Hash>
         </Value>
     </Setting>
-    <!-- ITSMConfigItem::Frontend::PublicITSMConfigItem -->
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItem###PageShown" Required="1" Valid="1">
         <Description Translatable="1">Number of config items to be displayed in each page of the public interface.</Description>
         <Navigation>Frontend::Public::View::ConfigItem</Navigation>
@@ -101,13 +98,6 @@
         </Value>
     </Setting>
     <!-- ITSMConfigItem::Frontend::PublicITSMConfigItemSearch -->
-    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Permission" Required="1" Valid="1">
-        <Description Translatable="1">Required permissions to use the ITSM configuration item search screen in the public interface.</Description>
-        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
-        <Value>
-            <Item ValueType="String" ValueRegex="">ro</Item>
-        </Value>
-    </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###Class" Required="0" Valid="1">
         <Description Translatable="1">Includes classes in the config item search of the public interface.</Description>
         <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
@@ -141,20 +131,6 @@
         <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
-        </Value>
-    </Setting>
-    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###ExtendedSearchCondition" Required="1" Valid="1">
-        <Description Translatable="1">Allows extended search conditions in config item search of the public interface. With this feature you can search e. g. config item name with this kind of conditions like "(*key1*&amp;&amp;*key2*)" or "(*key1*||*key2*)".</Description>
-        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
-        <Value>
-            <Item ValueType="Checkbox">1</Item>
-        </Value>
-    </Setting>
-    <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SearchPageShown" Required="1" Valid="1">
-        <Description Translatable="1">Number of config items to be displayed in each page of a search result in the public interface.</Description>
-        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
-        <Value>
-            <Item ValueType="String" ValueRegex="^\d+$">40</Item>
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SortBy::Default" UserPreferencesGroup="Advanced" UserModificationActive="1" UserModificationPossible="1" Required="1" Valid="1">
@@ -219,7 +195,7 @@
 
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###DynamicField" Required="0" Valid="1">
         <Description Translatable="1">Dynamic fields shown in the config item overview screen of the public interface.</Description>
-        <Navigation>Frontend::Public::View::ITSMConfigItemOverview</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemOverview</Navigation>
         <Value>
             <Hash>
                 <DefaultItem ValueType="Select">
@@ -232,14 +208,14 @@
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SearchLimit" Required="1" Valid="1">
         <Description Translatable="1">Defines the search limit for the PublicITSMConfigItemSearch screen.</Description>
-        <Navigation>Frontend::Public::View::ITSMConfigItemSearch</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="^\d+$">10000</Item>
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemSearch###SuppressFuzzyLogic" Required="1" Valid="1">
         <Description Translatable="1">Defines the search limit for the PublicITSMConfigItemSearch screen.</Description>
-        <Navigation>Frontend::Public::View::ITSMConfigItemSearch</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemSearch</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
         </Value>
@@ -358,6 +334,7 @@
             </Hash>
         </Value>
     </Setting>
+    <!-- Here -->
     <Setting Name="Public::ConfigItem::PermissionConditionColumns###Default" Required="0" Valid="1">
         <Description Translatable="1"></Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
@@ -521,21 +498,21 @@
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsEnabled" Required="0" Valid="0">
         <Description Translatable="1">Public users can see historic CI versions.</Description>
-        <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemZoom</Navigation>
         <Value>
             <Item ValueType="Checkbox">1</Item>
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###VersionsSelectable" Required="0" Valid="0">
         <Description Translatable="1">Public users have the possibility to manually switch between historic CI versions.</Description>
-        <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemZoom</Navigation>
         <Value>
             <Item ValueType="Checkbox">1</Item>
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::PublicITSMConfigItemZoom###GeneralInfo" Required="0" Valid="1">
         <Description Translatable="1">Which general information is shown in the header.</Description>
-        <Navigation>Frontend::Public::View::ITSMConfigItemZoom</Navigation>
+        <Navigation>Frontend::Public::View::ConfigItemZoom</Navigation>
         <Value>
             <Hash>
                 <DefaultItem ValueType="Select">

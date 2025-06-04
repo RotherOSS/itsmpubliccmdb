@@ -2,7 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# --
+# $origin: otobo -  - Kernel/Output/HTML/Layout/ITSMConfigItem.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -26,7 +28,7 @@ use namespace::autoclean;
 
 # OTOBO modules
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -410,7 +412,6 @@ sub ITSMConfigItemListShow {
         return $Env->{LayoutObject}->FatalError();
     }
     my $Object = $Backends->{$View}->{Module}->new( %{$Env} );
-
     return if !$Object;
 
     # retrieve filter values
@@ -504,7 +505,7 @@ sub ITSMConfigItemListShow {
     # filter selection
     if ( $Param{CategoryFilters} ) {
         my @NavBarFilters;
-        for my $Prio ( sort keys %{ $Param{CategoryFilters} } ) {
+        for my $Prio ( sort { $a <=> $b } keys %{ $Param{CategoryFilters} } ) {
             push @NavBarFilters, $Param{CategoryFilters}->{$Prio};
         }
         $Self->Block(
@@ -526,7 +527,7 @@ sub ITSMConfigItemListShow {
                     %{$CategoryFilter},
                 },
             );
-            if ( $CategoryFilter->{CategoryFilter} eq $Param{CategoryFilter} ) {
+            if ( $Param{CategoryFilter} && $CategoryFilter->{CategoryFilter} eq $Param{CategoryFilter} ) {
                 $Self->Block(
                     Name => 'OverviewNavBarFilterItemSelected',
                     Data => {
@@ -671,7 +672,6 @@ sub ITSMConfigItemListShow {
         }
     }
 
-
     # create nav bar and run overview backend module
     my $NavBarHTML = '';
 
@@ -696,7 +696,6 @@ sub ITSMConfigItemListShow {
             AllHits         => $Param{Total}  || 0,
             Output          => $Param{Output} || '',
         );
-
 }
 
 =head2 XMLData2Hash()

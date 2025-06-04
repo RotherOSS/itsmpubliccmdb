@@ -5,13 +5,13 @@
     <Framework>11.0.x</Framework>
     <PackageRequired Version="11.0.1">ITSMConfigurationManagement</PackageRequired>
     <Vendor>Rother OSS GmbH</Vendor>
-    <URL>https://otobo.de/</URL>
+    <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">The OTOBO::ITSM Public CMDB package.</Description>
     <Description Lang="de">Das OTOBO::ITSM Public CMDB Paket.</Description>
     <Description Lang="es">El paquete OTOBO::ITSM Public CMDB.</Description>
     <Description Lang="hu">Az OTOBO::ITSM Public CMDB csomag.</Description>
-    <Filelist>    
+    <Filelist>
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
         <File Permission="660" Location="Custom/Kernel/System/ITSMConfigItem/Permission.pm" />

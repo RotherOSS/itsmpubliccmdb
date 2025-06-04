@@ -2,7 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# --
+# $origin: otobo -  - Kernel/System/ITSMConfigItem/Permission.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -184,7 +186,7 @@ sub CustomerPermission {
     my %Conditions = %{ $Kernel::OM->Get('Kernel::Config')->Get('Customer::ConfigItem::PermissionConditions') // {} };
     my $ConfigItem = $Self->ConfigItemGet(
         ConfigItemID  => $Param{ConfigItemID},
-        DynamicFields => any { $_->{CustomerUserDynamicField} || $_->{CustomerCompanyDynamicField} } values %Conditions,
+        DynamicFields => 1,
     );
 
     CONDITION:
@@ -215,24 +217,45 @@ sub CustomerPermission {
 
         if ( $ConditionSet->{DynamicFieldValues} ) {
             for my $FieldName ( keys $ConditionSet->{DynamicFieldValues}->%* ) {
-                my $FieldValue = $ConditionSet->{DynamicFieldValues}{$FieldName};
-                next CONDITION if $FieldValue && !$ConfigItem->{"DynamicField_$FieldName"} eq $FieldValue;
+                my $ConditionValue = $ConditionSet->{DynamicFieldValues}{$FieldName} // '';
+
+                if ( !defined $ConfigItem->{"DynamicField_$FieldName"} ) {
+                    next CONDITION if $ConditionValue ne '';
+                }
+                elsif ( !ref $ConfigItem->{"DynamicField_$FieldName"} ) {
+                    next CONDITION if $ConditionValue ne $ConfigItem->{"DynamicField_$FieldName"};
+                }
+                elsif ( $ConditionValue eq '' ) {
+                    next CONDITION if $ConfigItem->{"DynamicField_$FieldName"}->@*;
+                }
+                else {
+                    next CONDITION if none { $_ eq $ConditionValue } $ConfigItem->{"DynamicField_$FieldName"}->@*;
+                }
             }
         }
 
         if ( $ConditionSet->{CustomerUserDynamicField} ) {
             next CONDITION if !$ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerUserDynamicField} };
-            next CONDITION if none { $_ eq $Param{UserID} } $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerUserDynamicField} }->@*;
+
+            my @CustomerUsers = ref $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerUserDynamicField} }
+                ? $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerUserDynamicField} }->@*
+                : ( $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerUserDynamicField} } );
+
+            next CONDITION if none { $_ eq $Param{UserID} } @CustomerUsers;
         }
 
         if ( $ConditionSet->{CustomerCompanyDynamicField} ) {
             next CONDITION if !$ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerCompanyDynamicField} };
 
+            my @CustomerCompanies = ref $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerCompanyDynamicField} }
+                ? $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerCompanyDynamicField} }->@*
+                : ( $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerCompanyDynamicField} } );
+
             my %AccessibleCustomers = $Kernel::OM->Get('Kernel::System::CustomerGroup')->GroupContextCustomers(
                 CustomerUserID => $Param{UserID},
             );
 
-            next CONDITION if none { $AccessibleCustomers{$_} } $ConfigItem->{ 'DynamicField_' . $ConditionSet->{CustomerCompanyDynamicField} }->@*;
+            next CONDITION if none { $AccessibleCustomers{$_} } @CustomerCompanies;
         }
 
         # grant access

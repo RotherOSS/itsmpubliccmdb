@@ -1,7 +1,7 @@
 /* OTOBO is a web-based ticketing system for service organisations.
 
 Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
@@ -27,6 +27,10 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     padding-bottom: 1px;
     min-height: 15px;
     min-width: 5px;
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #oooCustomerNotifications > .MessageBox {
@@ -63,6 +67,8 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     text-align: center;
 }
 
+/* Rother OSS / ITSMPublicCMDB */
+
 #oooITSMConfigItemListHeader:has(+.oooITSMConfigItemSearch) {
     padding-bottom: 6px;
 }
@@ -84,6 +90,4 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
     padding-bottom: 12px;
     font-size: 16px;
 }
-
-
- 
+/* EO ITSMPublicCMDB */

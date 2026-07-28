@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # $origin: otobo -  - Kernel/Output/HTML/Layout/ITSMConfigItem.pm
 # --
@@ -288,6 +288,8 @@ sub _ITSMLoadLayoutBackend {
 
 =head2 ITSMConfigItemListShow()
 
+=for stopwords CMDB
+
 Returns a list of configuration items with sort and pagination capabilities.
 
 This function is similar to L<Kernel::Output::HTML::LayoutTicket::TicketListShow()>
@@ -305,11 +307,12 @@ in F<Kernel/Output/HTML/LayoutTicket.pm>.
         Env           => $Self,
         LinkPage      => $LinkPage,
         LinkSort      => $LinkSort,
-        
+
 # Rother OSS / ITSM Public CMDB
+#         Frontend      => 'Agent',                           # optional (Agent|Customer), default: Agent, indicates from which frontend this function was called
         Frontend      => 'Agent',                           # optional (Agent|Customer|Public), default: Agent, indicates from which frontend this function was called
 # EO ITSM Public CMDB
-        
+
     );
 
 =cut
@@ -331,15 +334,20 @@ sub ITSMConfigItemListShow {
     # set default view mode to 'small'
     my $View = $Param{View} || 'Small';
 
-# Rother OSS / ITSM Public CMDB
     # store latest view mode
+# Rother OSS / ITSM Public CMDB
+#     $Kernel::OM->Get('Kernel::System::AuthSession')->UpdateSessionID(
+#         SessionID => $Self->{SessionID},
+#         Key       => 'UserITSMConfigItemOverview' . $Env->{Action},
+#         Value     => $View,
+#     );
     if ( $Param{Frontend} ne 'Public' ) {
         $Kernel::OM->Get('Kernel::System::AuthSession')->UpdateSessionID(
             SessionID => $Self->{SessionID},
             Key       => 'UserITSMConfigItemOverview' . $Env->{Action},
             Value     => $View,
         );
-    }   
+    }
 # EO ITSM Public CMDB
 
     # get config object
@@ -349,7 +357,9 @@ sub ITSMConfigItemListShow {
     my $Key = 'UserITSMConfigItemOverview' . $Env->{Action};
 
 # Rother OSS / ITSM Public CMDB
+#     if ( $Param{Frontend} ne 'Customer' ) {
     if ( $Param{Frontend} ne 'Customer' && $Param{Frontend} ne 'Public' ) {
+# EO ITSM Public CMDB
         if ( !$ConfigObject->Get('DemoSystem') && ( $Self->{$Key} // '' ) ne $View ) {
             $Kernel::OM->Get('Kernel::System::User')->SetPreferences(
                 UserID => $Self->{UserID},
@@ -360,6 +370,9 @@ sub ITSMConfigItemListShow {
     }
 
     # get backend from config
+# Rother OSS / ITSM Public CMDB
+#     my $Backends
+#         = $Param{Frontend} eq 'Agent' ? $ConfigObject->Get('ITSMConfigItem::Frontend::Overview') : $ConfigObject->Get('ITSMConfigItem::Frontend::CustomerOverview');
     my $Backends;
     if ( $Param{Frontend} eq 'Agent' ) {
         $Backends = $ConfigObject->Get('ITSMConfigItem::Frontend::Overview');
@@ -372,7 +385,6 @@ sub ITSMConfigItemListShow {
         $Backends = $ConfigObject->Get('ITSMConfigItem::Frontend::PublicOverview');
     }
 # EO ITSM Public CMDB
-    
     if ( !$Backends ) {
         return $Self->FatalError(
             Message => 'Need config option ITSMConfigItem::Frontend::Overview',
@@ -676,6 +688,7 @@ sub ITSMConfigItemListShow {
     my $NavBarHTML = '';
 
 # Rother OSS / ITSM Public CMDB
+#     if ( $Param{Frontend} ne 'Customer' ) {
     if ( $Param{Frontend} ne 'Customer' && $Param{Frontend} ne 'Public' ) {
 # EO ITSM Public CMDB
         $NavBarHTML = $Self->Output(

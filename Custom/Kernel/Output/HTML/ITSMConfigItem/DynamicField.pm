@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # $origin: otobo -  - Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm
 # --
@@ -36,6 +36,7 @@ our @ObjectDependencies = (
     'Kernel::System::DynamicField',
     'Kernel::System::DynamicField::Backend',
     'Kernel::System::ITSMConfigItem',
+    'Kernel::System::Main',
 );
 
 =head1 NAME
@@ -154,7 +155,7 @@ sub PageRender {
                 Name => 'ContentCell',
                 Data => {
                     GridArea => $GridArea,
-                    Type => $Section->{Type}
+                    Type     => $Section->{Type}
                 },
             );
 
@@ -197,16 +198,25 @@ sub _SectionRender {
 
     # Get HTML from additional modules
     elsif ( $Param{Section}{Module} ) {
+        my $Module = 'Kernel::Output::HTML::ITSMConfigItem::Section::' . $Param{Section}{Module};
 
-        # TODO: handle non dynamic field stuff
-        # my $Object = $MainObject->Require( $ConfigObject->Get('ModuleMap')->{ $Param{Section}{Module} } ) ...;
-        # my $HTML = $Object->Run( %Param );
-        # $LayoutObject->Block(
-        #    Name => 'GenericHTML',
-        #    Data => {
-        #        HTML => $HTML,
-        #    },
-        #);
+        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require($Module) ) {
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => "Can't load section module '$Module'",
+            );
+
+            return '';
+        }
+
+        my $Object = $Kernel::OM->Get($Module);
+        my $HTML   = $Object->Run(%Param);
+        $Param{LayoutObject}->Block(
+            Name => 'GenericHTML',
+            Data => {
+                HTML => $HTML,
+            },
+        );
 
         return 1;
     }
@@ -267,8 +277,9 @@ sub _SectionRender {
             $Param{LayoutObject}->Block(
                 Name => 'FieldDisplayCell',
                 Data => {
-                    Label => $Row->{Label} || $DynamicField->{Label},
-                    Type  => 'Label',
+                    Label    => $Row->{Label} || $DynamicField->{Label},
+                    Type     => 'Label',
+                    CSSClass => $DynamicField->{FieldType} eq 'Set' ? 'DynamicFieldSetLabel' : undef,
                 },
             );
 
@@ -285,8 +296,14 @@ sub _SectionRender {
                 $Param{LayoutObject}->Block(
                     Name => 'FieldDisplayCell',
                     Data => {
+                        $DynamicField->{Name} => $DisplayValue->{Title},
+                        $Param{ConfigItem}->%*,
                         $DisplayValue->%*,
-                        Type => 'ValueLink',
+
+                        # Include unique parameter with dynamic field name in case of collision with others.
+                        #   Please see bug#13362 for more information.
+                        "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
+                        Type                                 => 'ValueLink',
                     },
                 );
             }
@@ -489,6 +506,7 @@ sub _RenderDescriptionSection {
             Widths => '1fr',
         },
     );
+
 # Rother OSS / ITSM Public CMDB
     my $Frontend;
     if ( $Param{LayoutObject}{UserType} ) {
@@ -498,12 +516,14 @@ sub _RenderDescriptionSection {
         $Frontend = 'Public';
     }
 # EO ITSM Public CMDB
+
     $Param{LayoutObject}->Block(
         Name => 'FieldDisplayCell',
         Data => {
             ConfigItemID => $Param{ConfigItem}{ConfigItemID},
             VersionID    => $Param{ConfigItem}{VersionID},
 # Rother OSS / ITSM Public CMDB
+#             Frontend     => $Param{LayoutObject}{UserType} eq 'User' ? 'Agent' : 'Customer',
             Frontend     => $Frontend,
 # EO ITSM Public CMDB
             Type         => 'Iframe',
@@ -654,8 +674,14 @@ sub _RenderDF {
         $Param{LayoutObject}->Block(
             Name => 'FieldDisplayCell',
             Data => {
+                $DynamicField->{Name} => $DisplayValue->{Title},
+                $Param{ConfigItem}->%*,
                 $DisplayValue->%*,
-                Type => 'ValueLink',
+
+                # Include unique parameter with dynamic field name in case of collision with others.
+                #   Please see bug#13362 for more information.
+                "DynamicField_$DynamicField->{Name}" => $DisplayValue->{Title},
+                Type                                 => 'ValueLink',
             },
         );
     }

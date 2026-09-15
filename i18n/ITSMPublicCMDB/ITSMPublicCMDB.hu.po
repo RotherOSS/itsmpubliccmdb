@@ -1,0 +1,112 @@
+# Hungarian translations for ITSMPublicCMDB.
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# This file is distributed under the same license as the ITSMPublicCMDB package.
+#
+# Balázs Úr <balazs@urbalazs.hu>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: ITSMPublicCMDB 11.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/RotherOSS/itsmpubliccmdb/issues\n"
+"POT-Creation-Date: 2026-09-15 15:37+0000\n"
+"PO-Revision-Date: 2026-09-15 18:17+0200\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.12.3\n"
+
+#. SysConfig
+msgid "Color definitions for the public interface."
+msgstr "Színmeghatározások a nyilvános felülethez."
+
+#. SysConfig
+msgid ""
+"Defines the default config item attribute for config item sorting of the "
+"config item search result of the public interface."
+msgstr ""
+"Meghatározza az alapértelmezett konfigurációelem-attribútumot a nyilvános "
+"felület konfigurációelem-keresési eredményének konfigurációelem-rendezéséhez."
+
+#. SysConfig
+msgid ""
+"Defines the default config item order in the config item search result of "
+"the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+"Meghatározza az alapértelmezett konfigurációelem-sorrendet a nyilvános "
+"felület konfigurációelem-keresési eredményében. Fel: legrégebbi felülre. Le: "
+"legutolsó felülre."
+
+#. SysConfig
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr ""
+"Meghatározza a keresési korlátot a PublicITSMConfigItemSearch képernyőn."
+
+#. SysConfig
+msgid ""
+"Dynamic fields shown in the config item overview screen of the public "
+"interface."
+msgstr ""
+"A nyilvános felület konfigurációelem áttekintő képernyőjén megjelenített "
+"dinamikus mezők."
+
+#. SysConfig
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+"Felveszi az osztályokat a nyilvános felület konfigurációelem-keresésébe."
+
+#. SysConfig
+msgid ""
+"Includes deployment states in the config item search of the public interface."
+msgstr ""
+"Felveszi az üzembe állítási állapotokat a nyilvános felület konfigurációelem-"
+"keresésébe."
+
+#. SysConfig
+msgid ""
+"Includes incident states in the config item search of the public interface."
+msgstr ""
+"Felveszi az incidensállapotokat a nyilvános felület konfigurációelem-"
+"keresésébe."
+
+#. SysConfig
+msgid "Includes the name in the config item search of the public interface."
+msgstr "Felveszi a nevet a nyilvános felület konfigurációelem-keresésébe."
+
+#. SysConfig
+msgid "Includes the number in the config item search of the public interface."
+msgstr "Felveszi a számot a nyilvános felület konfigurációelem-keresésébe."
+
+#. SysConfig
+msgid "Loader module registration for the public interface."
+msgstr "Betöltőmodul regisztráció a nyilvános felülethez."
+
+#. SysConfig
+msgid ""
+"Number of config items to be displayed in each page of the public interface."
+msgstr ""
+"A nyilvános felület minden egyes oldalán megjelenítendő konfigurációelemek "
+"száma."
+
+#. SysConfig
+msgid "Public users can see historic CI versions."
+msgstr ""
+"A nyilvános felhasználók láthatják a korábbi konfigurációelem-verziókat."
+
+#. SysConfig
+msgid ""
+"Public users have the possibility to manually switch between historic CI "
+"versions."
+msgstr ""
+"A nyilvános felhasználóknak lehetőségük van kézileg váltani a korábbi "
+"konfigurációelem-verziók között."
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr "A nyilvános felület áttekintésének címe."
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr "A nyilvános felület keresésének címe."

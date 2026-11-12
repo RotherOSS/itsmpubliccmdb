@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ITSMPublicCMDB\n"
+"POT-Creation-Date: 2026-09-15 15:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. SysConfig
+msgid "Color definitions for the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default config item attribute for config item sorting of the config item search result of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default config item order in the config item search result of the public interface. Up: oldest on top. Down: latest on top."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the search limit for the PublicITSMConfigItemSearch screen."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the config item overview screen of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Includes classes in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Includes deployment states in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Includes incident states in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Includes the name in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Includes the number in the config item search of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Loader module registration for the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Number of config items to be displayed in each page of the public interface."
+msgstr ""
+
+#. SysConfig
+msgid "Public users can see historic CI versions."
+msgstr ""
+
+#. SysConfig
+msgid "Public users have the possibility to manually switch between historic CI versions."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface overview."
+msgstr ""
+
+#. SysConfig
+msgid "Title for the public interface search."
+msgstr ""

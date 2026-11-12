@@ -10,12 +10,13 @@
     <Description Lang="en">The OTOBO::ITSM Public CMDB package.</Description>
     <Description Lang="de">Das OTOBO::ITSM Public CMDB Paket.</Description>
     <Description Lang="es">El paquete OTOBO::ITSM Public CMDB.</Description>
-    <Description Lang="hu">Az OTOBO::ITSM Public CMDB csomag.</Description>
+    <Description Lang="hu">Az OTOBO::ITSM nyilvános CMDB csomag.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Layout/ITSMConfigItem.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/ITSMConfigItem/DynamicField.pm" />
         <File Permission="660" Location="Custom/Kernel/System/ITSMConfigItem/Permission.pm" />
         <File Permission="660" Location="Kernel/Config/Files/XML/PublicITSMConfigItem.xml" />
+        <File Permission="660" Location="Kernel/Language/hu_ITSMPublicCMDB.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Layout/Public.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/PublicOverviewSmall.pm" />
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/PublicITSMConfigItemZoom.tt" />
